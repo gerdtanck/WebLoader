@@ -15,6 +15,7 @@ class Device extends DemoLink {
     if (this.behavior === 'legacy-timeout' && raw[1] === 126) return;
     if (this.behavior === 'in-use' && raw[6] === 83) { this.emit(demoKit([196, ...Array(15).fill(1)])); return; }
     if (this.behavior === 'read-timeout' && raw[6] === 116 && raw[8] === CMD.REQUEST) return;
+    if (this.behavior === 'no-read-after-commit' && this.generation > 1 && raw[6] === 116 && raw[8] === CMD.REQUEST) throw new Error('Unexpected dump after commit');
     super.send(raw);
   }
   reply(p: Packet) {
@@ -35,7 +36,6 @@ class Device extends DemoLink {
         super.reply({ ...p, slot: p.slot + 1 });
         const corrupted = encodePacket(p); corrupted[10] ^= 1; this.emit(corrupted);
       }
-      if (this.behavior === 'readback-mismatch' && p.body[0] === CMD.END) this.memory.set(p.slot + 1, sample.data);
     }
     super.reply(p);
   }
@@ -75,7 +75,7 @@ test('A missing final ACK retries END only and does not duplicate the commit', a
   assert.equal(link.commands().filter(p => p.command === CMD.HEADER).length, 1);
   assert.equal(link.commands().filter(p => p.command === CMD.END).length, 2); assert.equal(link.generation, 2);
 });
-test('Install backs up target and kit before upload, persists commit, then verifies', async () => {
+test('Install backs up target and kit, then finishes with the commit ACK', async () => {
   const { link, session } = await setup(); link.memory.set(3, sample.data);
   session.state!.caps.freeWords = 1000; session.state!.caps.freeBytes = 4000;
   const target = await session.readSlot(3), backups: Backup[] = [], commits: Commit[] = [];
@@ -85,6 +85,8 @@ test('Install backs up target and kit before upload, persists commit, then verif
   }, () => {}, commit => commits.push(commit));
   assert.deepEqual(backups.map(b => b.kind), ['machine', 'kit', 'commit']); assert.equal(commits.length, 1);
   assert.equal(after.info?.sha256, replacement.info.sha256); assert.equal(after.slot, 3);
+  assert.equal(after.source, 'Durch Commit-ACK bestätigt');
+  assert.equal(link.commands().at(-1)?.command, CMD.END);
   assert.equal(session.state!.caps.freeWords, undefined); assert.equal(session.state!.caps.freeBytes, undefined);
 });
 test('Changed target, in-use target, and backup storage failure send no header', async () => {
@@ -96,10 +98,22 @@ test('Changed target, in-use target, and backup storage failure send no header',
     assert.equal(link.commands().filter(p => p.command === CMD.HEADER).length, 0);
   }
 });
-test('Readback mismatch keeps the commit evidence and fails verification', async () => {
-  const { link, session } = await setup('readback-mismatch'); const target = await session.readSlot(3), commits: Commit[] = [], backups: Backup[] = [];
-  await assert.rejects(session.install(replacement.data, target, async b => { backups.push(b); }, () => {}, c => commits.push(c)), /Rücklesen/);
-  assert.equal(commits.length, 1); assert(backups.some(b => b.kind === 'commit')); assert(equal(link.memory.get(3)!, sample.data));
+test('Install sends no dump after commit, including cancellation after the ACK', async () => {
+  const { link, session } = await setup('no-read-after-commit');
+  const target = await session.readSlot(3), abort = new AbortController(), stages: string[] = [];
+  link.sent = [];
+  const result = await session.install(replacement.data, target, async () => {}, p => stages.push(p.stage), () => abort.abort(), abort.signal);
+  assert.equal(result.status, 'occupied'); assert.equal(result.info?.sha256, replacement.info.sha256);
+  assert.equal(link.commands().filter(p => p.command === CMD.REQUEST).length, 1); // Target check before upload only.
+  assert.equal(link.commands().at(-1)?.command, CMD.END);
+  assert.equal(stages.at(-1), 'Geladen'); assert(stages.every(stage => !/Rücklesen|vergleichen/.test(stage)));
+});
+test('A commit log storage failure preserves commit evidence without requesting a dump', async () => {
+  const { link, session } = await setup('no-read-after-commit'), commits: Commit[] = [];
+  const target = await session.readSlot(3);
+  await assert.rejects(session.install(replacement.data, target, async b => { if (b.kind === 'commit') throw new Error('Disk full'); }, () => {}, c => commits.push(c)), /Disk full/);
+  assert.equal(commits.length, 1); assert(equal(link.memory.get(3)!, replacement.data));
+  assert.equal(link.commands().at(-1)?.command, CMD.END);
 });
 test('Legacy timeout quarantines subsequent operations until reconnection', async () => {
   const { session, link } = await setup(); link.behavior = 'legacy-timeout'; await assert.rejects(session.identity(), TimeoutError);

@@ -9,7 +9,7 @@ import { DemoLink } from './demo.ts';
 import { saveBackup, getBackups, download } from './storage.ts';
 
 interface Machine extends MachineInfo { key: string; manufacturer: string; file: string; image: string; fileHash: string; originalSlot: number; fileVersion?: string }
-interface Job { id: string; machine: Machine; target: SlotState; status: 'queued' | 'running' | 'done' | 'error' | 'committed'; message: string; fraction: number; commit?: Commit }
+interface Job { id: string; machine: Machine; target: SlotState; status: 'queued' | 'running' | 'done' | 'error'; message: string; fraction: number; commit?: Commit }
 const $ = <T extends HTMLElement = HTMLElement>(id: string) => document.getElementById(id) as T;
 const esc = (value: unknown) => String(value ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]!));
 const slotName = (n: number) => 'U' + String(n).padStart(2, '0');
@@ -95,7 +95,7 @@ function shell() {
         <aside class="detail panel" aria-label="Machine-Details"><button id="back-to-library" class="mobile-only mobile-back">← Bibliothek</button><div class="panel-title"><div><span class="section-index">03</span><h2>Im Detail</h2></div>${icon('book')}</div><div id="detail-content"></div></aside>
       </div>
       <section class="queue panel" aria-label="Ladeaufträge"><div class="queue-top"><div><span class="section-index">04</span><h2>Ladeaufträge</h2><span id="queue-count" class="count">0</span></div><div><button id="cancel" class="quiet" hidden>Abbrechen</button><button id="load" class="primary" disabled>${icon('arrow')} Machines laden</button></div></div><div id="jobs"></div></section>
-      <footer><span>WEBLOADER <span class="footer-slash">/</span> MDX X.20</span><span>Bibliothek → Slot → Laden → Rücklesen</span><button id="log" class="text-button">Transferprotokoll exportieren</button></footer>
+      <footer><span>WEBLOADER <span class="footer-slash">/</span> MDX X.20</span><span>Bibliothek → Slot → Laden</span><button id="log" class="text-button">Transferprotokoll exportieren</button></footer>
     </main>
     <nav class="mobile-nav" aria-label="Hauptbereiche"><button data-mobile-view="library" aria-current="page">${icon('book')}<span>Bibliothek</span></button><button data-mobile-view="slots">${icon('plug')}<span>Slots</span></button><button data-mobile-view="queue">${icon('arrow')}<span>Laden <b id="mobile-queue-count">0</b></span></button></nav>
     <dialog id="slot-dialog" aria-labelledby="slot-review-title"><form method="dialog"><div class="dialog-heading"><h2 id="slot-review-title"></h2><button class="icon-button" aria-label="Slotwahl schließen">${icon('close')}</button></div></form><p id="slot-review-content"></p><p>Der Auftrag wird zunächst vorgemerkt. Die Übertragung startest du anschließend unter „Laden“.</p><button id="confirm-slot" class="primary">Auftrag vormerken</button></dialog>
@@ -122,8 +122,8 @@ function renderDetail() {
 }
 function renderSlots() {
   const markup = (s: SlotState) => {
-    const queued = jobs.find(j => j.target.slot === s.slot && ['queued', 'running', 'committed'].includes(j.status)), enabled = s.slot <= 16;
-    return `<button class="slot ${s.status} ${queued ? 'planned' : ''} ${selectedSlot === s.slot ? 'chosen' : ''} ${!enabled ? 'unavailable' : ''}" data-slot="${s.slot}" ${!enabled ? 'disabled' : ''} aria-label="${slotName(s.slot)}: ${esc(queued ? queued.machine.name + ' vorgemerkt' : s.info?.name || (s.status === 'empty' ? 'Leer' : 'Unbekannt'))}"><span class="slot-number">${slotName(s.slot)}<i></i></span><strong>${esc(queued?.machine.name || s.info?.name || (s.status === 'empty' ? 'Leer' : '—'))}</strong><span class="slot-state">${queued ? (queued.status === 'committed' ? 'Prüfung offen' : queued.status === 'running' ? 'Ladevorgang' : 'Vorgemerkt') : s.status === 'occupied' ? 'Belegt' : s.status === 'empty' ? 'Verfügbar' : 'Unbekannt'}</span></button>`;
+    const queued = jobs.find(j => j.target.slot === s.slot && ['queued', 'running'].includes(j.status)), enabled = s.slot <= 16;
+    return `<button class="slot ${s.status} ${queued ? 'planned' : ''} ${selectedSlot === s.slot ? 'chosen' : ''} ${!enabled ? 'unavailable' : ''}" data-slot="${s.slot}" ${!enabled ? 'disabled' : ''} aria-label="${slotName(s.slot)}: ${esc(queued ? queued.machine.name + ' vorgemerkt' : s.info?.name || (s.status === 'empty' ? 'Leer' : 'Unbekannt'))}"><span class="slot-number">${slotName(s.slot)}<i></i></span><strong>${esc(queued?.machine.name || s.info?.name || (s.status === 'empty' ? 'Leer' : '—'))}</strong><span class="slot-state">${queued ? (queued.status === 'running' ? 'Ladevorgang' : 'Vorgemerkt') : s.status === 'occupied' ? 'Belegt' : s.status === 'empty' ? 'Verfügbar' : 'Unbekannt'}</span></button>`;
   };
   $('slots-active').innerHTML = slots.slice(0, 16).map(markup).join(''); $('slots-extended').innerHTML = slots.slice(16).map(markup).join('');
 }
@@ -135,7 +135,7 @@ function renderStats() {
 }
 function renderQueue() {
   $('queue-count').textContent = String(jobs.filter(j => j.status === 'queued').length);
-  $('mobile-queue-count').textContent = String(jobs.filter(j => ['queued', 'running', 'committed'].includes(j.status)).length);
+  $('mobile-queue-count').textContent = String(jobs.filter(j => ['queued', 'running'].includes(j.status)).length);
   $('jobs').innerHTML = jobs.map(j => `<div class="job ${j.status}"><span class="job-target">${slotName(j.target.slot)}</span><div class="job-name"><strong>${esc(j.machine.name)}</strong><span>${esc(j.target.info ? 'Ersetzt ' + j.target.info.name : j.target.status === 'empty' ? 'Leerer Slot' : 'Ziel wird vor dem Laden geprüft')}</span></div><span class="job-message">${esc(j.message)}</span><progress max="1" value="${j.fraction}" aria-label="Ladefortschritt ${slotName(j.target.slot)}"></progress><button data-remove="${j.id}" class="icon-button" aria-label="Auftrag entfernen" ${working ? 'disabled' : ''}>${icon('close')}</button></div>`).join('') || '<div class="queue-empty"><span>↳</span> <span class="desktop-only">Ziehe eine Machine aus der Bibliothek auf einen Slot.</span><span class="mobile-only">Wähle eine Machine in der Bibliothek und danach ihren Zielslot.</span><small>Vorhandene Machines werden vor dem Ersetzen gesichert.</small></div>';
   $<HTMLButtonElement>('load').disabled = working || !session?.state || session.needsReconnect || !jobs.some(j => j.status === 'queued');
 }
@@ -267,12 +267,17 @@ function events() {
       job.status = 'running'; job.message = 'Vorbereitung'; renderQueue();
       try {
         const data = await packageFor(job.machine);
-        const result = await session.install(data, job.target, async backup => { if (!demo) await saveBackup(backup); }, p => { job.message = p.stage; job.fraction = p.fraction; renderQueue(); }, commit => { job.commit = commit; job.status = 'committed'; job.message = 'Gespeichert · Rücklesen folgt'; renderQueue(); }, signal);
-        slots[job.target.slot - 1] = result; job.status = 'done'; job.message = demo ? 'Demo: geladen und geprüft' : 'Geladen und geprüft';
+        const result = await session.install(data, job.target, async backup => { if (!demo) await saveBackup(backup); }, p => { job.message = p.stage; job.fraction = p.fraction; renderQueue(); }, commit => {
+          job.commit = commit; job.status = 'done'; job.fraction = 1; job.message = demo ? 'Demo: geladen' : 'Geladen';
+          slots[job.target.slot - 1] = { slot: job.target.slot, status: 'occupied', info: job.machine, source: 'Durch Commit-ACK bestätigt', checkedAt: commit.receivedAt };
+          renderSlots(); renderStats(); renderQueue();
+        }, signal);
+        slots[job.target.slot - 1] = result; job.status = 'done'; job.message = demo ? 'Demo: geladen' : 'Geladen';
         renderSlots(); renderStats(); renderQueue();
       } catch (error) {
-        job.status = job.commit ? 'committed' : 'error'; job.message = (job.commit ? 'Gespeichert, Prüfung offen: ' : '') + (error instanceof Error ? error.message : String(error));
-        slots[job.target.slot - 1] = { slot: job.target.slot, status: 'unknown' }; renderSlots(); renderQueue(); throw error;
+        job.status = job.commit ? 'done' : 'error'; job.message = (job.commit ? 'Geladen · Abschlussfehler: ' : '') + (error instanceof Error ? error.message : String(error));
+        if (!job.commit) slots[job.target.slot - 1] = { slot: job.target.slot, status: 'unknown' };
+        renderSlots(); renderStats(); renderQueue(); throw error;
       }
     }
   });

@@ -133,7 +133,7 @@ export class Session {
         frames.push(encodePacket(p)); check(frames.length <= 129, 'MDS-Dump überschreitet die maximale Größe.');
         if (p.command !== CMD.END) continue;
         const bytes = concat(...frames), dump = await decodeDump(bytes);
-        check(dump.slot === slot, 'MDS-Rückleseziel stimmt nicht.');
+        check(dump.slot === slot, 'MDS-Dumpziel stimmt nicht.');
         return { slot, status: 'occupied', info: dump.info, data: dump.data, bytes, source: 'Vom Gerät gelesen', checkedAt: new Date().toISOString() };
       }
     } finally { box.close(); }
@@ -205,7 +205,7 @@ export class Session {
     return this.exclusive(async () => {
       check(this.state && this.state.enhancedGui, 'Enhanced GUI ist für den sicheren Empfang erforderlich.');
       check(target.status !== 'unknown', 'Zielslot vor dem Laden aktualisieren.');
-      await inspectPackage(data); onProgress({ stage: 'Ziel prüfen', fraction: 0 });
+      const info = await inspectPackage(data); onProgress({ stage: 'Ziel prüfen', fraction: 0 });
       const revision = await this.identity(signal); check(revision === 'X20', 'Gerät hat gewechselt. Neu verbinden.');
       const prior = await this.readSlot(target.slot, signal);
       check(prior.status === target.status && (prior.status !== 'occupied' || prior.info?.sha256 === target.info?.sha256), 'Zielinhalt hat sich geändert. Aktualisieren und Auftrag neu anlegen.');
@@ -219,12 +219,10 @@ export class Session {
       // Capacity measurements predate this commit. A later scan refreshes them.
       this.state.caps = { ...this.state.caps, freeBytes: undefined, freeWords: undefined };
       onCommit(commit);
-      await persist(makeBackup('commit', new TextEncoder().encode(JSON.stringify(commit, null, 2)), 'Commit', 'Gespeichert; Rückleseprüfung folgt.'));
-      onProgress({ stage: 'Rücklesen und vergleichen', fraction: 0.96 });
-      // The commit is already durable. Cancellation must not silently skip its verification.
-      const after = await this.readSlot(target.slot);
-      check(after.data && equal(after.data, data), 'Gespeichert, aber Rücklesen stimmt nicht überein. Nicht erneut senden.');
-      onProgress({ stage: 'Geladen und geprüft', fraction: 1 }); return after;
+      await persist(makeBackup('commit', new TextEncoder().encode(JSON.stringify(commit, null, 2)), 'Commit', 'Laden durch finales Commit-ACK bestätigt.'));
+      // The final ACK completes installation; no dump or byte comparison follows.
+      const installed: SlotState = { slot: target.slot, status: 'occupied', info, source: 'Durch Commit-ACK bestätigt', checkedAt: commit.receivedAt };
+      onProgress({ stage: 'Geladen', fraction: 1 }); return installed;
     });
   }
 }

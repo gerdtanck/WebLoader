@@ -67,10 +67,12 @@ sowie den aktuellen Kit-Arbeitsstand in IndexedDB. Ein vom aktuellen Kit
 verwendeter Zielslot wird nicht überschrieben. Das Paket wird für den
 gewählten Slot neu eingerahmt; seine MDS-Nutzdaten bleiben bytegleich.
 
-**Geladen und geprüft** erscheint erst nach dem finalen Commit-ACK und einem
-vollständigen, bytegleichen Rücklesen. Bei **Gespeichert, Prüfung offen** oder
-**Commit nicht bestätigt** zuerst den Zielslot neu einlesen; nicht blind erneut
-senden. Abbrechen macht einen bereits erfolgten Commit nicht rückgängig.
+**Geladen** erscheint nach dem finalen Commit-ACK der Machinedrum. Es folgt
+kein automatisches Rücklesen oder Vergleichen. Die Slotanzeige übernimmt die
+Metadaten der gesendeten Machine und kennzeichnet das Commit-ACK als Quelle.
+Bei **Commit nicht bestätigt** zuerst den Zielslot über **Aktualisieren** neu
+einlesen; nicht blind erneut senden. Abbrechen macht einen bereits erfolgten
+Commit nicht rückgängig.
 
 Unter **Backups** lassen sich Sicherungen herunterladen. Diese sind an den
 jeweiligen Browser und die Website-Adresse gebunden; ein Browser-Reset kann
@@ -127,11 +129,11 @@ Lokale Lab-Notizen und Diagnoseprogramme werden nicht mit veröffentlicht.
 ## Entwicklung und Nachweise
 
 - `src/protocol.ts`: Paketformat, Prüfsummen, Inhaltskennung, Retargeting.
-- `src/session.ts`: serielle MIDI-Vorgänge, Timeouts/WAIT/NAK, Backup, Commit,
-  Rücklesen und Schutz vor parallelen Aufträgen.
+- `src/session.ts`: serielle MIDI-Vorgänge, Timeouts/WAIT/NAK, Backup,
+  Commit-Bestätigung und Schutz vor parallelen Aufträgen.
 - `src/webmidi.ts`, `src/demo.ts`: physischer bzw. simulierter MIDI-Adapter.
 - `src/main.ts`, `src/style.css`: Oberfläche ohne UI-Framework.
-- `tests/`: 21 Node-Tests einschließlich aller 71 Originalpakete, beschädigter
+- `tests/`: 22 Node-Tests einschließlich aller 71 Originalpakete, beschädigter
   Daten, Fremdantworten, Zeitgrenzen und fehlender/falscher finaler ACKs.
 - `package-lock.json` und `toolchain.lock.json`: gepinnte Abhängigkeiten und
   Protokollquellen. Keine externen Fonts, Tracker oder Laufzeit-CDNs.
