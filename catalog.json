@@ -1,0 +1,7562 @@
+{
+  "schema": 1,
+  "machines": [
+    {
+      "name": "DRONE",
+      "id": "de.doerg.drone",
+      "category": "DBX",
+      "label": "DR",
+      "version": "0.5",
+      "mdsVersion": "1.1",
+      "bytes": 2076,
+      "programWords": 539,
+      "imports": 1,
+      "xWords": 44,
+      "yWords": 44,
+      "cycles": {
+        "mkii": 2610,
+        "mkiDram": 3017,
+        "mkiSram": 2681
+      },
+      "contentId": "8972930c86440565c1ce47b7fac3c7b3778ff7929583086742b2e2f3ffc4ac5f",
+      "sha256": "11e50e93d117c651b28fc1239a037b6294d43e531a4dc3620e10c13b8d30c1cc",
+      "sprite": [
+        4278190080,
+        4280320000,
+        4280336384,
+        4280311808,
+        4281331712,
+        4280815616,
+        4280553472,
+        4280551424,
+        4280419328,
+        4280417792,
+        2170617856,
+        2168487936,
+        3175120896,
+        2168471552,
+        3275759616,
+        4283428864,
+        4282912768,
+        2168719360,
+        2168718336,
+        3309567488,
+        2439053312,
+        3139534848,
+        4280320000,
+        4280336384,
+        4280311808,
+        4280299520,
+        4281331712,
+        4280813568,
+        4280550400,
+        4280679936,
+        4284678144,
+        4278190080
+      ],
+      "parameters": [
+        {
+          "name": "PTCH",
+          "default": 17,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DTUN",
+          "default": 40,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DRIV",
+          "default": 50,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "WARP",
+          "default": 40,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "CUT",
+          "default": 45,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "RES",
+          "default": 50,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "FDBK",
+          "default": 70,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "FTIM",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "dbx/drone-0.5.syx",
+      "manufacturer": "dbx",
+      "fileVersion": "0.5",
+      "file": "machines/dbx/drone-0.5.syx",
+      "image": "machines/dbx/drone-0.5.png",
+      "fileHash": "77192d351018df8359fe4fa5c9cd7238fa876e7e2dedec03d345a5bd1d597e05",
+      "originalSlot": 1
+    },
+    {
+      "name": "KICK2",
+      "id": "de.doerg.kick2",
+      "category": "DBX",
+      "label": "K2",
+      "version": "0.9",
+      "mdsVersion": "1.1",
+      "bytes": 1444,
+      "programWords": 338,
+      "imports": 0,
+      "xWords": 32,
+      "yWords": 32,
+      "cycles": {
+        "mkii": 2508,
+        "mkiDram": 2850,
+        "mkiSram": 2513
+      },
+      "contentId": "01a7fcd09b8318d8471743db5b2d133acb2947a643a7d935bcb6ea4b17475628",
+      "sha256": "7068c45ffa071548e2dca1a8742bedfc4287e5357851c86bb3bb5396b8490048",
+      "sprite": [
+        4278190080,
+        4278190336,
+        4278206208,
+        4280279040,
+        4279238656,
+        4280254464,
+        4278253568,
+        4278193152,
+        4278221824,
+        2164768768,
+        2165047296,
+        3876323328,
+        3272048640,
+        2566975488,
+        3170899968,
+        4278196224,
+        4278251520,
+        3137568768,
+        2567307264,
+        2365849600,
+        2768633856,
+        2969796608,
+        3137388544,
+        4278214656,
+        4278198272,
+        4278198272,
+        4278214656,
+        4278239232,
+        4278288384,
+        4278386688,
+        4278321152,
+        4278190080
+      ],
+      "parameters": [
+        {
+          "name": "PTCH",
+          "default": 33,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "BEND",
+          "default": 75,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "BTIM",
+          "default": 20,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DCAY",
+          "default": 40,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "PULS",
+          "default": 100,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "HOLD",
+          "default": 50,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DRIV",
+          "default": 70,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "TONE",
+          "default": 105,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "dbx/kick2-0.9.slot1.syx",
+      "manufacturer": "dbx",
+      "fileVersion": "0.9",
+      "file": "machines/dbx/kick2-0.9.slot1.syx",
+      "image": "machines/dbx/kick2-0.9.slot1.png",
+      "fileHash": "379256024b58fa8bd302f161a6cc4a9cac0d5c9eb65ae5485651a50271ad38e8",
+      "originalSlot": 1
+    },
+    {
+      "name": "RAM GRANULAR",
+      "id": "org.murdenihcam.ram-granular",
+      "category": "RAM",
+      "label": "GR",
+      "version": "0.5",
+      "mdsVersion": "1.1",
+      "bytes": 6736,
+      "programWords": 2008,
+      "imports": 13,
+      "xWords": 0,
+      "yWords": 64,
+      "cycles": {
+        "mkii": 5258,
+        "mkiDram": 5918,
+        "mkiSram": 4763
+      },
+      "contentId": "6343d1e95a78598cd93ab5f729430eaf2e199c2d2915b26b529dd57c5a2948a1",
+      "sha256": "3c5c12304d661a662109053f91c7ae5d9a04df2309a6a7f785b590714056b738",
+      "sprite": [
+        0,
+        0,
+        65003008,
+        65003008,
+        65003008,
+        64995840,
+        60408320,
+        60408320,
+        2073674240,
+        1268367872,
+        1805238784,
+        60801024,
+        2080365056,
+        201316864,
+        201316864,
+        6656,
+        1744837120,
+        1811929600,
+        2080365056,
+        67099136,
+        2080366080,
+        201310208,
+        2013387776,
+        122368,
+        115200,
+        115200,
+        116224,
+        116224,
+        122368,
+        122368,
+        0,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "PTCH",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "MODE",
+          "default": 0,
+          "min": 0,
+          "max": 1
+        },
+        {
+          "name": "DEC",
+          "default": 127,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DENS",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "SEEK",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "SCAN",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "GRAN",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "SPRY",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "murdenihcam/RAM-GR_U11.syx",
+      "manufacturer": "murdenihcam",
+      "fileVersion": "",
+      "file": "machines/murdenihcam/RAM-GR_U11.syx",
+      "image": "machines/murdenihcam/RAM-GR_U11.png",
+      "fileHash": "f47195cb457545d376b8216796685d9a06504f6d25bf1aae61c2c9dd5acaef02",
+      "originalSlot": 11
+    },
+    {
+      "name": "RAM PITCH",
+      "id": "org.murdenihcam.ram-pitch",
+      "category": "RAM",
+      "label": "PS",
+      "version": "0.2",
+      "mdsVersion": "1.1",
+      "bytes": 3332,
+      "programWords": 924,
+      "imports": 9,
+      "xWords": 0,
+      "yWords": 41,
+      "cycles": {
+        "mkii": 5232,
+        "mkiDram": 5507,
+        "mkiSram": 4890
+      },
+      "contentId": "1596b3cd4c6ce7203a05f4459aefa765beb0374e3559c9f764d327578f8266fa",
+      "sha256": "2c2300d7199b240401f5534c99445246181f2157ae130a88a73a0fb4812fded8",
+      "sprite": [
+        0,
+        0,
+        67100160,
+        67100160,
+        66903552,
+        66896384,
+        66896384,
+        2014102016,
+        671924736,
+        940360192,
+        836096,
+        1745862656,
+        1038848,
+        269474304,
+        2014304768,
+        1342183936,
+        6656,
+        2073025024,
+        1267718656,
+        1267718656,
+        59760128,
+        2073018368,
+        328195072,
+        1938693632,
+        66978304,
+        66978304,
+        66979328,
+        66979328,
+        66985472,
+        66985472,
+        0,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "PTCH",
+          "default": 96,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "PTC2",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "ENTI",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "FB",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DLAY",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "MODE",
+          "default": 0,
+          "min": 0,
+          "max": 1
+        },
+        {
+          "name": "WIN",
+          "default": 40,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "SCAT",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "murdenihcam/RAM-PS_U04.syx",
+      "manufacturer": "murdenihcam",
+      "fileVersion": "",
+      "file": "machines/murdenihcam/RAM-PS_U04.syx",
+      "image": "machines/murdenihcam/RAM-PS_U04.png",
+      "fileHash": "e21cbee8ddc423f8a5883253527a0ea5840dda720d478ddf5fc3cd943bf2426f",
+      "originalSlot": 4
+    },
+    {
+      "name": "RAM STRETCH",
+      "id": "org.murdenihcam.ram-stretch",
+      "category": "RAM",
+      "label": "ST",
+      "version": "0.4",
+      "mdsVersion": "1.1",
+      "bytes": 3824,
+      "programWords": 1078,
+      "imports": 11,
+      "xWords": 0,
+      "yWords": 64,
+      "cycles": {
+        "mkii": 3362,
+        "mkiDram": 3919,
+        "mkiSram": 3158
+      },
+      "contentId": "09a619e6fe54db62f38027ef9ff9115199c8799eb35016219e3c4e69e59a26e9",
+      "sha256": "66fe35d6f28b178d587e9bd3167ea835542f483dcaf5c1b9c7b35d930c3ad85a",
+      "sprite": [
+        0,
+        0,
+        1536155136,
+        1536155136,
+        1938808320,
+        59752960,
+        328188416,
+        2073018880,
+        1401815552,
+        66978304,
+        2080244224,
+        201195520,
+        201202176,
+        66984448,
+        2080250368,
+        1476401664,
+        1476401664,
+        924160,
+        269359616,
+        2014190080,
+        1343102464,
+        67092480,
+        2080365568,
+        1275059712,
+        1275052544,
+        67092992,
+        2014184960,
+        269354496,
+        1879973376,
+        925184,
+        0,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "PTCH",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "MODE",
+          "default": 63,
+          "min": 63,
+          "max": 65
+        },
+        {
+          "name": "DEC",
+          "default": 127,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "TIME",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "STRT",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "END",
+          "default": 127,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "GRAN",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "FLUX",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "murdenihcam/RAM-ST_U10.syx",
+      "manufacturer": "murdenihcam",
+      "fileVersion": "",
+      "file": "machines/murdenihcam/RAM-ST_U10.syx",
+      "image": "machines/murdenihcam/RAM-ST_U10.png",
+      "fileHash": "546f897267dd60d3aa43bd6e543d47fbdf58db43a76d578e8c6618a90a27e49b",
+      "originalSlot": 10
+    },
+    {
+      "name": "E12 GRANULAR",
+      "id": "org.example.e12-granular",
+      "category": "SMP",
+      "label": "G2",
+      "version": "0.6",
+      "mdsVersion": "1.1",
+      "bytes": 6040,
+      "programWords": 1804,
+      "imports": 4,
+      "xWords": 32,
+      "yWords": 57,
+      "cycles": {
+        "mkii": 5298,
+        "mkiDram": 5962,
+        "mkiSram": 5255
+      },
+      "contentId": "87e8b68989d5747a6ffa3574bbda6d84d6c91763f1e2f59dd1a02ede9d574688",
+      "sha256": "e02aefec141e827885044af679c1d1f716c3c79a8311a88d79c8c8ed429afee5",
+      "sprite": [
+        0,
+        0,
+        2078266880,
+        1541395968,
+        1541395968,
+        1541395968,
+        60413440,
+        2073678848,
+        60414976,
+        1671027712,
+        1805245440,
+        1805631488,
+        1006623744,
+        67100160,
+        67094016,
+        2013267456,
+        1342180864,
+        1945636352,
+        66588160,
+        1811537408,
+        1811537408,
+        2079965184,
+        66706944,
+        2073680384,
+        195025408,
+        2074069504,
+        60803584,
+        2015350272,
+        807390720,
+        1210043904,
+        0,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "PTCH",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "SMPL",
+          "default": 1,
+          "min": 1,
+          "max": 21
+        },
+        {
+          "name": "DEC",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DENS",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "SEEK",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "SCAN",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "GRAN",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "SPRY",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "murdenihcam/SMP-G2_e12.syx",
+      "manufacturer": "murdenihcam",
+      "fileVersion": "",
+      "file": "machines/murdenihcam/SMP-G2_e12.syx",
+      "image": "machines/murdenihcam/SMP-G2_e12.png",
+      "fileHash": "ea22feb4ae41780d9acdf0322caa1b598941c2386d650bc79737ab17df5e1051",
+      "originalSlot": 5
+    },
+    {
+      "name": "ROM GRANULAR",
+      "id": "org.example.rom-only-granular",
+      "category": "SMP",
+      "label": "GM",
+      "version": "0.6",
+      "mdsVersion": "1.1",
+      "bytes": 6040,
+      "programWords": 1804,
+      "imports": 4,
+      "xWords": 32,
+      "yWords": 57,
+      "cycles": {
+        "mkii": 5298,
+        "mkiDram": 5962,
+        "mkiSram": 5255
+      },
+      "contentId": "d7a51a3cdb99e5ff519ae8aca1ed59db720b6bde32b98304e174617cf31f67b9",
+      "sha256": "1433136528ad04e28a1d88b443105f5d0498b7136b833ed8773afffe6e1ba7a0",
+      "sprite": [
+        0,
+        0,
+        2078266880,
+        199218688,
+        199218688,
+        65000960,
+        2073679360,
+        1268372480,
+        2073680896,
+        60414976,
+        2073680896,
+        195018752,
+        469752832,
+        2080366080,
+        67094016,
+        2013267456,
+        1342180864,
+        1946095104,
+        67046912,
+        1811930624,
+        1744952832,
+        2013380608,
+        122368,
+        2014304768,
+        135256576,
+        2014300672,
+        1034752,
+        2080361984,
+        872402432,
+        1275055616,
+        0,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "PTCH",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "SMPL",
+          "default": 1,
+          "min": 1,
+          "max": 48
+        },
+        {
+          "name": "DEC",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DENS",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "SEEK",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "SCAN",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "GRAN",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "SPRY",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "murdenihcam/SMP-GM_rom.syx",
+      "manufacturer": "murdenihcam",
+      "fileVersion": "",
+      "file": "machines/murdenihcam/SMP-GM_rom.syx",
+      "image": "machines/murdenihcam/SMP-GM_rom.png",
+      "fileHash": "08c107535385e708ee67d0d8e16364e85624b7cd224ff6de658a4a3c98990074",
+      "originalSlot": 4
+    },
+    {
+      "name": "ROM+E12 GRANULAR",
+      "id": "org.example.rom-granular",
+      "category": "SMP",
+      "label": "GR",
+      "version": "0.6",
+      "mdsVersion": "1.1",
+      "bytes": 6232,
+      "programWords": 1811,
+      "imports": 4,
+      "xWords": 32,
+      "yWords": 57,
+      "cycles": {
+        "mkii": 5298,
+        "mkiDram": 5962,
+        "mkiSram": 5255
+      },
+      "contentId": "9798ec96c6519f4ec41357545aaed630bd9b35c8e8471b7f2210df6686e6cace",
+      "sha256": "3c2d7824e2d99e7a7e52914f42a78aacd866d560f5583c74c23eeedacf0c2344",
+      "sprite": [
+        0,
+        0,
+        1809831424,
+        1809831424,
+        2078266880,
+        65000960,
+        2073679360,
+        60412928,
+        2073680896,
+        60414976,
+        60414976,
+        2074066944,
+        1409276928,
+        1946148352,
+        67094016,
+        1744832000,
+        1744834048,
+        2080361984,
+        67096064,
+        2080366080,
+        201317888,
+        2080358400,
+        122368,
+        2013387264,
+        805427712,
+        1208076800,
+        117248,
+        1476513280,
+        1476513280,
+        1879166464,
+        0,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "PTCH",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "SMPL",
+          "default": 1,
+          "min": 1,
+          "max": 69
+        },
+        {
+          "name": "DEC",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DENS",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "SEEK",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "SCAN",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "GRAN",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "SPRY",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "murdenihcam/SMP-GR_allbanks.syx",
+      "manufacturer": "murdenihcam",
+      "fileVersion": "",
+      "file": "machines/murdenihcam/SMP-GR_allbanks.syx",
+      "image": "machines/murdenihcam/SMP-GR_allbanks.png",
+      "fileHash": "137f04a08f791547a40f0059c1d42bb686017b2fe95aa3869046610dc0115aac",
+      "originalSlot": 3
+    },
+    {
+      "name": "E12 STRETCH",
+      "id": "org.example.e12-stretch",
+      "category": "SMP",
+      "label": "S2",
+      "version": "0.7",
+      "mdsVersion": "1.1",
+      "bytes": 3000,
+      "programWords": 830,
+      "imports": 5,
+      "xWords": 0,
+      "yWords": 51,
+      "cycles": {
+        "mkii": 4766,
+        "mkiDram": 5198,
+        "mkiSram": 4794
+      },
+      "contentId": "b999a9720b77457b75823ffe1c5c2d5bda932f5c0a4e366e0ac8fd966a50bfc3",
+      "sha256": "86452fd5947b43f62b2160c10f9837a7e2ec75c62ddb30129692a99a0f4551c4",
+      "sprite": [
+        0,
+        0,
+        2073024000,
+        730846720,
+        730846720,
+        730846720,
+        730846720,
+        730846208,
+        59644928,
+        2080250880,
+        1274944512,
+        2080243712,
+        66984960,
+        2080251392,
+        201197056,
+        134219264,
+        134221312,
+        200805888,
+        200805888,
+        66592256,
+        66706944,
+        2079965184,
+        1543101952,
+        1536809472,
+        60807680,
+        2074069504,
+        60803584,
+        1612696064,
+        1746913792,
+        941608448,
+        0,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "PTCH",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "SMPL",
+          "default": 1,
+          "min": 1,
+          "max": 21
+        },
+        {
+          "name": "DEC",
+          "default": 127,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "TIME",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "STRT",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "END",
+          "default": 127,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "GRAN",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "FLUX",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "murdenihcam/SMP-S2_e12.syx",
+      "manufacturer": "murdenihcam",
+      "fileVersion": "",
+      "file": "machines/murdenihcam/SMP-S2_e12.syx",
+      "image": "machines/murdenihcam/SMP-S2_e12.png",
+      "fileHash": "2d0b261af5be284a9e8c3fb0e8543389ee0887ca61621cbedad9bca87ad9ea62",
+      "originalSlot": 2
+    },
+    {
+      "name": "ROM+E12 SLICER",
+      "id": "org.example.rom-e12-slicer",
+      "category": "SMP",
+      "label": "SL",
+      "version": "0.6",
+      "mdsVersion": "1.1",
+      "bytes": 8620,
+      "programWords": 2557,
+      "imports": 13,
+      "xWords": 64,
+      "yWords": 64,
+      "cycles": {
+        "mkii": 6043,
+        "mkiDram": 6769,
+        "mkiSram": 6057
+      },
+      "contentId": "639747deb9cfe66fa30188f82ae1f4d7c22f2eae2e5053f1f7d7222aa842c352",
+      "sha256": "8bc4b5fc22dbb4f0eef8565ab95f4c74d6a7da4db9058154e0a5bd6f0c382c30",
+      "sprite": [
+        0,
+        0,
+        1804588544,
+        1804588544,
+        2073024000,
+        59758080,
+        2073024000,
+        59757568,
+        2072910848,
+        66984960,
+        66984960,
+        2080243712,
+        1409162240,
+        1946033664,
+        66979328,
+        1744832000,
+        1744834048,
+        2080361984,
+        67096064,
+        1946148352,
+        201317888,
+        2071986176,
+        58727936,
+        2071992832,
+        864033280,
+        1266682368,
+        58722816,
+        1535118848,
+        1535118848,
+        1937772032,
+        0,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "PTCH",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "SMPL",
+          "default": 1,
+          "min": 1,
+          "max": 69
+        },
+        {
+          "name": "DEC",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "TIME",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "PLAY",
+          "default": 0,
+          "min": 0,
+          "max": 2
+        },
+        {
+          "name": "THRS",
+          "default": 27,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "SLIC",
+          "default": 32,
+          "min": 1,
+          "max": 32
+        },
+        {
+          "name": "SLNO",
+          "default": 1,
+          "min": 1,
+          "max": 32
+        }
+      ],
+      "key": "murdenihcam/SMP-SL.syx",
+      "manufacturer": "murdenihcam",
+      "fileVersion": "",
+      "file": "machines/murdenihcam/SMP-SL.syx",
+      "image": "machines/murdenihcam/SMP-SL.png",
+      "fileHash": "66ab007ff317e3660e5e91d328145dc88b5302b8b3a8d6201d63b8891ae21d9e",
+      "originalSlot": 4
+    },
+    {
+      "name": "ROM SLICER",
+      "id": "org.example.rom-slicer",
+      "category": "SMP",
+      "label": "SM",
+      "version": "0.6",
+      "mdsVersion": "1.1",
+      "bytes": 8412,
+      "programWords": 2543,
+      "imports": 13,
+      "xWords": 64,
+      "yWords": 64,
+      "cycles": {
+        "mkii": 6043,
+        "mkiDram": 6740,
+        "mkiSram": 6042
+      },
+      "contentId": "898e7efb2113215f4e598bb9aaebe852963ccea5184f47bafafcf5580c10499a",
+      "sha256": "07b13c125469961538d93512cb17741096d2451744ce9bb3c508223995f29128",
+      "sprite": [
+        0,
+        0,
+        2072499712,
+        193451520,
+        193451520,
+        59233792,
+        2072499712,
+        1267192832,
+        2072386560,
+        66984960,
+        2080250880,
+        201195520,
+        469638144,
+        2080251392,
+        66979328,
+        2013267456,
+        1342180864,
+        1946095104,
+        67046912,
+        1811930624,
+        1744952832,
+        2013380608,
+        122368,
+        2014304768,
+        135256576,
+        2014300672,
+        1034752,
+        2080361984,
+        872402432,
+        1275055616,
+        0,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "PTCH",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "SMPL",
+          "default": 1,
+          "min": 1,
+          "max": 48
+        },
+        {
+          "name": "DEC",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "TIME",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "PLAY",
+          "default": 0,
+          "min": 0,
+          "max": 2
+        },
+        {
+          "name": "THRS",
+          "default": 27,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "SLIC",
+          "default": 32,
+          "min": 1,
+          "max": 32
+        },
+        {
+          "name": "SLNO",
+          "default": 1,
+          "min": 1,
+          "max": 32
+        }
+      ],
+      "key": "murdenihcam/SMP-SM.syx",
+      "manufacturer": "murdenihcam",
+      "fileVersion": "",
+      "file": "machines/murdenihcam/SMP-SM.syx",
+      "image": "machines/murdenihcam/SMP-SM.png",
+      "fileHash": "960b3b82274f694713aa0d51aa5a27fe636db1b3588672e7d68bc727a50df801",
+      "originalSlot": 5
+    },
+    {
+      "name": "E12 SLICER",
+      "id": "org.example.e12-slicer",
+      "category": "SMP",
+      "label": "SN",
+      "version": "0.6",
+      "mdsVersion": "1.1",
+      "bytes": 8580,
+      "programWords": 2543,
+      "imports": 13,
+      "xWords": 64,
+      "yWords": 64,
+      "cycles": {
+        "mkii": 6024,
+        "mkiDram": 6713,
+        "mkiSram": 6029
+      },
+      "contentId": "0ee1c1e94c23cb92549d9d58c30531043f391c356c5dd8acfc51dcb0c0cc8d34",
+      "sha256": "833dc3462d65cfc06bbc8a3c5a0f777b7fbdc875abd2248ef8a18386d1a62ff6",
+      "sprite": [
+        0,
+        0,
+        2073024000,
+        1536153088,
+        1536153088,
+        1536153088,
+        59758080,
+        2073023488,
+        59644928,
+        1677597696,
+        1811815424,
+        1811808256,
+        1006509056,
+        66985472,
+        66979328,
+        2013267456,
+        1342180864,
+        1946095104,
+        67046912,
+        1811930624,
+        1811930624,
+        2013511680,
+        253440,
+        2013518336,
+        134470144,
+        2080360960,
+        67095040,
+        2080361984,
+        872402432,
+        1275055616,
+        0,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "PTCH",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "SMPL",
+          "default": 1,
+          "min": 1,
+          "max": 21
+        },
+        {
+          "name": "DEC",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "TIME",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "PLAY",
+          "default": 0,
+          "min": 0,
+          "max": 2
+        },
+        {
+          "name": "THRS",
+          "default": 27,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "SLIC",
+          "default": 32,
+          "min": 1,
+          "max": 32
+        },
+        {
+          "name": "SLNO",
+          "default": 1,
+          "min": 1,
+          "max": 32
+        }
+      ],
+      "key": "murdenihcam/SMP-SN.syx",
+      "manufacturer": "murdenihcam",
+      "fileVersion": "",
+      "file": "machines/murdenihcam/SMP-SN.syx",
+      "image": "machines/murdenihcam/SMP-SN.png",
+      "fileHash": "3395b786f7659a6a15881b342b131d9a23c815c9e14e1a78d70706038bf7bee3",
+      "originalSlot": 6
+    },
+    {
+      "name": "ROM STRETCH",
+      "id": "org.example.rom-stretch",
+      "category": "SMP",
+      "label": "SR",
+      "version": "0.7",
+      "mdsVersion": "1.1",
+      "bytes": 3000,
+      "programWords": 830,
+      "imports": 5,
+      "xWords": 0,
+      "yWords": 51,
+      "cycles": {
+        "mkii": 4769,
+        "mkiDram": 5198,
+        "mkiSram": 4794
+      },
+      "contentId": "d28fe080ba3340e31abd9369078ca3f6de670b7c82b239aea8146f19a78ffc99",
+      "sha256": "f5493f30c17822a4dc791e18e8932d6ae1ef0b6f0726c7023638d97c064eb676",
+      "sprite": [
+        0,
+        0,
+        2072499712,
+        193451520,
+        193451520,
+        59233792,
+        2072499712,
+        1267192832,
+        2072386560,
+        66984960,
+        2080250880,
+        201195520,
+        469638144,
+        2080251392,
+        66979328,
+        2013267456,
+        1342180864,
+        1946144256,
+        67096064,
+        1811930624,
+        1811930624,
+        2080358400,
+        67100160,
+        2013387264,
+        134339072,
+        2013383168,
+        117248,
+        2013383168,
+        805423616,
+        1208077824,
+        0,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "PTCH",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "SMPL",
+          "default": 1,
+          "min": 1,
+          "max": 48
+        },
+        {
+          "name": "DEC",
+          "default": 127,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "TIME",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "STRT",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "END",
+          "default": 127,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "GRAN",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "FLUX",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "murdenihcam/SMP-SR_rom.syx",
+      "manufacturer": "murdenihcam",
+      "fileVersion": "",
+      "file": "machines/murdenihcam/SMP-SR_rom.syx",
+      "image": "machines/murdenihcam/SMP-SR_rom.png",
+      "fileHash": "cf6233d7520dc0443488521826bba5ec16312a13de61b6b410dd7e43b79fe639",
+      "originalSlot": 1
+    },
+    {
+      "name": "ROM+E12 STRETCH",
+      "id": "org.example.rom-e12-stretch",
+      "category": "SMP",
+      "label": "ST",
+      "version": "0.7",
+      "mdsVersion": "1.1",
+      "bytes": 3200,
+      "programWords": 839,
+      "imports": 5,
+      "xWords": 0,
+      "yWords": 51,
+      "cycles": {
+        "mkii": 4764,
+        "mkiDram": 5198,
+        "mkiSram": 4792
+      },
+      "contentId": "8c9d7ed16518763c344a8366401e5b75f005c1c21e7bd0b150a22a7cb49d1281",
+      "sha256": "23ba154b85e2b8a24b8105e3f45baf62679794ce6d2f987b1ba5dd6d1c4f0fd3",
+      "sprite": [
+        0,
+        0,
+        1804588544,
+        1804588544,
+        2073024000,
+        59758080,
+        2073024000,
+        59757568,
+        2072910848,
+        66984960,
+        66984960,
+        2080243712,
+        1409162240,
+        1946033664,
+        66979328,
+        1744832000,
+        1744834048,
+        2014187008,
+        921088,
+        1879973376,
+        135142912,
+        2080358400,
+        67100160,
+        2080365056,
+        872405504,
+        1275054592,
+        920064,
+        1477315072,
+        1477315072,
+        1879969280,
+        0,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "PTCH",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "SMPL",
+          "default": 1,
+          "min": 1,
+          "max": 69
+        },
+        {
+          "name": "DEC",
+          "default": 127,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "TIME",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "STRT",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "END",
+          "default": 127,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "GRAN",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "FLUX",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "murdenihcam/SMP-ST_allbanks.syx",
+      "manufacturer": "murdenihcam",
+      "fileVersion": "",
+      "file": "machines/murdenihcam/SMP-ST_allbanks.syx",
+      "image": "machines/murdenihcam/SMP-ST_allbanks.png",
+      "fileHash": "8f49f6d29d915458cac202ab60009709447946a9d65e5c7d9ab782df564f1b42",
+      "originalSlot": 3
+    },
+    {
+      "name": "SPACE MOD",
+      "id": "org.example.nfx-mo",
+      "category": "NFX",
+      "label": "MO",
+      "version": "0.11",
+      "mdsVersion": "1.1",
+      "bytes": 8856,
+      "programWords": 2674,
+      "imports": 18,
+      "xWords": 57,
+      "yWords": 64,
+      "cycles": {
+        "mkii": 4381,
+        "mkiDram": 5942,
+        "mkiSram": 5220
+      },
+      "contentId": "9b0ed7d677988b6be713227b0fc09328b51c5e82a1753ebf45ea6072f6f7488c",
+      "sha256": "40c3c02d3666c906c4d422449f73f2f1545e57fada0a6feba8bdd85b2bbbbd6d",
+      "sprite": [
+        0,
+        0,
+        67050496,
+        67051008,
+        67100160,
+        115200,
+        115200,
+        115200,
+        1032704,
+        1039872,
+        2014305792,
+        135249920,
+        469747712,
+        2080366080,
+        67100160,
+        2013273600,
+        1207962112,
+        2080360960,
+        67095040,
+        2080360960,
+        1266797056,
+        1266794496,
+        864145920,
+        58838016,
+        58838016,
+        58838016,
+        58838016,
+        67095552,
+        67095552,
+        67097088,
+        0,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "MODE",
+          "default": 0,
+          "min": 0,
+          "max": 4
+        },
+        {
+          "name": "RATE",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DPTH",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "FB",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "SPRD",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "ENTI",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DLAY",
+          "default": 40,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "NBAL",
+          "default": 127,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "murdenihcam/mo.syx",
+      "manufacturer": "murdenihcam",
+      "fileVersion": "",
+      "file": "machines/murdenihcam/mo.syx",
+      "image": "machines/murdenihcam/mo.png",
+      "fileHash": "da01619cbe1eb8f09288a310098a221fb32df2ddd1ffc673ab5329f5ad8512b9",
+      "originalSlot": 7
+    },
+    {
+      "name": "DR110 BD",
+      "id": "dr110.circuit.complete.v1.bd",
+      "category": "D11",
+      "label": "BD",
+      "version": "0.1",
+      "mdsVersion": "1.1",
+      "bytes": 3552,
+      "programWords": 1013,
+      "imports": 0,
+      "xWords": 8,
+      "yWords": 12,
+      "cycles": {
+        "mkii": 578,
+        "mkiDram": 791,
+        "mkiSram": 583
+      },
+      "contentId": "76bc4068fe0306603438744f830e2d046f3bbe5aef29bf5e11d1d7b4e62170db",
+      "sha256": "a8e5130861be0940bd04edf49da4297ed5d42f8d50642b13649127d290f44261",
+      "sprite": [
+        0,
+        0,
+        522240,
+        8911872,
+        12586496,
+        2145781248,
+        2145781248,
+        2145781248,
+        394752,
+        394752,
+        462336,
+        8649728,
+        12711936,
+        2145386496,
+        2145910272,
+        2145910272,
+        1536,
+        1536,
+        528508416,
+        1069606400,
+        1893852672,
+        1617159680,
+        1617395200,
+        1617312768,
+        1617172480,
+        1616904192,
+        1893752832,
+        1069572096,
+        528506880,
+        24576,
+        0,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "TUNE",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DEC",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "PENV",
+          "default": 36,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "PDEC",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "TICK",
+          "default": 28,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "TDEC",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "waftlord/D11-BD-v1.0.syx",
+      "manufacturer": "waftlord",
+      "fileVersion": "1.0",
+      "file": "machines/waftlord/D11-BD-v1.0.syx",
+      "image": "machines/waftlord/D11-BD-v1.0.png",
+      "fileHash": "93469b3abee672713ac62dd22cac694915a84675591ea028f46ff64b417eb6ea",
+      "originalSlot": 2
+    },
+    {
+      "name": "DR110 CP PILOT",
+      "id": "mdml.dr110.cp.fullrate.v12-1",
+      "category": "D11",
+      "label": "CP",
+      "version": "0.1",
+      "mdsVersion": "1.1",
+      "bytes": 2556,
+      "programWords": 673,
+      "imports": 0,
+      "xWords": 10,
+      "yWords": 12,
+      "cycles": {
+        "mkii": 910,
+        "mkiDram": 1114,
+        "mkiSram": 915
+      },
+      "contentId": "22fadc889cf12d6187bd9ede502f03ecc8c9cf0b5670529010662ca57aa651d0",
+      "sha256": "db6ad235a9956fce36266b7ce4e5ee7da6ec5b1b200a125fe224207cf1040ffc",
+      "sprite": [
+        0,
+        0,
+        522240,
+        8911872,
+        12586496,
+        2145781248,
+        2145781248,
+        2145781248,
+        394752,
+        394752,
+        462336,
+        8649728,
+        12711936,
+        2145386496,
+        2145910272,
+        2145910272,
+        1536,
+        1536,
+        528508416,
+        1069606400,
+        1893852672,
+        1617159680,
+        1617395200,
+        1617312768,
+        1617172480,
+        1616904192,
+        1893752832,
+        1069572096,
+        528506880,
+        24576,
+        0,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "TUNE",
+          "default": 44,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DEC",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "SNAP",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "BODY",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "CLPS",
+          "default": 56,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "SPAC",
+          "default": 57,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "POSN",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "TAIL",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "waftlord/D11-CP-v1.0.syx",
+      "manufacturer": "waftlord",
+      "fileVersion": "1.0",
+      "file": "machines/waftlord/D11-CP-v1.0.syx",
+      "image": "machines/waftlord/D11-CP-v1.0.png",
+      "fileHash": "9065bc13ba699df3eaaf6f6531162581deff376d7a1031cdd9bc767c1950414f",
+      "originalSlot": 1
+    },
+    {
+      "name": "DR110 CY",
+      "id": "dr110.circuit.complete.v1.cy",
+      "category": "D11",
+      "label": "CY",
+      "version": "0.1",
+      "mdsVersion": "1.1",
+      "bytes": 1000,
+      "programWords": 195,
+      "imports": 0,
+      "xWords": 12,
+      "yWords": 13,
+      "cycles": {
+        "mkii": 885,
+        "mkiDram": 1042,
+        "mkiSram": 890
+      },
+      "contentId": "e26f1dd8ccccb6c67ae5b31144846d91b15bf313e29ad1cc4bf8be34adf962aa",
+      "sha256": "8e89846ec77e6a1ca863778ce49bde4984e9b92fedc0005dc6130fefdfb1cbb1",
+      "sprite": [
+        0,
+        0,
+        522240,
+        8911872,
+        12586496,
+        2145781248,
+        2145781248,
+        2145781248,
+        394752,
+        394752,
+        462336,
+        8649728,
+        12711936,
+        2145386496,
+        2145910272,
+        2145910272,
+        1536,
+        1536,
+        528508416,
+        1069606400,
+        1893852672,
+        1617159680,
+        1617395200,
+        1617312768,
+        1617172480,
+        1616904192,
+        1893752832,
+        1069572096,
+        528506880,
+        24576,
+        0,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "TUNE",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DEC",
+          "default": 61,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "BODY",
+          "default": 90,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "SNAP",
+          "default": 85,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "SDEC",
+          "default": 37,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "NOIS",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "waftlord/D11-CY-v1.0.syx",
+      "manufacturer": "waftlord",
+      "fileVersion": "1.0",
+      "file": "machines/waftlord/D11-CY-v1.0.syx",
+      "image": "machines/waftlord/D11-CY-v1.0.png",
+      "fileHash": "f6e763f820524ac0e9657649cf90e7c576cdbe85e2657c426573c76147ad3e24",
+      "originalSlot": 5
+    },
+    {
+      "name": "DR110 Hi-Hat",
+      "id": "dr110.schematic.hats.v2.ch",
+      "category": "D11",
+      "label": "HH",
+      "version": "13.0",
+      "mdsVersion": "1.1",
+      "bytes": 3308,
+      "programWords": 929,
+      "imports": 0,
+      "xWords": 8,
+      "yWords": 10,
+      "cycles": {
+        "mkii": 790,
+        "mkiDram": 1158,
+        "mkiSram": 795
+      },
+      "contentId": "45029a27a636a92be7b9c4a470cc43ca7f66a212667e30654496de7c72ebf62e",
+      "sha256": "d269d81633e08eb19361d75b6e653ac6c0127b872c9f7180158fef98f1114b5c",
+      "sprite": [
+        0,
+        0,
+        522240,
+        8911872,
+        12586496,
+        2145781248,
+        2145781248,
+        2145781248,
+        394752,
+        394752,
+        462336,
+        8649728,
+        12711936,
+        2145386496,
+        2145910272,
+        2145910272,
+        1536,
+        1536,
+        528508416,
+        1069606400,
+        1893852672,
+        1617159680,
+        1617395200,
+        1617312768,
+        1617172480,
+        1616904192,
+        1893752832,
+        1069572096,
+        528506880,
+        24576,
+        0,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "TUNE",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DEC",
+          "default": 91,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "OSC2",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "OSC3",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "OSC4",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "NOIS",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "FILT",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "OPEN",
+          "default": 32,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "waftlord/D11-HH-v1.0.syx",
+      "manufacturer": "waftlord",
+      "fileVersion": "1.0",
+      "file": "machines/waftlord/D11-HH-v1.0.syx",
+      "image": "machines/waftlord/D11-HH-v1.0.png",
+      "fileHash": "64eb6d5e905b86dfa3e07b598af68f9a18aef93fb3976eb541f89235d3c1ee76",
+      "originalSlot": 4
+    },
+    {
+      "name": "DR110 SD",
+      "id": "dr110.circuit.complete.v1.sd",
+      "category": "D11",
+      "label": "SD",
+      "version": "0.1",
+      "mdsVersion": "1.1",
+      "bytes": 2436,
+      "programWords": 656,
+      "imports": 0,
+      "xWords": 8,
+      "yWords": 11,
+      "cycles": {
+        "mkii": 629,
+        "mkiDram": 860,
+        "mkiSram": 634
+      },
+      "contentId": "445c5a1a814c558a9c29276e2040d0d272e948c15a92ca9eebf179ec835f673a",
+      "sha256": "bdbafd04a7988edaf993e3aeaccab9f49de9cd6d5234757fef88877417854b76",
+      "sprite": [
+        0,
+        0,
+        522240,
+        8911872,
+        12586496,
+        2145781248,
+        2145781248,
+        2145781248,
+        394752,
+        394752,
+        462336,
+        8649728,
+        12711936,
+        2145386496,
+        2145910272,
+        2145910272,
+        1536,
+        1536,
+        528508416,
+        1069606400,
+        1893852672,
+        1617159680,
+        1617395200,
+        1617312768,
+        1617172480,
+        1616904192,
+        1893752832,
+        1069572096,
+        528506880,
+        24576,
+        0,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "TUNE",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DEC",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "BODY",
+          "default": 80,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "BDEC",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "SNAP",
+          "default": 84,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "TONE",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "waftlord/D11-SD-v1.0.syx",
+      "manufacturer": "waftlord",
+      "fileVersion": "1.0",
+      "file": "machines/waftlord/D11-SD-v1.0.syx",
+      "image": "machines/waftlord/D11-SD-v1.0.png",
+      "fileHash": "3e49b0847fae196d3887f726148862b563ae3b0ae46a9308ea63db545ec5383d",
+      "originalSlot": 3
+    },
+    {
+      "name": "GONG AGENG",
+      "id": "mdml.gong.ageng.v2",
+      "category": "GM",
+      "label": "AG",
+      "version": "3.0",
+      "mdsVersion": "1.1",
+      "bytes": 6036,
+      "programWords": 1808,
+      "imports": 0,
+      "xWords": 17,
+      "yWords": 26,
+      "cycles": {
+        "mkii": 864,
+        "mkiDram": 1110,
+        "mkiSram": 869
+      },
+      "contentId": "445ab182d61a6e54b1ad3cdd385d8474b4c40c751aac23d7722d0168a7995f6c",
+      "sha256": "dbfc5366c862cc48f22507bb8008269d76a5d3196ba87ea0a0c6920fc76969aa",
+      "sprite": [
+        0,
+        0,
+        1073742848,
+        1073742848,
+        2147482624,
+        1073742848,
+        1073742848,
+        1089995776,
+        50725888,
+        117113856,
+        193889280,
+        436403200,
+        335627264,
+        1006756864,
+        678470656,
+        685286400,
+        682140672,
+        685286400,
+        678470656,
+        1006756864,
+        335627264,
+        436403200,
+        193889280,
+        117113856,
+        50725888,
+        1089995776,
+        1073742848,
+        2147482624,
+        1073742848,
+        1073742848,
+        1073741824,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "TUNE",
+          "default": 43,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "RING",
+          "default": 105,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DAMP",
+          "default": 25,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "MALT",
+          "default": 112,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "BEAT",
+          "default": 72,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "HIT",
+          "default": 100,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "waftlord/GM-AG-v1.0.syx",
+      "manufacturer": "waftlord",
+      "fileVersion": "1.0",
+      "file": "machines/waftlord/GM-AG-v1.0.syx",
+      "image": "machines/waftlord/GM-AG-v1.0.png",
+      "fileHash": "6b31f5dff031302ea39cd840afebcb3c7140f2bb30f18fd2c4b3576c673e4998",
+      "originalSlot": 1
+    },
+    {
+      "name": "GAMBANG",
+      "id": "mdml.gamelan.gm-gb.v2",
+      "category": "GM",
+      "label": "GB",
+      "version": "3.0",
+      "mdsVersion": "1.1",
+      "bytes": 2832,
+      "programWords": 782,
+      "imports": 0,
+      "xWords": 10,
+      "yWords": 20,
+      "cycles": {
+        "mkii": 758,
+        "mkiDram": 992,
+        "mkiSram": 763
+      },
+      "contentId": "39b2ca16f4933e24dedaceb25f9d2baa50ddac17b6999fd2d6bc7f6bcf19bd81",
+      "sha256": "83ef27645bd8508c0fde2e8d77b020d5090239896e9ae12109acf0a3d0c045ce",
+      "sprite": [
+        0,
+        2097152,
+        15726592,
+        61589504,
+        212338688,
+        279967744,
+        278921216,
+        1890580480,
+        279693312,
+        279447552,
+        279967744,
+        346030080,
+        347074560,
+        346787840,
+        346558464,
+        347074560,
+        346030080,
+        347074560,
+        346787840,
+        346558464,
+        347074560,
+        346030080,
+        347070464,
+        279650304,
+        279453696,
+        1890574336,
+        278921216,
+        414179328,
+        111878144,
+        27795456,
+        7331840,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "TUNE",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "RING",
+          "default": 58,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DAMP",
+          "default": 60,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "MALT",
+          "default": 108,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "HIT",
+          "default": 100,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "waftlord/GM-GB-v1.0.syx",
+      "manufacturer": "waftlord",
+      "fileVersion": "1.0",
+      "file": "machines/waftlord/GM-GB-v1.0.syx",
+      "image": "machines/waftlord/GM-GB-v1.0.png",
+      "fileHash": "ace11e4612a9dc3577d2cd75db5578921cf23166977504a7fcd406d2a9e5a71d",
+      "originalSlot": 4
+    },
+    {
+      "name": "KENDANG",
+      "id": "mdml.gamelan.gm-kd.v2",
+      "category": "GM",
+      "label": "KD",
+      "version": "3.0",
+      "mdsVersion": "1.1",
+      "bytes": 2832,
+      "programWords": 782,
+      "imports": 0,
+      "xWords": 10,
+      "yWords": 20,
+      "cycles": {
+        "mkii": 758,
+        "mkiDram": 992,
+        "mkiSram": 763
+      },
+      "contentId": "8cb5147d7f44155192f58b237c8dbf4708483a33632fb87971dcaf14fe59b0bb",
+      "sha256": "8f746c10cdf3e6abd6bb34d78208aead134194f9e341e30dfd5785b6e9092598",
+      "sprite": [
+        0,
+        0,
+        16646144,
+        58949632,
+        100712448,
+        67125248,
+        234938368,
+        193175552,
+        285085696,
+        276566016,
+        595822592,
+        738224128,
+        600279040,
+        540542976,
+        600279040,
+        738224128,
+        600279040,
+        540542976,
+        600279040,
+        738224128,
+        600279040,
+        540542976,
+        600279040,
+        503279616,
+        520220672,
+        469741568,
+        369152000,
+        469741568,
+        251781120,
+        33488896,
+        0,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "TUNE",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "RING",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DAMP",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "MALT",
+          "default": 114,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "HIT",
+          "default": 100,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "waftlord/GM-KD-v1.0.syx",
+      "manufacturer": "waftlord",
+      "fileVersion": "1.0",
+      "file": "machines/waftlord/GM-KD-v1.0.syx",
+      "image": "machines/waftlord/GM-KD-v1.0.png",
+      "fileHash": "b9c30498389a7e9a2d6e3f4cc1bcbbe1658155258faba16f34d9ee851151e56d",
+      "originalSlot": 5
+    },
+    {
+      "name": "KETTLE GONGS",
+      "id": "mdml.gamelan.gm-kt.v2",
+      "category": "GM",
+      "label": "KT",
+      "version": "3.0",
+      "mdsVersion": "1.1",
+      "bytes": 7336,
+      "programWords": 2216,
+      "imports": 0,
+      "xWords": 10,
+      "yWords": 20,
+      "cycles": {
+        "mkii": 791,
+        "mkiDram": 1054,
+        "mkiSram": 796
+      },
+      "contentId": "1bea43bfa3d24ddbaf9240b368cd24cd8e49f9384c07ee10d92496a147cb61ca",
+      "sha256": "181ca1fa850a325f971f572c899aea6fc478620f4e8b95d1408cad949999773c",
+      "sprite": [
+        0,
+        33554432,
+        34013184,
+        2115862528,
+        174620672,
+        177782784,
+        177324032,
+        177291264,
+        177291264,
+        177291264,
+        177324032,
+        173588480,
+        172523520,
+        171802624,
+        168755200,
+        167772160,
+        167772160,
+        168230912,
+        169705472,
+        174620672,
+        177782784,
+        177324032,
+        177291264,
+        177291264,
+        177291264,
+        177324032,
+        173588480,
+        172523520,
+        2117959680,
+        34537472,
+        33554432,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "TUNE",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "RING",
+          "default": 90,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DAMP",
+          "default": 35,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "MALT",
+          "default": 105,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "HIT",
+          "default": 100,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "TYPE",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "waftlord/GM-KT-v1.0.syx",
+      "manufacturer": "waftlord",
+      "fileVersion": "1.0",
+      "file": "machines/waftlord/GM-KT-v1.0.syx",
+      "image": "machines/waftlord/GM-KT-v1.0.png",
+      "fileHash": "4e63dbe662d3573d0617c12b327393d8555dbf3e91caed7fbce10d2e65477ac9",
+      "originalSlot": 2
+    },
+    {
+      "name": "METAL BARS",
+      "id": "mdml.gamelan.gm-mb.v2",
+      "category": "GM",
+      "label": "MB",
+      "version": "3.0",
+      "mdsVersion": "1.1",
+      "bytes": 5300,
+      "programWords": 1568,
+      "imports": 0,
+      "xWords": 10,
+      "yWords": 20,
+      "cycles": {
+        "mkii": 791,
+        "mkiDram": 1060,
+        "mkiSram": 796
+      },
+      "contentId": "76aa458ad2d3f0c4cbf23d561d802585c4f4be3dcda1d75b181676d0aa28536b",
+      "sha256": "90460050d8a2bf164ea2d84908a10a1a11c682c7dbcd092d75d44752d62a3258",
+      "sprite": [
+        0,
+        32505856,
+        1570816,
+        2144602112,
+        1075054592,
+        2144860160,
+        1048576,
+        1570816,
+        1070860288,
+        538183680,
+        1071118336,
+        1048576,
+        1568768,
+        533991424,
+        269750272,
+        534245376,
+        1048576,
+        1568768,
+        265555968,
+        135532544,
+        265809920,
+        1048576,
+        1564672,
+        131342336,
+        68427776,
+        131588096,
+        1048576,
+        1564672,
+        64233472,
+        34873344,
+        66576384,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "TUNE",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "RING",
+          "default": 65,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DAMP",
+          "default": 32,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "MALT",
+          "default": 120,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "HIT",
+          "default": 100,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "TYPE",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "waftlord/GM-MB-v1.0.syx",
+      "manufacturer": "waftlord",
+      "fileVersion": "1.0",
+      "file": "machines/waftlord/GM-MB-v1.0.syx",
+      "image": "machines/waftlord/GM-MB-v1.0.png",
+      "fileHash": "6d46abeb8a1a5348dfd089247bf580d12f8c5a49113eb40b66398ccdc4a7683c",
+      "originalSlot": 3
+    },
+    {
+      "name": "K55-BD ORIGINAL",
+      "id": "k55.v7m.k55-bd",
+      "category": "K55",
+      "label": "BD",
+      "version": "0.1",
+      "mdsVersion": "1.1",
+      "bytes": 848,
+      "programWords": 147,
+      "imports": 0,
+      "xWords": 6,
+      "yWords": 16,
+      "cycles": {
+        "mkii": 812,
+        "mkiDram": 970,
+        "mkiSram": 817
+      },
+      "contentId": "9e698571f229a50edc7a878214da8160abdaa16340e6795e27b4299a315d14c9",
+      "sha256": "85aab36e8d0c477dd63a9d19d02911b58f89e9651840868fdb30cd4d9f850f1e",
+      "sprite": [
+        0,
+        15872,
+        484444672,
+        1023285760,
+        2097095680,
+        2097086464,
+        1894202880,
+        1894189056,
+        1894189056,
+        1894202880,
+        1894187008,
+        2145854976,
+        2145851392,
+        1072105472,
+        533136896,
+        0,
+        512,
+        484457984,
+        1023294976,
+        2097086976,
+        2097086464,
+        1894202880,
+        1894189056,
+        1894189056,
+        1894202880,
+        1894187008,
+        2145861120,
+        2145846272,
+        1072105472,
+        533136384,
+        15872,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "TUNE",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DEC",
+          "default": 68,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "BEND",
+          "default": 8,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "SNAP",
+          "default": 45,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DRIV",
+          "default": 12,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "waftlord/K55-BD-v1.0.syx",
+      "manufacturer": "waftlord",
+      "fileVersion": "1.0",
+      "file": "machines/waftlord/K55-BD-v1.0.syx",
+      "image": "machines/waftlord/K55-BD-v1.0.png",
+      "fileHash": "13961d207253f2bb8e26f01d944b16eeffc859e97f0f84410c5c4cc7e8272d44",
+      "originalSlot": 1
+    },
+    {
+      "name": "K55-CB ORIGINAL",
+      "id": "k55.v7m.k55-cb",
+      "category": "K55",
+      "label": "CB",
+      "version": "0.1",
+      "mdsVersion": "1.1",
+      "bytes": 836,
+      "programWords": 144,
+      "imports": 0,
+      "xWords": 4,
+      "yWords": 16,
+      "cycles": {
+        "mkii": 978,
+        "mkiDram": 1127,
+        "mkiSram": 983
+      },
+      "contentId": "fdace3d0cd1bd4905f0a19c037b390108437f3c365b6260a96598d3d7ea6483e",
+      "sha256": "9346b41c6468a53e010fa7215eee824396f900e5b0b6e2a8d286f05aead587c4",
+      "sprite": [
+        0,
+        15872,
+        484444672,
+        1023285760,
+        2097095680,
+        2097086464,
+        1894202880,
+        1894189056,
+        1894189056,
+        1894202880,
+        1894187008,
+        2145854976,
+        2145851392,
+        1072105472,
+        533136896,
+        0,
+        512,
+        484457984,
+        1023294976,
+        2097086976,
+        2097086464,
+        1894202880,
+        1894189056,
+        1894189056,
+        1894202880,
+        1894187008,
+        2145861120,
+        2145846272,
+        1072105472,
+        533136384,
+        15872,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "TUNE",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DEC",
+          "default": 70,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DTUN",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "EDGE",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "FALL",
+          "default": 51,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DRIV",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "waftlord/K55-CB-v1.0.syx",
+      "manufacturer": "waftlord",
+      "fileVersion": "1.0",
+      "file": "machines/waftlord/K55-CB-v1.0.syx",
+      "image": "machines/waftlord/K55-CB-v1.0.png",
+      "fileHash": "72fd47b7c7fc3bc133f07d6f737db3f489cc3234ce130bbcfb74901c6ea14d3a",
+      "originalSlot": 6
+    },
+    {
+      "name": "K55-CG RESONATOR",
+      "id": "k55.v7m.k55-cg",
+      "category": "K55",
+      "label": "CG",
+      "version": "0.1",
+      "mdsVersion": "1.1",
+      "bytes": 712,
+      "programWords": 104,
+      "imports": 0,
+      "xWords": 4,
+      "yWords": 16,
+      "cycles": {
+        "mkii": 1017,
+        "mkiDram": 1132,
+        "mkiSram": 1022
+      },
+      "contentId": "e2267e9031afe23406252381550db33ed9c318f0da12dc93884877a55efde299",
+      "sha256": "1762ca028bd240afbbcd7b607e3e149d5e2e0cac27e602c0e3eca7a4798d721e",
+      "sprite": [
+        0,
+        15872,
+        484444672,
+        1023285760,
+        2097095680,
+        2097086464,
+        1894202880,
+        1894189056,
+        1894189056,
+        1894202880,
+        1894187008,
+        2145854976,
+        2145851392,
+        1072105472,
+        533136896,
+        0,
+        512,
+        484457984,
+        1023294976,
+        2097086976,
+        2097086464,
+        1894202880,
+        1894189056,
+        1894189056,
+        1894202880,
+        1894187008,
+        2145861120,
+        2145846272,
+        1072105472,
+        533136384,
+        15872,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "TUNE",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DEC",
+          "default": 75,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "HIT",
+          "default": 80,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "PULS",
+          "default": 48,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "SNAP",
+          "default": 48,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DRIV",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "waftlord/K55-CG-v1.0.syx",
+      "manufacturer": "waftlord",
+      "fileVersion": "1.0",
+      "file": "machines/waftlord/K55-CG-v1.0.syx",
+      "image": "machines/waftlord/K55-CG-v1.0.png",
+      "fileHash": "f9c60209bf2ac48057f2c4bdd4b8a6660716a1d55945afd04d7a83aba7fa4fbd",
+      "originalSlot": 4
+    },
+    {
+      "name": "K55-CY ORIGINAL",
+      "id": "k55.v7m.k55-cy",
+      "category": "K55",
+      "label": "CY",
+      "version": "0.1",
+      "mdsVersion": "1.1",
+      "bytes": 1080,
+      "programWords": 222,
+      "imports": 0,
+      "xWords": 14,
+      "yWords": 28,
+      "cycles": {
+        "mkii": 909,
+        "mkiDram": 1142,
+        "mkiSram": 914
+      },
+      "contentId": "dab867cfc5fe904ee7c18c4006009071602678b604f04ea28148c62416b0351e",
+      "sha256": "48f5c073f2f76eb81b5c83cd4f8304d50adcabb3e636c1377a6cf3dd6eb25bdc",
+      "sprite": [
+        0,
+        15872,
+        484444672,
+        1023285760,
+        2097095680,
+        2097086464,
+        1894202880,
+        1894189056,
+        1894189056,
+        1894202880,
+        1894187008,
+        2145854976,
+        2145851392,
+        1072105472,
+        533136896,
+        0,
+        512,
+        484457984,
+        1023294976,
+        2097086976,
+        2097086464,
+        1894202880,
+        1894189056,
+        1894189056,
+        1894202880,
+        1894187008,
+        2145861120,
+        2145846272,
+        1072105472,
+        533136384,
+        15872,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "TUNE",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DEC",
+          "default": 93,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "METL",
+          "default": 96,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "EDGE",
+          "default": 80,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "FALL",
+          "default": 65,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DRIV",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "waftlord/K55-CY-v1.0.syx",
+      "manufacturer": "waftlord",
+      "fileVersion": "1.0",
+      "file": "machines/waftlord/K55-CY-v1.0.syx",
+      "image": "machines/waftlord/K55-CY-v1.0.png",
+      "fileHash": "972e5e3e00e283643126f75505cc895faf867f501a2aa68d97e28d21b3f32cb1",
+      "originalSlot": 8
+    },
+    {
+      "name": "K55-HH ORIGINAL",
+      "id": "k55.v7m.k55-hh",
+      "category": "K55",
+      "label": "HH",
+      "version": "0.1",
+      "mdsVersion": "1.1",
+      "bytes": 1112,
+      "programWords": 231,
+      "imports": 0,
+      "xWords": 14,
+      "yWords": 28,
+      "cycles": {
+        "mkii": 928,
+        "mkiDram": 1170,
+        "mkiSram": 933
+      },
+      "contentId": "7c9721412b04f4ec4180fc396383d7d2f17b4453fa138f1f6525ee3291893e3b",
+      "sha256": "d1163d6654fc38fba37654b4129a52a40d43a9a631b21d69ded5a9e64b2baa6a",
+      "sprite": [
+        0,
+        15872,
+        484444672,
+        1023285760,
+        2097095680,
+        2097086464,
+        1894202880,
+        1894189056,
+        1894189056,
+        1894202880,
+        1894187008,
+        2145854976,
+        2145851392,
+        1072105472,
+        533136896,
+        0,
+        512,
+        484457984,
+        1023294976,
+        2097086976,
+        2097086464,
+        1894202880,
+        1894189056,
+        1894189056,
+        1894202880,
+        1894187008,
+        2145861120,
+        2145846272,
+        1072105472,
+        533136384,
+        15872,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "TUNE",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DEC",
+          "default": 58,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "METL",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "TONE",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DRIV",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "waftlord/K55-HH-v1.0.syx",
+      "manufacturer": "waftlord",
+      "fileVersion": "1.0",
+      "file": "machines/waftlord/K55-HH-v1.0.syx",
+      "image": "machines/waftlord/K55-HH-v1.0.png",
+      "fileHash": "cf4db969aecc57f8760994461b0a0354db9255e18289b7fb0ff9d809ee146659",
+      "originalSlot": 7
+    },
+    {
+      "name": "K55-RS ORIGINAL",
+      "id": "k55.v7m.k55-rs",
+      "category": "K55",
+      "label": "RS",
+      "version": "0.1",
+      "mdsVersion": "1.1",
+      "bytes": 848,
+      "programWords": 147,
+      "imports": 0,
+      "xWords": 6,
+      "yWords": 16,
+      "cycles": {
+        "mkii": 812,
+        "mkiDram": 970,
+        "mkiSram": 817
+      },
+      "contentId": "8c63815116077d14e8d6b2d654c7bbef0a7040551e07371bf57750b8ceef6ec3",
+      "sha256": "97c9668ec98d26eec58dd6047b9047516b44b425fb3814f293f98f4de2fb2515",
+      "sprite": [
+        0,
+        15872,
+        484444672,
+        1023285760,
+        2097095680,
+        2097086464,
+        1894202880,
+        1894189056,
+        1894189056,
+        1894202880,
+        1894187008,
+        2145854976,
+        2145851392,
+        1072105472,
+        533136896,
+        0,
+        512,
+        484457984,
+        1023294976,
+        2097086976,
+        2097086464,
+        1894202880,
+        1894189056,
+        1894189056,
+        1894202880,
+        1894187008,
+        2145861120,
+        2145846272,
+        1072105472,
+        533136384,
+        15872,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "TUNE",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DEC",
+          "default": 42,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "BEND",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "SNAP",
+          "default": 32,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DRIV",
+          "default": 100,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "waftlord/K55-RS-v1.0.syx",
+      "manufacturer": "waftlord",
+      "fileVersion": "1.0",
+      "file": "machines/waftlord/K55-RS-v1.0.syx",
+      "image": "machines/waftlord/K55-RS-v1.0.png",
+      "fileHash": "ab24a6b7c3792222e69caeb7549ca476a2a882a59f77ece9dd8221f9fe0f7d98",
+      "originalSlot": 5
+    },
+    {
+      "name": "K55-SD ORIGINAL",
+      "id": "k55.v7m.k55-sd",
+      "category": "K55",
+      "label": "SD",
+      "version": "0.1",
+      "mdsVersion": "1.1",
+      "bytes": 960,
+      "programWords": 183,
+      "imports": 0,
+      "xWords": 6,
+      "yWords": 16,
+      "cycles": {
+        "mkii": 923,
+        "mkiDram": 1117,
+        "mkiSram": 928
+      },
+      "contentId": "8b37e9da9a91eab6474cefce5d8565b70b0391a2352fccc3e635a0873ea9b619",
+      "sha256": "b0e1e6f605f739dec5cc4fc51113f1b2219499c7bb4778776d249083183c0c62",
+      "sprite": [
+        0,
+        15872,
+        484444672,
+        1023285760,
+        2097095680,
+        2097086464,
+        1894202880,
+        1894189056,
+        1894189056,
+        1894202880,
+        1894187008,
+        2145854976,
+        2145851392,
+        1072105472,
+        533136896,
+        0,
+        512,
+        484457984,
+        1023294976,
+        2097086976,
+        2097086464,
+        1894202880,
+        1894189056,
+        1894189056,
+        1894202880,
+        1894187008,
+        2145861120,
+        2145846272,
+        1072105472,
+        533136384,
+        15872,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "TUNE",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DEC",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "BEND",
+          "default": 3,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "NOIS",
+          "default": 91,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "SNAP",
+          "default": 66,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DRIV",
+          "default": 15,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "waftlord/K55-SD-v1.0.syx",
+      "manufacturer": "waftlord",
+      "fileVersion": "1.0",
+      "file": "machines/waftlord/K55-SD-v1.0.syx",
+      "image": "machines/waftlord/K55-SD-v1.0.png",
+      "fileHash": "12be03e6ff9eaeeb938bb68f7c4970b3e9b2754f90683984f28afff1b8acbfc0",
+      "originalSlot": 2
+    },
+    {
+      "name": "K55-TM ORIGINAL",
+      "id": "k55.v7m.k55-tm",
+      "category": "K55",
+      "label": "TM",
+      "version": "0.1",
+      "mdsVersion": "1.1",
+      "bytes": 948,
+      "programWords": 179,
+      "imports": 0,
+      "xWords": 6,
+      "yWords": 16,
+      "cycles": {
+        "mkii": 889,
+        "mkiDram": 1079,
+        "mkiSram": 894
+      },
+      "contentId": "09bf7da00a1e347c23032f61b9eccf37c75402a55fdf4db47fa9c3d58775363f",
+      "sha256": "6a8ed2dc8e021604ee5ca7eb2870045c7747d3f702e91d19a0892eec8fcb332a",
+      "sprite": [
+        0,
+        15872,
+        484444672,
+        1023285760,
+        2097095680,
+        2097086464,
+        1894202880,
+        1894189056,
+        1894189056,
+        1894202880,
+        1894187008,
+        2145854976,
+        2145851392,
+        1072105472,
+        533136896,
+        0,
+        512,
+        484457984,
+        1023294976,
+        2097086976,
+        2097086464,
+        1894202880,
+        1894189056,
+        1894189056,
+        1894202880,
+        1894187008,
+        2145861120,
+        2145846272,
+        1072105472,
+        533136384,
+        15872,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "TUNE",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DEC",
+          "default": 77,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "BEND",
+          "default": 12,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "NOIS",
+          "default": 5,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "SNAP",
+          "default": 48,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DRIV",
+          "default": 12,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "waftlord/K55-TM-v1.0.syx",
+      "manufacturer": "waftlord",
+      "fileVersion": "1.0",
+      "file": "machines/waftlord/K55-TM-v1.0.syx",
+      "image": "machines/waftlord/K55-TM-v1.0.png",
+      "fileHash": "173ee76391bdfb2f515b0832fdb47814a4146110d04effaf4d91716425be6784",
+      "originalSlot": 3
+    },
+    {
+      "name": "DRUM",
+      "id": "mdml.lxf.core.drum.v3",
+      "category": "LXF",
+      "label": "DR",
+      "version": "0.5",
+      "mdsVersion": "1.1",
+      "bytes": 820,
+      "programWords": 137,
+      "imports": 1,
+      "xWords": 14,
+      "yWords": 9,
+      "cycles": {
+        "mkii": 1160,
+        "mkiDram": 1308,
+        "mkiSram": 1165
+      },
+      "contentId": "16820682f38faaa71858065592a5309fcc43d5d11181560090b09f5ff69a9a85",
+      "sha256": "89986e7374ca953d629adbd12d4e3817690a3e8f817044aef303737dddc7415c",
+      "sprite": [
+        0,
+        458752,
+        460288,
+        460288,
+        525824,
+        526336,
+        15732736,
+        66592768,
+        2266767360,
+        2349219840,
+        2281865216,
+        3624337408,
+        2956263424,
+        288686080,
+        906330112,
+        604012544,
+        604078080,
+        604012544,
+        872775680,
+        305463296,
+        2973040640,
+        3624337408,
+        2281865216,
+        2349219840,
+        2266767360,
+        66592768,
+        15732736,
+        526336,
+        460288,
+        460288,
+        460288,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "PTCH",
+          "default": 53,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "RATI",
+          "default": 24,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "FM",
+          "default": 38,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "SWP",
+          "default": 65,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "PDEC",
+          "default": 44,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "PHAS",
+          "default": 32,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "BEND",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DRIV",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "waftlord/LXF-DR-v1.0.syx",
+      "manufacturer": "waftlord",
+      "fileVersion": "1.0",
+      "file": "machines/waftlord/LXF-DR-v1.0.syx",
+      "image": "machines/waftlord/LXF-DR-v1.0.png",
+      "fileHash": "a65e806074329b8c2166a00013d30958873145df4e5bfb8e9c04040ebd85df4d",
+      "originalSlot": 1
+    },
+    {
+      "name": "METAL",
+      "id": "mdml.lxf.core.metal.v3",
+      "category": "LXF",
+      "label": "MT",
+      "version": "0.5",
+      "mdsVersion": "1.1",
+      "bytes": 740,
+      "programWords": 111,
+      "imports": 1,
+      "xWords": 12,
+      "yWords": 9,
+      "cycles": {
+        "mkii": 1211,
+        "mkiDram": 1333,
+        "mkiSram": 1216
+      },
+      "contentId": "26ead90438126ed9cc6c73613014674a009d2ea446e7dd29ea3ae702c31da20f",
+      "sha256": "710d03225410d1c15666b6db9af458f69d9f635fde6cbc4ac0f9f98ee46a1490",
+      "sprite": [
+        0,
+        8192,
+        4222976,
+        14688256,
+        10485760,
+        10485760,
+        28311552,
+        28311552,
+        2175796736,
+        2176255488,
+        2176814592,
+        3787313152,
+        2578571264,
+        129081344,
+        54009856,
+        54267904,
+        54267904,
+        54267904,
+        54108160,
+        129081344,
+        2578472960,
+        3787313152,
+        2176814592,
+        2176255488,
+        2175796736,
+        28311552,
+        28311552,
+        10485760,
+        10502144,
+        14737408,
+        4210688,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "PTCH",
+          "default": 127,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "RAT1",
+          "default": 70,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "FM1",
+          "default": 86,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "RAT2",
+          "default": 86,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "FM2",
+          "default": 80,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "PHAS",
+          "default": 32,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "SPRD",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DRIV",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "waftlord/LXF-MT-v1.0.syx",
+      "manufacturer": "waftlord",
+      "fileVersion": "1.0",
+      "file": "machines/waftlord/LXF-MT-v1.0.syx",
+      "image": "machines/waftlord/LXF-MT-v1.0.png",
+      "fileHash": "4904020b6b47234abae779b221f4741e79d2434e1835278cdfe272d4b35950ed",
+      "originalSlot": 3
+    },
+    {
+      "name": "SNARE",
+      "id": "mdml.lxf.core.snare.v1",
+      "category": "LXF",
+      "label": "SN",
+      "version": "0.5",
+      "mdsVersion": "1.1",
+      "bytes": 860,
+      "programWords": 150,
+      "imports": 1,
+      "xWords": 13,
+      "yWords": 9,
+      "cycles": {
+        "mkii": 1171,
+        "mkiDram": 1331,
+        "mkiSram": 1176
+      },
+      "contentId": "64007aff4dcc1f8ee06abfb72f9554e403b6a7b86406aea89ccaa01f61cb3ccb",
+      "sha256": "41f57c8261a5099bfa28f49b860084ad95d9c53c7990c1c972e6809c59773016",
+      "sprite": [
+        0,
+        1835008,
+        1836544,
+        1836544,
+        2098688,
+        2099200,
+        134090752,
+        2215055360,
+        2214928384,
+        2516434944,
+        3423436800,
+        3020783616,
+        208502784,
+        342720512,
+        203276288,
+        353943552,
+        219725824,
+        353943552,
+        220053504,
+        342720512,
+        208502784,
+        3020783616,
+        3423453184,
+        2516426752,
+        2214928384,
+        2281639936,
+        2230272,
+        2098688,
+        1836544,
+        1836544,
+        1835008,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "PTCH",
+          "default": 82,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "TONE",
+          "default": 96,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "MIX",
+          "default": 90,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "SWP",
+          "default": 32,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "NDEC",
+          "default": 48,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "PHAS",
+          "default": 32,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "SNAP",
+          "default": 90,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DRIV",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "waftlord/LXF-SN-v1.0.syx",
+      "manufacturer": "waftlord",
+      "fileVersion": "1.0",
+      "file": "machines/waftlord/LXF-SN-v1.0.syx",
+      "image": "machines/waftlord/LXF-SN-v1.0.png",
+      "fileHash": "d44d83faf5b62180b62c872b66e5ad9dd30900a8acaceaa9b169aa0efec79aea",
+      "originalSlot": 2
+    },
+    {
+      "name": "MP7-BD",
+      "id": "mdml.mp7.bd.pilot.v1",
+      "category": "MP7",
+      "label": "BD",
+      "version": "0.1",
+      "mdsVersion": "1.1",
+      "bytes": 4184,
+      "programWords": 1216,
+      "imports": 0,
+      "xWords": 22,
+      "yWords": 22,
+      "cycles": {
+        "mkii": 2431,
+        "mkiDram": 2880,
+        "mkiSram": 2436
+      },
+      "contentId": "bed998b58416ad441369a6f7cb6a2b2006105855357cf7faa5cf6c461dbc9d80",
+      "sha256": "52b76452d95f528409cc914aba2e6b1cd34cdc48badc20903205c86cb44aecbb",
+      "sprite": [
+        0,
+        0,
+        2113929216,
+        1111391232,
+        1107953664,
+        1107590144,
+        1107296256,
+        2115781632,
+        1109556224,
+        1109148672,
+        1107296256,
+        1111391232,
+        2114585600,
+        1107589120,
+        1107296256,
+        1110328320,
+        1110080512,
+        2117747712,
+        1107296256,
+        1107296256,
+        1107296256,
+        1107296256,
+        2113935360,
+        2113935360,
+        2115999744,
+        2115999744,
+        2113959936,
+        2113959936,
+        2113929216,
+        2113929216,
+        0,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "TUNE",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "RING",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "HIT",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "PULS",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "BEND",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "BTIM",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "TONE",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DRIV",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "waftlord/MP7-BD-v1.0.syx",
+      "manufacturer": "waftlord",
+      "fileVersion": "1.0",
+      "file": "machines/waftlord/MP7-BD-v1.0.syx",
+      "image": "machines/waftlord/MP7-BD-v1.0.png",
+      "fileHash": "025715c69f73638821004235c147079cf02368b13d45d1c9d0f2d89e0a4ecbe6",
+      "originalSlot": 1
+    },
+    {
+      "name": "MP7-CB",
+      "id": "mdml.mp7.cb.pilot.v1",
+      "category": "MP7",
+      "label": "CB",
+      "version": "0.1",
+      "mdsVersion": "1.1",
+      "bytes": 1872,
+      "programWords": 475,
+      "imports": 0,
+      "xWords": 15,
+      "yWords": 19,
+      "cycles": {
+        "mkii": 2361,
+        "mkiDram": 2791,
+        "mkiSram": 2374
+      },
+      "contentId": "aa1b01e24434c36d433794efff4f0a9a76979be1a974ac481266fcfea2bd3e22",
+      "sha256": "7c021944a1920d41055dcf5b7d80b02d7529f9a62abe77377be060839013d2c4",
+      "sprite": [
+        0,
+        0,
+        2113929216,
+        1111391232,
+        1107953664,
+        1107590144,
+        1107296256,
+        2115781632,
+        1109556224,
+        1109148672,
+        1107296256,
+        1111391232,
+        2114585600,
+        1107589120,
+        1107296256,
+        1110328320,
+        1110080512,
+        2117747712,
+        1107296256,
+        1107296256,
+        1107296256,
+        1107296256,
+        2113935360,
+        2113935360,
+        2115999744,
+        2115999744,
+        2113959936,
+        2113959936,
+        2113929216,
+        2113929216,
+        0,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "TUNE",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "RING",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "HIT",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "PULS",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "BAL",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "SPRD",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "FALL",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DRIV",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "waftlord/MP7-CB-v1.0.syx",
+      "manufacturer": "waftlord",
+      "fileVersion": "1.0",
+      "file": "machines/waftlord/MP7-CB-v1.0.syx",
+      "image": "machines/waftlord/MP7-CB-v1.0.png",
+      "fileHash": "49e3872a2644b693e801d1973aebc9c64bb9034a04f239460dd1abde7bcef381",
+      "originalSlot": 5
+    },
+    {
+      "name": "MP7-CL",
+      "id": "mdml.mp7.cl.pilot.v1",
+      "category": "MP7",
+      "label": "CL",
+      "version": "0.1",
+      "mdsVersion": "1.1",
+      "bytes": 1904,
+      "programWords": 485,
+      "imports": 0,
+      "xWords": 22,
+      "yWords": 22,
+      "cycles": {
+        "mkii": 2480,
+        "mkiDram": 2853,
+        "mkiSram": 2485
+      },
+      "contentId": "8c00b80ef7ca7b9863b87036dcea1da6fda036a696b524c023a4435b31065638",
+      "sha256": "da7d61d5c5e05b5ecf7469320cf5a313a989e9d28de47882cbfc43a37523e225",
+      "sprite": [
+        0,
+        0,
+        2113929216,
+        1111391232,
+        1107953664,
+        1107590144,
+        1107296256,
+        2115781632,
+        1109556224,
+        1109148672,
+        1107296256,
+        1111391232,
+        2114585600,
+        1107589120,
+        1107296256,
+        1110328320,
+        1110080512,
+        2117747712,
+        1107296256,
+        1107296256,
+        1107296256,
+        1107296256,
+        2113935360,
+        2113935360,
+        2115999744,
+        2115999744,
+        2113959936,
+        2113959936,
+        2113929216,
+        2113929216,
+        0,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "TUNE",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "RING",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "HIT",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "PULS",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "FLAM",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "GAP",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "TONE",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DRIV",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "waftlord/MP7-CL-v1.0.syx",
+      "manufacturer": "waftlord",
+      "fileVersion": "1.0",
+      "file": "machines/waftlord/MP7-CL-v1.0.syx",
+      "image": "machines/waftlord/MP7-CL-v1.0.png",
+      "fileHash": "424a2692357cc5033b67fef76aabcf866426929d1a54cabc195f7296648b0db9",
+      "originalSlot": 2
+    },
+    {
+      "name": "MP7-GU",
+      "id": "mdml.mp7.gu.pilot.v1",
+      "category": "MP7",
+      "label": "GU",
+      "version": "0.1",
+      "mdsVersion": "1.1",
+      "bytes": 4512,
+      "programWords": 1320,
+      "imports": 0,
+      "xWords": 16,
+      "yWords": 21,
+      "cycles": {
+        "mkii": 2316,
+        "mkiDram": 2665,
+        "mkiSram": 2321
+      },
+      "contentId": "1c1fc1e1fd74076812b283cba74dded5a468e8cad6ea3d2428daf86e283146e5",
+      "sha256": "9176f9e301fc7b0e74f480f4d1978088679bd075e82fe0142745f56ca0e1c8f1",
+      "sprite": [
+        0,
+        0,
+        2113929216,
+        1111391232,
+        1107953664,
+        1107590144,
+        1107296256,
+        2115781632,
+        1109556224,
+        1109148672,
+        1107296256,
+        1111391232,
+        2114585600,
+        1107589120,
+        1107296256,
+        1110328320,
+        1110080512,
+        2117747712,
+        1107296256,
+        1107296256,
+        1107296256,
+        1107296256,
+        2113935360,
+        2113935360,
+        2115999744,
+        2115999744,
+        2113959936,
+        2113959936,
+        2113929216,
+        2113929216,
+        0,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "TUNE",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "RING",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "RATE",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DUTY",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "LENG",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "SKEW",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "EDGE",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DRIV",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "waftlord/MP7-GU-v1.0.syx",
+      "manufacturer": "waftlord",
+      "fileVersion": "1.0",
+      "file": "machines/waftlord/MP7-GU-v1.0.syx",
+      "image": "machines/waftlord/MP7-GU-v1.0.png",
+      "fileHash": "aa930cd4288357f3b1b9c89da5af39a813178a7086328a69f9b4240e92f93cf6",
+      "originalSlot": 4
+    },
+    {
+      "name": "MP7 METALS",
+      "id": "mdml.mp7.nz.core.v7",
+      "category": "MP7",
+      "label": "NZ",
+      "version": "7.0",
+      "mdsVersion": "1.1",
+      "bytes": 8904,
+      "programWords": 2716,
+      "imports": 0,
+      "xWords": 23,
+      "yWords": 64,
+      "cycles": {
+        "mkii": 2333,
+        "mkiDram": 2921,
+        "mkiSram": 2338
+      },
+      "contentId": "58912668991c3be88465ad5ee292847bff630e32a524ac223c8b8b9ce1b030a4",
+      "sha256": "513c4ffaafa8e4c22ab47fefef6d39c6301f97ecc61fdfaa06cb84bb9a70f404",
+      "sprite": [
+        0,
+        0,
+        2113929216,
+        1111391232,
+        1107953664,
+        1107590144,
+        1107296256,
+        2115781632,
+        1109556224,
+        1109148672,
+        1107296256,
+        1111391232,
+        2114585600,
+        1107589120,
+        1107296256,
+        1110328320,
+        1110080512,
+        2117747712,
+        1107296256,
+        1107296256,
+        1107296256,
+        1107296256,
+        2113935360,
+        2113935360,
+        2115999744,
+        2115999744,
+        2113959936,
+        2113959936,
+        2113929216,
+        2113929216,
+        0,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "TUNE",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "RING",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "NOIS",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "NDEC",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "TICK",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "HPF",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "TYPE",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DRIV",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "waftlord/MP7-NZ-v1.0.syx",
+      "manufacturer": "waftlord",
+      "fileVersion": "1.0",
+      "file": "machines/waftlord/MP7-NZ-v1.0.syx",
+      "image": "machines/waftlord/MP7-NZ-v1.0.png",
+      "fileHash": "860481776144648e7fe98b5c315a175fc92ba5e38d3d203b8dab69fd0b56c29b",
+      "originalSlot": 7
+    },
+    {
+      "name": "MP7 PERCUSSION",
+      "id": "mdml.mp7.pc.core.v7",
+      "category": "MP7",
+      "label": "PC",
+      "version": "7.0",
+      "mdsVersion": "1.1",
+      "bytes": 2460,
+      "programWords": 656,
+      "imports": 0,
+      "xWords": 22,
+      "yWords": 33,
+      "cycles": {
+        "mkii": 2490,
+        "mkiDram": 2927,
+        "mkiSram": 2495
+      },
+      "contentId": "eddd9d46faa1c4e2f7e6326f284afc8063944235027854e8a21242046b091df0",
+      "sha256": "432cdaffbc138f518ed27c2848878405db4338ec231cf09eecc7ab6c2b8eaa26",
+      "sprite": [
+        0,
+        0,
+        2113929216,
+        1111391232,
+        1107953664,
+        1107590144,
+        1107296256,
+        2115781632,
+        1109556224,
+        1109148672,
+        1107296256,
+        1111391232,
+        2114585600,
+        1107589120,
+        1107296256,
+        1110328320,
+        1110080512,
+        2117747712,
+        1107296256,
+        1107296256,
+        1107296256,
+        1107296256,
+        2113935360,
+        2113935360,
+        2115999744,
+        2115999744,
+        2113959936,
+        2113959936,
+        2113929216,
+        2113929216,
+        0,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "TUNE",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "RING",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "HIT",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "PULS",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "BEND",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "TYPE",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "TONE",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DRIV",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "waftlord/MP7-PC-v1.0.syx",
+      "manufacturer": "waftlord",
+      "fileVersion": "1.0",
+      "file": "machines/waftlord/MP7-PC-v1.0.syx",
+      "image": "machines/waftlord/MP7-PC-v1.0.png",
+      "fileHash": "b7a8d72382db312175e9ea5ed703b0dba1134c15549bae5f7ea1c817c371d697",
+      "originalSlot": 6
+    },
+    {
+      "name": "MP7-QUI",
+      "id": "mdml.mp7.qui.pilot.v1",
+      "category": "MP7",
+      "label": "QU",
+      "version": "0.1",
+      "mdsVersion": "1.1",
+      "bytes": 4340,
+      "programWords": 1265,
+      "imports": 0,
+      "xWords": 16,
+      "yWords": 21,
+      "cycles": {
+        "mkii": 2239,
+        "mkiDram": 2574,
+        "mkiSram": 2244
+      },
+      "contentId": "2810300d598da6d1adc0e57e29fe2e42f0da2bf0bbeee69d00d1f5b63230b12b",
+      "sha256": "849cdc21f46c7c4d27470eed9c3dd2d7982e9c154479b60ba0a124178d86fcd2",
+      "sprite": [
+        0,
+        0,
+        2113929216,
+        1111391232,
+        1107953664,
+        1107590144,
+        1107296256,
+        2115781632,
+        1109556224,
+        1109148672,
+        1107296256,
+        1111391232,
+        2114585600,
+        1107589120,
+        1107296256,
+        1110328320,
+        1110080512,
+        2117747712,
+        1107296256,
+        1107296256,
+        1107296256,
+        1107296256,
+        2113935360,
+        2113935360,
+        2115999744,
+        2115999744,
+        2113959936,
+        2113959936,
+        2113929216,
+        2113929216,
+        0,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "TUNE",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "RING",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "RATE",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DUTY",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "FALL",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "RSPD",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "EDGE",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DRIV",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "waftlord/MP7-QU-v1.0.syx",
+      "manufacturer": "waftlord",
+      "fileVersion": "1.0",
+      "file": "machines/waftlord/MP7-QU-v1.0.syx",
+      "image": "machines/waftlord/MP7-QU-v1.0.png",
+      "fileHash": "1ecb734512b64d3eae2fb0d994277e54497ed00be0e154ffa89fc0a90f48245d",
+      "originalSlot": 8
+    },
+    {
+      "name": "MP7-RS",
+      "id": "mdml.mp7.rs.compact.v3",
+      "category": "MP7",
+      "label": "RS",
+      "version": "0.3",
+      "mdsVersion": "1.1",
+      "bytes": 1864,
+      "programWords": 473,
+      "imports": 0,
+      "xWords": 13,
+      "yWords": 24,
+      "cycles": {
+        "mkii": 2411,
+        "mkiDram": 2833,
+        "mkiSram": 2416
+      },
+      "contentId": "466bcbbe5c5e7aaa3d84ccf25f76f2e310e1b57c4d8b82f1ed5ca04a17cb04fe",
+      "sha256": "b564a05f41a4fa6035cb16150f3b5d0023bca75cb83495eab5f032bb0b823c35",
+      "sprite": [
+        0,
+        0,
+        2113929216,
+        1111391232,
+        1107953664,
+        1107590144,
+        1107296256,
+        2115781632,
+        1109556224,
+        1109148672,
+        1107296256,
+        1111391232,
+        2114585600,
+        1107589120,
+        1107296256,
+        1110328320,
+        1110080512,
+        2117747712,
+        1107296256,
+        1107296256,
+        1107296256,
+        1107296256,
+        2113935360,
+        2113935360,
+        2115999744,
+        2115999744,
+        2113959936,
+        2113959936,
+        2113929216,
+        2113929216,
+        0,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "TUNE",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "RING",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "HIT",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "PULS",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "TICK",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "BAL",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "TONE",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DRIV",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "waftlord/MP7-RS-v1.0.syx",
+      "manufacturer": "waftlord",
+      "fileVersion": "1.0",
+      "file": "machines/waftlord/MP7-RS-v1.0.syx",
+      "image": "machines/waftlord/MP7-RS-v1.0.png",
+      "fileHash": "7d7a60147f2459b9ec20f9e3fc85c37201dbf3ad245a6b794b71adbeb3691a93",
+      "originalSlot": 9
+    },
+    {
+      "name": "MP7 SNARES",
+      "id": "mdml.mp7.sn.core.v7",
+      "category": "MP7",
+      "label": "SN",
+      "version": "7.0",
+      "mdsVersion": "1.1",
+      "bytes": 2844,
+      "programWords": 781,
+      "imports": 0,
+      "xWords": 20,
+      "yWords": 59,
+      "cycles": {
+        "mkii": 2427,
+        "mkiDram": 2920,
+        "mkiSram": 2432
+      },
+      "contentId": "2d94d289a4fe7d56ed5e51a3a5fb34ee2726e97c02f46da333e4eff364d46f4c",
+      "sha256": "2326673796281a587c89be9fb91b137fac5edffea7ae5f26099ed9608d84e870",
+      "sprite": [
+        0,
+        0,
+        2113929216,
+        1111391232,
+        1107953664,
+        1107590144,
+        1107296256,
+        2115781632,
+        1109556224,
+        1109148672,
+        1107296256,
+        1111391232,
+        2114585600,
+        1107589120,
+        1107296256,
+        1110328320,
+        1110080512,
+        2117747712,
+        1107296256,
+        1107296256,
+        1107296256,
+        1107296256,
+        2113935360,
+        2113935360,
+        2115999744,
+        2115999744,
+        2113959936,
+        2113959936,
+        2113929216,
+        2113929216,
+        0,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "TUNE",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "RING",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "NOIS",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "NDEC",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "SNAP",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "COLR",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "TYPE",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DRIV",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "waftlord/MP7-SN-v1.0.syx",
+      "manufacturer": "waftlord",
+      "fileVersion": "1.0",
+      "file": "machines/waftlord/MP7-SN-v1.0.syx",
+      "image": "machines/waftlord/MP7-SN-v1.0.png",
+      "fileHash": "cf9bd119d47759f1c4e0b3a9684fda75626d297e8dd0f07c8a1fc062737e16ac",
+      "originalSlot": 3
+    },
+    {
+      "name": "Chorus Four Full",
+      "id": "mdml.nfx.chorus.four.nbal.v4",
+      "category": "NFX",
+      "label": "CM",
+      "version": "3.6",
+      "mdsVersion": "1.1",
+      "bytes": 2668,
+      "programWords": 710,
+      "imports": 15,
+      "xWords": 64,
+      "yWords": 64,
+      "cycles": {
+        "mkii": 2130,
+        "mkiDram": 2810,
+        "mkiSram": 2323
+      },
+      "contentId": "9677ff9b489c0361276c3783b76ead0691766be1a761c26df8ea72de9574a7b6",
+      "sha256": "a00f5e4d75d4134d47e728e24a06315045becf73f4f8a4e95d0e146d4f1553bc",
+      "sprite": [
+        0,
+        0,
+        553914368,
+        285745152,
+        285745152,
+        143147008,
+        76038144,
+        71581696,
+        35799040,
+        35790848,
+        34672640,
+        34639872,
+        68192256,
+        136348672,
+        136348672,
+        272696320,
+        545326080,
+        545392640,
+        553912320,
+        553914368,
+        285745152,
+        285745152,
+        143147008,
+        76038144,
+        71581696,
+        35799040,
+        35790848,
+        34672640,
+        34639872,
+        68192256,
+        0,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "DEL",
+          "default": 100,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DEP",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "SPD",
+          "default": 52,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "FB",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "HP",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "LP",
+          "default": 100,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "MIX",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "NBAL",
+          "default": 127,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "waftlord/NFX-CM-v1.0.syx",
+      "manufacturer": "waftlord",
+      "fileVersion": "1.0",
+      "file": "machines/waftlord/NFX-CM-v1.0.syx",
+      "image": "machines/waftlord/NFX-CM-v1.0.png",
+      "fileHash": "51a9c729a076c4a0633f21207d0424f74e87573e9957c48c8a87133c60edaaef",
+      "originalSlot": 1
+    },
+    {
+      "name": "Frequency Shift",
+      "id": "mdml.nfx.fs.v7",
+      "category": "NFX",
+      "label": "FS",
+      "version": "0.8",
+      "mdsVersion": "1.1",
+      "bytes": 1552,
+      "programWords": 352,
+      "imports": 13,
+      "xWords": 64,
+      "yWords": 64,
+      "cycles": {
+        "mkii": 2578,
+        "mkiDram": 2991,
+        "mkiSram": 2592
+      },
+      "contentId": "71a9258035cd60ca85a2c8f0a14558fb6afd7290f393df69a87362851b4cb8c9",
+      "sha256": "35bc870757fab9bb2f32a62f7f7e77bfc75de79a38170120f4fe83d3a2ee6889",
+      "sprite": [
+        0,
+        0,
+        805306368,
+        771751936,
+        566231040,
+        540016640,
+        566231040,
+        771751936,
+        805306368,
+        536870912,
+        805308416,
+        738199552,
+        587204608,
+        738199552,
+        805308416,
+        536872960,
+        536872960,
+        536872960,
+        805308416,
+        788531200,
+        552601600,
+        537659392,
+        552610304,
+        788536320,
+        805308416,
+        536870912,
+        805306368,
+        788529152,
+        549453824,
+        788529152,
+        805306368,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "SHFT",
+          "default": 80,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "FINE",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "SIDE",
+          "default": 127,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "FDBK",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DAMP",
+          "default": 96,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "WARM",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "MIX",
+          "default": 127,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "NBAL",
+          "default": 127,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "waftlord/NFX-FS-v1.0.syx",
+      "manufacturer": "waftlord",
+      "fileVersion": "1.0",
+      "file": "machines/waftlord/NFX-FS-v1.0.syx",
+      "image": "machines/waftlord/NFX-FS-v1.0.png",
+      "fileHash": "16b3ec50cc1342d39bcbae22704157c952d23054f870cd2b51c4f15c18d5bfb5",
+      "originalSlot": 1
+    },
+    {
+      "name": "Gate Blend",
+      "id": "mdml.nfx.gt.nbal.v6",
+      "category": "NFX",
+      "label": "GT",
+      "version": "0.1",
+      "mdsVersion": "1.1",
+      "bytes": 940,
+      "programWords": 164,
+      "imports": 0,
+      "xWords": 8,
+      "yWords": 41,
+      "cycles": {
+        "mkii": 962,
+        "mkiDram": 1129,
+        "mkiSram": 967
+      },
+      "contentId": "69c2fba107118cd67665164d5a55c8d145360ab4380cc4cd71471d3ee6d505b9",
+      "sha256": "9568abeca902c4fe7eb8243863616a4427c94007f3e2b9274773de243e27b518",
+      "sprite": [
+        0,
+        2097152,
+        2105344,
+        2105344,
+        1572864,
+        401408,
+        7872512,
+        58720256,
+        25174016,
+        6299648,
+        2097152,
+        2105344,
+        2105344,
+        268443648,
+        536875008,
+        2080503808,
+        2080503808,
+        268443648,
+        0,
+        2097152,
+        2105344,
+        3153920,
+        917504,
+        106496,
+        925696,
+        3145728,
+        2105344,
+        2105344,
+        2097152,
+        2105344,
+        2105344,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "KEY",
+          "default": 96,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "MODE",
+          "default": 21,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "THR",
+          "default": 32,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "ATK",
+          "default": 24,
+          "min": 0,
+          "max": 80
+        },
+        {
+          "name": "HOLD",
+          "default": 24,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "REL",
+          "default": 64,
+          "min": 0,
+          "max": 112
+        },
+        {
+          "name": "DPTH",
+          "default": 127,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "NBAL",
+          "default": 127,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "waftlord/NFX-GT-v1.0.syx",
+      "manufacturer": "waftlord",
+      "fileVersion": "1.0",
+      "file": "machines/waftlord/NFX-GT-v1.0.syx",
+      "image": "machines/waftlord/NFX-GT-v1.0.png",
+      "fileHash": "8975b82fd0621ec73a42cd416dc3cdb62c23be2dc70c2609d591ab16ecae33ed",
+      "originalSlot": 1
+    },
+    {
+      "name": "Chord Resonator",
+      "id": "mdml.nfx.hr.v20",
+      "category": "NFX",
+      "label": "HR",
+      "version": "0.20",
+      "mdsVersion": "1.1",
+      "bytes": 3752,
+      "programWords": 1053,
+      "imports": 3,
+      "xWords": 64,
+      "yWords": 64,
+      "cycles": {
+        "mkii": 2326,
+        "mkiDram": 2733,
+        "mkiSram": 2326
+      },
+      "contentId": "5184b9f1a6d671f55c465c21fd694dffa0cb008cf897c91309e39c370883e70d",
+      "sha256": "4ee2b3da346894166e2d007652c9497f378af925d65f714a9b99a6f02974efb8",
+      "sprite": [
+        0,
+        0,
+        0,
+        134217728,
+        469762048,
+        469762048,
+        536739840,
+        268304384,
+        262144,
+        262144,
+        524288,
+        0,
+        0,
+        8388608,
+        29360128,
+        29360128,
+        33546240,
+        16769024,
+        16384,
+        16384,
+        32768,
+        0,
+        0,
+        524288,
+        1835008,
+        1835008,
+        2096640,
+        1048064,
+        1024,
+        1024,
+        2048,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "ROOT",
+          "default": 32,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "CHRD",
+          "default": 70,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "VOIC",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "RING",
+          "default": 88,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "MORF",
+          "default": 80,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "WARP",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "MIX",
+          "default": 127,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "NBAL",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "waftlord/NFX-HR-v1.0.syx",
+      "manufacturer": "waftlord",
+      "fileVersion": "1.0",
+      "file": "machines/waftlord/NFX-HR-v1.0.syx",
+      "image": "machines/waftlord/NFX-HR-v1.0.png",
+      "fileHash": "07d81d1fc1376a93ba3091386cdf256bbaf11dbe7f2bc83d190b164c648be68c",
+      "originalSlot": 1
+    },
+    {
+      "name": "Pitch RAM Delay",
+      "id": "mdml.nfx.rsd.v3",
+      "category": "NFX",
+      "label": "PC",
+      "version": "5.0",
+      "mdsVersion": "1.1",
+      "bytes": 2672,
+      "programWords": 694,
+      "imports": 1,
+      "xWords": 64,
+      "yWords": 9,
+      "cycles": {
+        "mkii": 11169,
+        "mkiDram": 15991,
+        "mkiSram": 11652
+      },
+      "contentId": "f2fd3b96fc7f0da6ad9bfa406ab5e20f00911b2d2e82bde5a8cea13c375fb1a0",
+      "sha256": "2531b65c6cbdb6567affa3db12646100d926d82d5b2e8e12ab01d77e88a3c81e",
+      "sprite": [
+        0,
+        0,
+        536866816,
+        272764928,
+        324718592,
+        324718592,
+        272764928,
+        272764928,
+        272764928,
+        272764928,
+        272764928,
+        272764928,
+        272764928,
+        272764928,
+        272764928,
+        272764928,
+        536866816,
+        0,
+        0,
+        0,
+        268439552,
+        952111104,
+        1440747520,
+        299896832,
+        301961216,
+        285184000,
+        268439552,
+        268439552,
+        469889024,
+        0,
+        0,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "SIZE",
+          "default": 112,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DPTH",
+          "default": 127,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "LAG",
+          "default": 80,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "FDBK",
+          "default": 72,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "MODE",
+          "default": 32,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "RAM",
+          "default": 32,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "KEY",
+          "default": 32,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "TIME",
+          "default": 16,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "waftlord/NFX-PC-v1.0.syx",
+      "manufacturer": "waftlord",
+      "fileVersion": "1.0",
+      "file": "machines/waftlord/NFX-PC-v1.0.syx",
+      "image": "machines/waftlord/NFX-PC-v1.0.png",
+      "fileHash": "298d465e92a74d3c005c7156970f51f5e195853fb76baf085ac124f0db6fde29",
+      "originalSlot": 1
+    },
+    {
+      "name": "Ruin Sidechain",
+      "id": "mdml.nfx.ruin.v11",
+      "category": "NFX",
+      "label": "RU",
+      "version": "0.1",
+      "mdsVersion": "1.1",
+      "bytes": 900,
+      "programWords": 163,
+      "imports": 0,
+      "xWords": 64,
+      "yWords": 9,
+      "cycles": {
+        "mkii": 1301,
+        "mkiDram": 1493,
+        "mkiSram": 1306
+      },
+      "contentId": "c3c52e8706482f5feed4ed86e857d8ef007761d5957b3e601f5aa81a394e0f54",
+      "sha256": "64245bf6fa2aa3611e46356d0cf7f30885ee484c7c91ea7d7ad80fb6965d888e",
+      "sprite": [
+        0,
+        1048576,
+        6291456,
+        25165824,
+        33554432,
+        33554432,
+        25165824,
+        6291456,
+        1572864,
+        393216,
+        98304,
+        32768,
+        65536,
+        393216,
+        1572864,
+        0,
+        0,
+        14737408,
+        14737408,
+        57344,
+        939524096,
+        939524096,
+        941359104,
+        1841152,
+        1841152,
+        6144,
+        117440512,
+        117899264,
+        117899264,
+        6750208,
+        6291456,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "DRIV",
+          "default": 28,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "TONE",
+          "default": 127,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "SHAP",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DPTH",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "REL",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "MIX",
+          "default": 100,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "OUT",
+          "default": 100,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "NBAL",
+          "default": 127,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "waftlord/NFX-RU-v1.0.syx",
+      "manufacturer": "waftlord",
+      "fileVersion": "1.0",
+      "file": "machines/waftlord/NFX-RU-v1.0.syx",
+      "image": "machines/waftlord/NFX-RU-v1.0.png",
+      "fileHash": "15b9b41977dc443bb3419eb92ba43b637c60f2c33e58994db9a5e68b2153b9c6",
+      "originalSlot": 1
+    },
+    {
+      "name": "Zing Modulator",
+      "id": "mdml.nfx.zing.v2",
+      "category": "NFX",
+      "label": "ZG",
+      "version": "0.1",
+      "mdsVersion": "1.1",
+      "bytes": 796,
+      "programWords": 123,
+      "imports": 0,
+      "xWords": 6,
+      "yWords": 9,
+      "cycles": {
+        "mkii": 975,
+        "mkiDram": 1115,
+        "mkiSram": 980
+      },
+      "contentId": "8cabce638bbfef9f4b14ca1a56b8a38a3674f692532f0ed7048b476c63862cf6",
+      "sha256": "5cca014dfd2bfa4410024a13779a38f71e76851b197285bc070206db362c49fd",
+      "sprite": [
+        0,
+        268451840,
+        268468224,
+        268500992,
+        134283264,
+        100696064,
+        16793600,
+        16785408,
+        83906560,
+        33587200,
+        16842752,
+        16646144,
+        12976128,
+        16842752,
+        38043648,
+        36208640,
+        34635776,
+        36208640,
+        38043648,
+        16842752,
+        8519680,
+        8126464,
+        0,
+        1048576,
+        6291456,
+        8388608,
+        8388608,
+        6291456,
+        1572864,
+        393216,
+        131072,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "CARR",
+          "default": 32,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "TUNE",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "EDGE",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "BIAS",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "MIX",
+          "default": 127,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "OUT",
+          "default": 112,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "BLND",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "waftlord/NFX-ZG-v1.0.syx",
+      "manufacturer": "waftlord",
+      "fileVersion": "1.0",
+      "file": "machines/waftlord/NFX-ZG-v1.0.syx",
+      "image": "machines/waftlord/NFX-ZG-v1.0.png",
+      "fileHash": "67fcc7bfb58a2fc8e6b83e6336acba0a447b04b9c4f631bd62230920db1eddad",
+      "originalSlot": 1
+    },
+    {
+      "name": "SNES Packed Perc",
+      "id": "mdml.snes.percussion.opt.v4",
+      "category": "SNS",
+      "label": "PC",
+      "version": "0.2",
+      "mdsVersion": "1.1",
+      "bytes": 17068,
+      "programWords": 5292,
+      "imports": 0,
+      "xWords": 20,
+      "yWords": 64,
+      "cycles": {
+        "mkii": 947,
+        "mkiDram": 1391,
+        "mkiSram": 952
+      },
+      "contentId": "66616a51128973e36fbfad28703c0513ceb034a090c29d000c5d80ceb2fe3d0d",
+      "sha256": "2def821e5c898e1eb66b84acd55f6073671e321543eb9a068fec38ac527c2c95",
+      "sprite": [
+        0,
+        0,
+        0,
+        7340032,
+        7340032,
+        16252928,
+        16252928,
+        16252928,
+        16252928,
+        16252928,
+        16310272,
+        7925760,
+        7469056,
+        119797760,
+        252704768,
+        252704768,
+        261091328,
+        260567040,
+        260300800,
+        260571136,
+        252575744,
+        253689856,
+        102694912,
+        8323072,
+        33488896,
+        16711680,
+        16711680,
+        8257536,
+        3932160,
+        0,
+        0,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "PTCH",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "HIT",
+          "default": 10,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "BEND",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "BTIM",
+          "default": 38,
+          "min": 0,
+          "max": 64
+        },
+        {
+          "name": "BRR",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "waftlord/SNS-PC-v1.0.syx",
+      "manufacturer": "waftlord",
+      "fileVersion": "1.0",
+      "file": "machines/waftlord/SNS-PC-v1.0.syx",
+      "image": "machines/waftlord/SNS-PC-v1.0.png",
+      "fileHash": "51b7098910c75d6298186eb1782865ab3f5c3001482713e0b9f38460c6d96fce",
+      "originalSlot": 1
+    },
+    {
+      "name": "World Kart Pack",
+      "id": "mdml.snes.worldkart.packed.v3",
+      "category": "SNS",
+      "label": "PK",
+      "version": "0.2",
+      "mdsVersion": "1.1",
+      "bytes": 16648,
+      "programWords": 5134,
+      "imports": 0,
+      "xWords": 64,
+      "yWords": 64,
+      "cycles": {
+        "mkii": 1151,
+        "mkiDram": 1362,
+        "mkiSram": 1156
+      },
+      "contentId": "40cc070e041210fe479427241456b384b5e78c242467ea1041df38b18e065f14",
+      "sha256": "d0a0c77e5905c5aee0e3a03009d019df562894038235239c97a31058c7c0778b",
+      "sprite": [
+        0,
+        0,
+        0,
+        7340032,
+        7340032,
+        16252928,
+        16252928,
+        16252928,
+        16252928,
+        16252928,
+        16310272,
+        7925760,
+        7469056,
+        119797760,
+        252704768,
+        252704768,
+        261091328,
+        260567040,
+        260300800,
+        260571136,
+        252575744,
+        253689856,
+        102694912,
+        8323072,
+        33488896,
+        16711680,
+        16711680,
+        8257536,
+        3932160,
+        0,
+        0,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "PTCH",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "SWP",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "BRR",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "SND",
+          "default": 5,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "waftlord/SNS-PK-v1.0.syx",
+      "manufacturer": "waftlord",
+      "fileVersion": "1.0",
+      "file": "machines/waftlord/SNS-PK-v1.0.syx",
+      "image": "machines/waftlord/SNS-PK-v1.0.png",
+      "fileHash": "32bbfbe51fa1fb1a3aecaf5964040af7a77da6e4715c435884d5a23267b74c52",
+      "originalSlot": 1
+    },
+    {
+      "name": "ACID TWIN",
+      "id": "mdml.acid.twin.v9",
+      "category": "SYN",
+      "label": "AT",
+      "version": "0.3",
+      "mdsVersion": "1.1",
+      "bytes": 15084,
+      "programWords": 4703,
+      "imports": 0,
+      "xWords": 42,
+      "yWords": 44,
+      "cycles": {
+        "mkii": 1090,
+        "mkiDram": 1265,
+        "mkiSram": 1095
+      },
+      "contentId": "2340b0ed5ffb9fcdc5a072c3689b2cefe9b947471552f198531f166a4b82fd1a",
+      "sha256": "0ca41af76eda84b6ca8baf09cff72f84f237da6134eacabe3dcf2c75328544ae",
+      "sprite": [
+        0,
+        0,
+        268697600,
+        134348800,
+        67174400,
+        33587200,
+        16793600,
+        8396800,
+        533196800,
+        134348800,
+        67174400,
+        33587200,
+        16793600,
+        8396800,
+        533196800,
+        0,
+        0,
+        8390656,
+        8390656,
+        8399360,
+        8395776,
+        939526144,
+        130023424,
+        4128768,
+        57344,
+        2031616,
+        132120576,
+        939524096,
+        536870912,
+        536870912,
+        536870912,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "PTCH",
+          "default": 36,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "INTV",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "CUT",
+          "default": 48,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "RES",
+          "default": 88,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DRIV",
+          "default": 30,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "XFM",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "waftlord/SYN-AT-v1.0.syx",
+      "manufacturer": "waftlord",
+      "fileVersion": "1.0",
+      "file": "machines/waftlord/SYN-AT-v1.0.syx",
+      "image": "machines/waftlord/SYN-AT-v1.0.png",
+      "fileHash": "ac70f0f07dcfe40b3cd75c298b39bc29d80c0a7f1588f81cc218c95af96806f1",
+      "originalSlot": 1
+    },
+    {
+      "name": "BOWED MATTER",
+      "id": "mdml.bowed.matter.v1-1",
+      "category": "SYN",
+      "label": "BM",
+      "version": "1.1",
+      "mdsVersion": "1.1",
+      "bytes": 8516,
+      "programWords": 2601,
+      "imports": 0,
+      "xWords": 64,
+      "yWords": 49,
+      "cycles": {
+        "mkii": 2772,
+        "mkiDram": 3141,
+        "mkiSram": 2777
+      },
+      "contentId": "d0fe6062549d6b4622f4eb6f50d693f7aa127ba98e63e22215b85f089575a151",
+      "sha256": "3c1fcabba1af77187fd307b41ab4d6871e530c4dc46fd07115bde0a2905d0648",
+      "sprite": [
+        3670016,
+        29360128,
+        117440512,
+        478150656,
+        470810624,
+        234946560,
+        58753024,
+        7471104,
+        1966080,
+        17006592,
+        33611776,
+        8417280,
+        1077248,
+        114688,
+        491520,
+        3801088,
+        30408704,
+        117440512,
+        503316480,
+        478150656,
+        235929600,
+        58785792,
+        7372800,
+        917504,
+        2326528,
+        16834560,
+        33583104,
+        8417280,
+        638976,
+        458752,
+        3702784,
+        29491200
+      ],
+      "parameters": [
+        {
+          "name": "ROOT",
+          "default": 45,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "BODY",
+          "default": 66,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "BEND",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "FEED",
+          "default": 84,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "LINK",
+          "default": 44,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "RUFF",
+          "default": 30,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DRFT",
+          "default": 56,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "RATE",
+          "default": 40,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "waftlord/SYN-BM-v1.0.syx",
+      "manufacturer": "waftlord",
+      "fileVersion": "1.0",
+      "file": "machines/waftlord/SYN-BM-v1.0.syx",
+      "image": "machines/waftlord/SYN-BM-v1.0.png",
+      "fileHash": "080ee777c10719c3f96f7b33581ccf1ba97931c7ecf2471700816f812ead00d1",
+      "originalSlot": 1
+    },
+    {
+      "name": "CS01 VOICE",
+      "id": "mdml.cs01.pilot.v1",
+      "category": "SYN",
+      "label": "C1",
+      "version": "0.1",
+      "mdsVersion": "1.1",
+      "bytes": 30008,
+      "programWords": 9464,
+      "imports": 0,
+      "xWords": 29,
+      "yWords": 24,
+      "cycles": {
+        "mkii": 1521,
+        "mkiDram": 2341,
+        "mkiSram": 1530
+      },
+      "contentId": "9f976709bfc64ad7a7c878f04f61c26bf8d3c3f3226fc3c5a7463fec2ca3d39e",
+      "sha256": "8cb1dfe12514931739922ac90be0e0c0a41763f58363c7cd0b0124c1109b5329",
+      "sprite": [
+        0,
+        0,
+        1073733632,
+        537927680,
+        538435584,
+        538206208,
+        569827328,
+        1072701440,
+        537944064,
+        538435584,
+        537927680,
+        569384960,
+        1072701440,
+        537927680,
+        537927680,
+        537927680,
+        537927680,
+        1072701440,
+        537927680,
+        538124288,
+        538222592,
+        569679872,
+        1072898048,
+        537927680,
+        537927680,
+        538124288,
+        569679872,
+        1072996352,
+        538124288,
+        1073733632,
+        0,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "PTCH",
+          "default": 48,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "WAVE",
+          "default": 100,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "CUT",
+          "default": 62,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "RES",
+          "default": 127,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "EGD",
+          "default": 60,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DEC",
+          "default": 66,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "PWMS",
+          "default": 48,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "PW",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "waftlord/SYN-C1-v1.0.syx",
+      "manufacturer": "waftlord",
+      "fileVersion": "1.0",
+      "file": "machines/waftlord/SYN-C1-v1.0.syx",
+      "image": "machines/waftlord/SYN-C1-v1.0.png",
+      "fileHash": "33d62394451d0b6619ad5ebca67d8a25ef7b9db758b0881f2528acd0a49b2fdc",
+      "originalSlot": 1
+    },
+    {
+      "name": "CELL",
+      "id": "mdml.cell.v1",
+      "category": "SYN",
+      "label": "CL",
+      "version": "0.5",
+      "mdsVersion": "1.1",
+      "bytes": 13680,
+      "programWords": 4201,
+      "imports": 1,
+      "xWords": 1,
+      "yWords": 21,
+      "cycles": {
+        "mkii": 775,
+        "mkiDram": 1047,
+        "mkiSram": 776
+      },
+      "contentId": "3c774ec8ca0160ad9b87f9ca2865a63fd73a09215ddb3a37f411d140a5568bf8",
+      "sha256": "da407032bd65e8933c3294f76589c72ac48b74775c367b2c92c1b85dba8f71d9",
+      "sprite": [
+        0,
+        0,
+        0,
+        2096754688,
+        2089357312,
+        2089357312,
+        2089357312,
+        2096754688,
+        0,
+        0,
+        2096754688,
+        1157173248,
+        1157173248,
+        1157173248,
+        2096754688,
+        0,
+        0,
+        2096754688,
+        1149890560,
+        1149890560,
+        1149890560,
+        2096754688,
+        0,
+        0,
+        2096754688,
+        1157173248,
+        1157173248,
+        1157173248,
+        2096754688,
+        0,
+        0,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "ROOT",
+          "default": 48,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "POOL",
+          "default": 44,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "GENE",
+          "default": 37,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "MOVE",
+          "default": 8,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "LEN",
+          "default": 60,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "EVOL",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "ACT",
+          "default": 8,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "WAVE",
+          "default": 16,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "waftlord/SYN-CL-v1.0.syx",
+      "manufacturer": "waftlord",
+      "fileVersion": "1.0",
+      "file": "machines/waftlord/SYN-CL-v1.0.syx",
+      "image": "machines/waftlord/SYN-CL-v1.0.png",
+      "fileHash": "c4b2aa3af7455d09ca32f0a22e2c975d18d71d5ec929b66160b0823e18ba24a5",
+      "originalSlot": 1
+    },
+    {
+      "name": "SYN-CZ 0.9",
+      "id": "mdml.syn.cz.opt.v9",
+      "category": "SYN",
+      "label": "CZ",
+      "version": "0.8",
+      "mdsVersion": "1.1",
+      "bytes": 9704,
+      "programWords": 2946,
+      "imports": 1,
+      "xWords": 64,
+      "yWords": 64,
+      "cycles": {
+        "mkii": 37952,
+        "mkiDram": 41310,
+        "mkiSram": 38122
+      },
+      "contentId": "6b707639b4d5ec1f2e9a8577d84e8977f3f917328f9fb68f4b38d119338075e3",
+      "sha256": "4aca508f00ab6bb4030112e3b3e52b6dfddf9ce9bf9cf275245d7cf3f2a2b08d",
+      "sprite": [
+        0,
+        50331648,
+        1743781888,
+        1878786048,
+        1862139904,
+        1812922368,
+        1812398080,
+        1812145152,
+        1812147712,
+        1812146688,
+        1812150784,
+        1677922816,
+        1610809344,
+        1610744320,
+        1610613760,
+        1610627072,
+        1811940352,
+        1845494272,
+        1862467584,
+        1862483456,
+        1870857216,
+        1841498112,
+        1826820096,
+        1827880448,
+        1819475968,
+        742064128,
+        740229120,
+        739180544,
+        537853952,
+        458752,
+        0,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "PTCH",
+          "default": 80,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "WAVE",
+          "default": 8,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DCW",
+          "default": 104,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "TIME",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DTUN",
+          "default": 68,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "MODE",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "waftlord/SYN-CZ-v1.0.syx",
+      "manufacturer": "waftlord",
+      "fileVersion": "1.0",
+      "file": "machines/waftlord/SYN-CZ-v1.0.syx",
+      "image": "machines/waftlord/SYN-CZ-v1.0.png",
+      "fileHash": "58ecf582344b47e1650854038e0126c53a9102a9b26820726cb0f33fed16de78",
+      "originalSlot": 1
+    },
+    {
+      "name": "Dream Reed",
+      "id": "mdml.dream.reed.v1",
+      "category": "SYN",
+      "label": "DR",
+      "version": "0.1",
+      "mdsVersion": "1.1",
+      "bytes": 2748,
+      "programWords": 736,
+      "imports": 0,
+      "xWords": 32,
+      "yWords": 52,
+      "cycles": {
+        "mkii": 1724,
+        "mkiDram": 2063,
+        "mkiSram": 1729
+      },
+      "contentId": "a968223ed2c7a77bcdee4ee41cf014c4e6f7f970dc706ddffd14f1d423ce5c17",
+      "sha256": "51dd0323072df02af04e8d4a70be4f3887694172acff5a8e976f7f736a6209b0",
+      "sprite": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1073741824,
+        1610612736,
+        2013265920,
+        2147450880,
+        2147475456,
+        2147481600,
+        2147482624,
+        2147482624,
+        2013297664,
+        1610619904,
+        1073742848,
+        0,
+        0,
+        0,
+        201328640,
+        503318528,
+        503320576,
+        536743936,
+        268308480,
+        2048,
+        12584960,
+        31457280,
+        31457280,
+        33546240,
+        16769024,
+        0,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "PTCH",
+          "default": 74,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "CHRD",
+          "default": 66,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "VOIC",
+          "default": 24,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "SPRD",
+          "default": 44,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "AIR",
+          "default": 72,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "BLOM",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "RATE",
+          "default": 20,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "GLID",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "waftlord/SYN-DR-v1.0.syx",
+      "manufacturer": "waftlord",
+      "fileVersion": "1.0",
+      "file": "machines/waftlord/SYN-DR-v1.0.syx",
+      "image": "machines/waftlord/SYN-DR-v1.0.png",
+      "fileHash": "82564b3327405a0c362ca9320c7f0308adcc96d4cc7f3b778409f76643fc5a9e",
+      "originalSlot": 1
+    },
+    {
+      "name": "FERAL FM",
+      "id": "mdml.feral.fm.v1",
+      "category": "SYN",
+      "label": "FR",
+      "version": "0.3",
+      "mdsVersion": "1.1",
+      "bytes": 1916,
+      "programWords": 487,
+      "imports": 1,
+      "xWords": 23,
+      "yWords": 17,
+      "cycles": {
+        "mkii": 2205,
+        "mkiDram": 2513,
+        "mkiSram": 2212
+      },
+      "contentId": "5216d4ddfb236f710bc3d2917367597261e3af9627ebd39bf4f784a96f756e17",
+      "sha256": "5d53fa27af87a85099d90abf56734ebba045bd76701356e8774233a7a3724ee0",
+      "sprite": [
+        0,
+        268435456,
+        537116672,
+        1074012160,
+        537399296,
+        269486080,
+        135268352,
+        68159488,
+        135268352,
+        268963840,
+        537141248,
+        1074511872,
+        537399296,
+        269492224,
+        1080320,
+        2106368,
+        19928064,
+        14681088,
+        62915584,
+        204473344,
+        268960768,
+        268960768,
+        537134080,
+        537263104,
+        537133056,
+        537133056,
+        268959744,
+        268959744,
+        204472320,
+        62914560,
+        0,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "PTCH",
+          "default": 32,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "RATI",
+          "default": 32,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "FM",
+          "default": 62,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "BODY",
+          "default": 20,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "FDBK",
+          "default": 24,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "FENV",
+          "default": 92,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "TDEC",
+          "default": 48,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "SUB",
+          "default": 66,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "waftlord/SYN-FR-v1.0.syx",
+      "manufacturer": "waftlord",
+      "fileVersion": "1.0",
+      "file": "machines/waftlord/SYN-FR-v1.0.syx",
+      "image": "machines/waftlord/SYN-FR-v1.0.png",
+      "fileHash": "e180f53ff23f46b7ac197e6e912b53268a1b3ea5a8a573a13521f8c8a7d6ba14",
+      "originalSlot": 1
+    },
+    {
+      "name": "HOOVER",
+      "id": "mdml.syn.hv.creative.v1",
+      "category": "SYN",
+      "label": "HV",
+      "version": "0.6",
+      "mdsVersion": "1.1",
+      "bytes": 2052,
+      "programWords": 533,
+      "imports": 0,
+      "xWords": 10,
+      "yWords": 10,
+      "cycles": {
+        "mkii": 1016,
+        "mkiDram": 1215,
+        "mkiSram": 1021
+      },
+      "contentId": "641b97d52ad28a8192417502a5ca42fca11cacc0d4c60b9ab6dd10ba1868c968",
+      "sha256": "396082ec38fdf76442675378f4665e2bfe8d69cb9f45707dd1395d07f489de52",
+      "sprite": [
+        2147482624,
+        16781312,
+        16781312,
+        16785408,
+        16785408,
+        16793600,
+        16793600,
+        16809984,
+        16809984,
+        16842752,
+        16842752,
+        537001984,
+        537001984,
+        537133056,
+        537133056,
+        537395200,
+        16781312,
+        16781312,
+        16781312,
+        16785408,
+        16785408,
+        16793600,
+        16793600,
+        16809984,
+        16809984,
+        16842752,
+        16842752,
+        537001984,
+        537001984,
+        537133056,
+        537133056,
+        2147482624
+      ],
+      "parameters": [
+        {
+          "name": "TUNE",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "PWM",
+          "default": 108,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "RATE",
+          "default": 85,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "BEND",
+          "default": 84,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "TIME",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "TONE",
+          "default": 68,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "waftlord/SYN-HV-v1.0.syx",
+      "manufacturer": "waftlord",
+      "fileVersion": "1.0",
+      "file": "machines/waftlord/SYN-HV-v1.0.syx",
+      "image": "machines/waftlord/SYN-HV-v1.0.png",
+      "fileHash": "329cd2ee2d963693c619e2a41e6d8d589812cba131d16f2993c7d7b96c3b2e72",
+      "originalSlot": 1
+    },
+    {
+      "name": "KNOT FM",
+      "id": "mdml.knot.fm.v1",
+      "category": "SYN",
+      "label": "KN",
+      "version": "0.2",
+      "mdsVersion": "1.1",
+      "bytes": 1404,
+      "programWords": 323,
+      "imports": 1,
+      "xWords": 13,
+      "yWords": 12,
+      "cycles": {
+        "mkii": 2247,
+        "mkiDram": 2494,
+        "mkiSram": 2260
+      },
+      "contentId": "3440d98e580c1cbe811857dccbcfa712fb4b16338b232b9cafe6c55070acbf49",
+      "sha256": "c7ff0a2976ea08f50927a7fab0d518be4fee82cf8b01973b1d861c0c2654d69d",
+      "sprite": [
+        0,
+        0,
+        0,
+        28672,
+        1006759936,
+        1065857024,
+        435122176,
+        217866240,
+        259571712,
+        67092480,
+        29818880,
+        66027520,
+        125681664,
+        238870528,
+        217346048,
+        214183936,
+        228470784,
+        157487104,
+        453236736,
+        520148992,
+        469784576,
+        402683904,
+        469790720,
+        1006661632,
+        1040248832,
+        1057222656,
+        1002958848,
+        536768512,
+        268427264,
+        2080768,
+        0,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "PTCH",
+          "default": 32,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "RATI",
+          "default": 32,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "SPRD",
+          "default": 24,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "FM",
+          "default": 49,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "KNOT",
+          "default": 39,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "FDBK",
+          "default": 19,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "EVOL",
+          "default": 83,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "TIME",
+          "default": 52,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "waftlord/SYN-KN-v1.0.syx",
+      "manufacturer": "waftlord",
+      "fileVersion": "1.0",
+      "file": "machines/waftlord/SYN-KN-v1.0.syx",
+      "image": "machines/waftlord/SYN-KN-v1.0.png",
+      "fileHash": "dc803de2a54d6a5a07602d405d533b8d6c67949206f4bfe919e2a508603e09f9",
+      "originalSlot": 1
+    },
+    {
+      "name": "SYN-MO",
+      "id": "mdml.syn.mo.v3",
+      "category": "SYN",
+      "label": "MO",
+      "version": "0.1",
+      "mdsVersion": "1.1",
+      "bytes": 3316,
+      "programWords": 911,
+      "imports": 0,
+      "xWords": 24,
+      "yWords": 12,
+      "cycles": {
+        "mkii": 836,
+        "mkiDram": 1057,
+        "mkiSram": 841
+      },
+      "contentId": "26bf0c73da738dbe077ee8e79baf416def1505aae1963ff034ba88d004f62dda",
+      "sha256": "d666f0fd13109934ec7af497ffa472fde5c298c4fcbd0056f6ddc3ae340eecb5",
+      "sprite": [
+        8687616,
+        8687616,
+        8687616,
+        8687616,
+        8687616,
+        8687616,
+        8687616,
+        8687616,
+        8687616,
+        8687616,
+        8687616,
+        8687616,
+        8687616,
+        8687616,
+        8687616,
+        8687616,
+        8687616,
+        8687616,
+        8687616,
+        8687616,
+        8687616,
+        8687616,
+        8687616,
+        8687616,
+        8687616,
+        8687616,
+        8687616,
+        8687616,
+        8687616,
+        8687616,
+        8687616,
+        8687616
+      ],
+      "parameters": [
+        {
+          "name": "PTCH",
+          "default": 48,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "VOWL",
+          "default": 58,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "SIZE",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "SRC",
+          "default": 12,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "CHAR",
+          "default": 68,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "MOVE",
+          "default": 87,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "TYPE",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "BODY",
+          "default": 104,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "waftlord/SYN-MO-v1.0.syx",
+      "manufacturer": "waftlord",
+      "fileVersion": "1.0",
+      "file": "machines/waftlord/SYN-MO-v1.0.syx",
+      "image": "machines/waftlord/SYN-MO-v1.0.png",
+      "fileHash": "9ca0d36d4624d36eda8f21de2d27520e04827ac1e4825afb15b04cc4c5b7a3c2",
+      "originalSlot": 1
+    },
+    {
+      "name": "MONO SYNTH",
+      "id": "mdml.monotron.synth.v18",
+      "category": "SYN",
+      "label": "MT",
+      "version": "0.1",
+      "mdsVersion": "1.1",
+      "bytes": 13832,
+      "programWords": 4291,
+      "imports": 0,
+      "xWords": 11,
+      "yWords": 19,
+      "cycles": {
+        "mkii": 1118,
+        "mkiDram": 1372,
+        "mkiSram": 1123
+      },
+      "contentId": "4f5dd03e574f1951fad306278d1896836eee893ad121203a558664b4cf04c8b7",
+      "sha256": "cf7d65e07adef9ae91da7efbbb03f66518d61e4cdd2030f98c6efe0692ea305d",
+      "sprite": [
+        0,
+        0,
+        16777216,
+        8388608,
+        4194304,
+        2097152,
+        1048576,
+        524288,
+        262144,
+        131072,
+        65536,
+        33488896,
+        1048576,
+        1048576,
+        1048576,
+        1048576,
+        1048576,
+        1048576,
+        1048576,
+        536868864,
+        1050624,
+        1050624,
+        1050624,
+        1050624,
+        1050624,
+        1050624,
+        1050624,
+        2095104,
+        1048576,
+        1048576,
+        0,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "PTCH",
+          "default": 42,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "CUT",
+          "default": 66,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "RES",
+          "default": 86,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "TYPE",
+          "default": 32,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "RATE",
+          "default": 3,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DPTH",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "waftlord/SYN-MT-v1.0.syx",
+      "manufacturer": "waftlord",
+      "fileVersion": "1.0",
+      "file": "machines/waftlord/SYN-MT-v1.0.syx",
+      "image": "machines/waftlord/SYN-MT-v1.0.png",
+      "fileHash": "5e3be926c880a05dcfd081bb215ee90056a28318d5b8680bccc37bfe39f4924b",
+      "originalSlot": 1
+    },
+    {
+      "name": "MonoWave Full",
+      "id": "mdml.monowave.fullrange.v62",
+      "category": "SYN",
+      "label": "MW",
+      "version": "6.2",
+      "mdsVersion": "1.1",
+      "bytes": 24108,
+      "programWords": 7509,
+      "imports": 0,
+      "xWords": 64,
+      "yWords": 18,
+      "cycles": {
+        "mkii": 15257,
+        "mkiDram": 21225,
+        "mkiSram": 15365
+      },
+      "contentId": "44fe21ae5f9c6f6c1e4cc6010cdc52cb6c1856accdfb4ca825386c9cabf70e9c",
+      "sha256": "e6e7af53015026ffc3a83153de7b12694d1e72d1aedebaf04aa710a99d46ee76",
+      "sprite": [
+        0,
+        67108864,
+        134217728,
+        536866816,
+        134217728,
+        67108864,
+        1041244160,
+        34095104,
+        33832960,
+        33849344,
+        33718272,
+        33849344,
+        1040728064,
+        537935872,
+        538976256,
+        541069312,
+        538972160,
+        537921536,
+        1040713728,
+        33818624,
+        33689600,
+        33820672,
+        34086912,
+        34619392,
+        1042300928,
+        541097984,
+        539000832,
+        537952256,
+        537935872,
+        537411584,
+        0,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "PTCH",
+          "default": 36,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "WAVE",
+          "default": 20,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "TIM",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "BEND",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "BTIM",
+          "default": 88,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "SYNC",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "FOLD",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "BRR",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "waftlord/SYN-MW-v1.1.syx",
+      "manufacturer": "waftlord",
+      "fileVersion": "1.1",
+      "file": "machines/waftlord/SYN-MW-v1.1.syx",
+      "image": "machines/waftlord/SYN-MW-v1.1.png",
+      "fileHash": "834cf5de5e482354f58d6d338f73a641b776435337c702be7653b7fd2a26c36e",
+      "originalSlot": 1
+    },
+    {
+      "name": "POLIVOKS COMPACT",
+      "id": "mdml.polivoks.compact.v1",
+      "category": "SYN",
+      "label": "PX",
+      "version": "0.7",
+      "mdsVersion": "1.1",
+      "bytes": 25012,
+      "programWords": 7815,
+      "imports": 36,
+      "xWords": 64,
+      "yWords": 64,
+      "cycles": {
+        "mkii": 936,
+        "mkiDram": 1180,
+        "mkiSram": 941
+      },
+      "contentId": "b6f992e87be52882490869f91a674e712380a03d121f5b80579b549e054fb4be",
+      "sha256": "9469abf4bd15e1a8ec733f8cd8b60d7f1c356373e854f0e1335d9e0c17a8854f",
+      "sprite": [
+        0,
+        536870912,
+        536870912,
+        536870912,
+        536870912,
+        805306368,
+        201326592,
+        50331648,
+        12582912,
+        252182016,
+        805830144,
+        536897024,
+        536897024,
+        536877056,
+        536877056,
+        805306368,
+        234881024,
+        29859328,
+        3644928,
+        29384704,
+        234905600,
+        805805568,
+        537370112,
+        536870912,
+        536870912,
+        536870912,
+        536870912,
+        536870912,
+        536870912,
+        536870912,
+        536870912,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "PTCH",
+          "default": 36,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "WAVE",
+          "default": 24,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "CUT",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "RES",
+          "default": 72,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DRIV",
+          "default": 31,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "EGD",
+          "default": 88,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DEC",
+          "default": 41,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "waftlord/SYN-PX-v1.0.syx",
+      "manufacturer": "waftlord",
+      "fileVersion": "1.0",
+      "file": "machines/waftlord/SYN-PX-v1.0.syx",
+      "image": "machines/waftlord/SYN-PX-v1.0.png",
+      "fileHash": "7c772d38b125e9668e7afade240115deaed2ed712d6c9949a844df4df7bf7331",
+      "originalSlot": 1
+    },
+    {
+      "name": "SYN-RL",
+      "id": "mdml.syn.rl.sync.v41",
+      "category": "SYN",
+      "label": "RL",
+      "version": "4.1",
+      "mdsVersion": "1.1",
+      "bytes": 13008,
+      "programWords": 4013,
+      "imports": 2,
+      "xWords": 64,
+      "yWords": 64,
+      "cycles": {
+        "mkii": 4053,
+        "mkiDram": 6725,
+        "mkiSram": 4169
+      },
+      "contentId": "1d17d0e0b4ba8e8deefe03a46efe0b2cf677e6dce4f760fa166934fa5892ff01",
+      "sha256": "e74dd1eda8fe6bcaddcc9e42a78ca55ac9d6da1f5233481bd7c4fc6d5418ba81",
+      "sprite": [
+        0,
+        1879048192,
+        1895825408,
+        1996488704,
+        2030043136,
+        1895825408,
+        1627389952,
+        2130706432,
+        1627389952,
+        1627389952,
+        1627389952,
+        654311424,
+        947912704,
+        545259520,
+        272629760,
+        281018368,
+        320864256,
+        202375168,
+        134742016,
+        68419584,
+        35782656,
+        21069824,
+        8470528,
+        4333568,
+        2375680,
+        1605632,
+        328704,
+        131584,
+        512,
+        270336,
+        528384,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "STRT",
+          "default": 32,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "END",
+          "default": 127,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "LOOP",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "CURV",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "TUNE",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "RING",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "HARD",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "BEND",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "waftlord/SYN-RL-v1.0.syx",
+      "manufacturer": "waftlord",
+      "fileVersion": "1.0",
+      "file": "machines/waftlord/SYN-RL-v1.0.syx",
+      "image": "machines/waftlord/SYN-RL-v1.0.png",
+      "fileHash": "177d97c3a7ede3d41b1d33178a699b9ebbe90c70bc075bfd2fe09066b45521fd",
+      "originalSlot": 1
+    },
+    {
+      "name": "SYN-SI",
+      "id": "mdml.syn.si.len-intl.v19",
+      "category": "SYN",
+      "label": "SI",
+      "version": "19.0",
+      "mdsVersion": "1.1",
+      "bytes": 13108,
+      "programWords": 3999,
+      "imports": 0,
+      "xWords": 32,
+      "yWords": 29,
+      "cycles": {
+        "mkii": 1610,
+        "mkiDram": 2982,
+        "mkiSram": 1656
+      },
+      "contentId": "2eede1bfe7a2de80f2fa7b297be5b2438f380fb06974abf3420f0394434f8041",
+      "sha256": "1489aa6c1a4ed6bd0be90e6aa105943744ceb86057196071edcae140ec6be34d",
+      "sprite": [
+        134209536,
+        8192,
+        8192,
+        8192,
+        8192,
+        8192,
+        8192,
+        8192,
+        134209536,
+        67108864,
+        67108864,
+        67108864,
+        67108864,
+        67108864,
+        67108864,
+        67108864,
+        134209536,
+        8192,
+        8192,
+        8192,
+        8192,
+        8192,
+        8192,
+        8192,
+        134209536,
+        67108864,
+        67108864,
+        67108864,
+        67108864,
+        67108864,
+        67108864,
+        67108864
+      ],
+      "parameters": [
+        {
+          "name": "PTCH",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "PW",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "SHAP",
+          "default": 16,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "INTL",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "LEN",
+          "default": 4,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "CHRD",
+          "default": 2,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DIR",
+          "default": 12,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "OCT",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "waftlord/SYN-SI-v1.0.syx",
+      "manufacturer": "waftlord",
+      "fileVersion": "1.0",
+      "file": "machines/waftlord/SYN-SI-v1.0.syx",
+      "image": "machines/waftlord/SYN-SI-v1.0.png",
+      "fileHash": "543f9bcc61b62fddfa180e330b68f239ed0a9f9cc8e179dd91779e344cb7add2",
+      "originalSlot": 1
+    },
+    {
+      "name": "SPORE",
+      "id": "mdml.spore.v2",
+      "category": "SYN",
+      "label": "SP",
+      "version": "0.2",
+      "mdsVersion": "1.1",
+      "bytes": 1008,
+      "programWords": 196,
+      "imports": 2,
+      "xWords": 64,
+      "yWords": 15,
+      "cycles": {
+        "mkii": 2269,
+        "mkiDram": 2477,
+        "mkiSram": 2274
+      },
+      "contentId": "3f0c7cb57b2132ece413feba37ca0578f67939b803b60b28a4cee4e0a5c66c48",
+      "sha256": "449a8afb6d4749ff0f74776570278636bdef0dd0b687b2a37aaafb608158805d",
+      "sprite": [
+        0,
+        0,
+        6291456,
+        6294528,
+        3072,
+        8323072,
+        25214976,
+        33562624,
+        67112960,
+        67112960,
+        67112960,
+        33562624,
+        1635827712,
+        1618938880,
+        3072,
+        6291456,
+        6291456,
+        66584576,
+        201719808,
+        268500992,
+        536903680,
+        536909824,
+        536909824,
+        268500992,
+        201719808,
+        66584576,
+        0,
+        0,
+        50380800,
+        50380800,
+        0,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "PTCH",
+          "default": 32,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "FORM",
+          "default": 45,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "SIZE",
+          "default": 38,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "TWIN",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "RATI",
+          "default": 73,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "CHRP",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "EVOL",
+          "default": 87,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "TIME",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "waftlord/SYN-SP-v1.0.syx",
+      "manufacturer": "waftlord",
+      "fileVersion": "1.0",
+      "file": "machines/waftlord/SYN-SP-v1.0.syx",
+      "image": "machines/waftlord/SYN-SP-v1.0.png",
+      "fileHash": "4fbf4e9715fb419ee170a1dab3b7c708b77fb248fbe09d8b27b5de67630f05a3",
+      "originalSlot": 1
+    },
+    {
+      "name": "SYN-WC",
+      "id": "mdml.syn.wc.v9",
+      "category": "SYN",
+      "label": "WC",
+      "version": "0.2",
+      "mdsVersion": "1.1",
+      "bytes": 8008,
+      "programWords": 2437,
+      "imports": 1,
+      "xWords": 64,
+      "yWords": 64,
+      "cycles": {
+        "mkii": 953,
+        "mkiDram": 1214,
+        "mkiSram": 958
+      },
+      "contentId": "0bc5a9b29265da54072c3689f98f3d025ee22a992344e96b3ceb8f136b57e4e1",
+      "sha256": "b64c9f10ed81d9d660c9cc12dcedfa765231bf05fd67f9c857cfea155a5e6f82",
+      "sprite": [
+        0,
+        3145728,
+        4063232,
+        1032192,
+        1073868800,
+        1073770496,
+        1074786304,
+        1308590080,
+        1341128704,
+        1341915136,
+        1077870592,
+        1073938432,
+        1074724864,
+        1090256896,
+        1090256896,
+        16760832,
+        258048,
+        28672,
+        1046528,
+        234850304,
+        267388928,
+        268175360,
+        4130816,
+        198656,
+        985088,
+        12322816,
+        32507904,
+        14690816,
+        7347200,
+        2099200,
+        0,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "PTCH",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "RATI",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "FM",
+          "default": 28,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "FOLD",
+          "default": 66,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "SYMM",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "FENV",
+          "default": 98,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "TDEC",
+          "default": 58,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "LPG",
+          "default": 110,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "waftlord/SYN-WC-v1.0.syx",
+      "manufacturer": "waftlord",
+      "fileVersion": "1.0",
+      "file": "machines/waftlord/SYN-WC-v1.0.syx",
+      "image": "machines/waftlord/SYN-WC-v1.0.png",
+      "fileHash": "0bb94604f31b4996b3e0402976a131bf79d480ac8fce3c2d083289f00ab1081c",
+      "originalSlot": 1
+    }
+  ]
+}

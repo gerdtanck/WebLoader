@@ -1,0 +1,14 @@
+artifacts/
+runtime/
+node_modules/
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+
+# Local lab evidence and planning are not part of the public website repository.
+/knowledge/
+/PLAN.md
+/scripts/probe_hardware.py
+/tests/test_probe_hardware.py

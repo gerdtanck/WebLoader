@@ -1,0 +1,105 @@
+{
+  "schema": 1,
+  "recorded": "2026-11-16",
+  "scope": "WebLoader 0.1 static site, browser MIDI implementation, and read-only diagnostic",
+  "parent_lock": {
+    "path": "../toolchain.lock.json",
+    "sha256": "a36d3047e220d6d9d1cfc75c18ab6b1f5d52c1d981298cf7a65184774d7b27c4"
+  },
+  "repositories": [
+    {
+      "url": "https://github.com/jmamma/MDS.git",
+      "commit": "0de4c4f76810a0162f4b1d6243fbe6303dc8d985"
+    },
+    {
+      "url": "https://github.com/jmamma/MDX.git",
+      "commit": "a1adf336654ee4d2162f319bb85ba0c5c4a9b315"
+    },
+    {
+      "url": "https://github.com/jmamma/MCL.git",
+      "commit": "693a410017833a732c24412db5fcce9049e78642"
+    }
+  ],
+  "local_reference_files": {
+    "../external/MDS/docs/MDX_MachineDumpProtocol.txt": "b215a3883bd4e33019d1b733f50c3a80204aeff35abb73573d79d5d932dd3c07",
+    "../external/MDS/docs/MDX_MachineDumpStandard.txt": "bd5c4e4d40fffa23edcf8f1872f7f568d1e3d7058c0e7dc27ab288625932c747",
+    "../external/MDX/docs/2.0/Machinedrum_SPS1-UW_OS-X.20_readme.txt": "61c96ff93274dc3ce54a72818e4f0ff7887af5ea876f44de42381541b8a38f77",
+    "../mdlab/protocol.py": "dd5bb9df09d4940e15f37b63ffb49a1df6a6a8e5461a4485d2811df1d22085dd",
+    "../mdlab/hardware.py": "06ad5e53ffc1dad82f772cbacab84fb7565f0cfab2b40f3a04e2b69722d0e671",
+    "../mdlab/hardware_mds.py": "23a7334e85c080b39607344ec303af1e3e74a969e81ae31bc8d686cc049e2d9c",
+    "../mdlab/hardware_stream.py": "16abc59641bce3eee55865102297545a19a89c10a323d4ea2246545fe8794585",
+    "../mdlab/hardware_protocol.py": "d55ac5d4938594a339e53c2d2fca44ecb83e05d79c287e973e4a17e2487d81b5",
+    "../mdlab/midi.py": "9ae20b139a41854c11efd0b161685282b55527de45d1d258175393abda9b1ef0",
+    "../requirements.txt": "04c4bf187034909c703cb1f8ef771088fb774ccb2d0cf58e9f91fd0155adf383",
+    "../tools/hardware-midi/references.json": "8fe9c6ca1090471cde991a1a13b1d409413f63d88e2190b116530a678de1d837"
+  },
+  "catalog_snapshot": {
+    "path": "artifacts/planning/catalog-inspection.json",
+    "sha256": "e65cd41f645a2dddba298e42cd73a4ccdb918cf0fa2d7acc9c4809c4c14132e1",
+    "scope": "Original user-supplied machine and PNG hashes; redistribution rights not inferred"
+  },
+  "web_documentation_observations": {
+    "path": "knowledge/references/web-2026-11-16.json",
+    "sha256": "557372d67b4b268f24a6820013aa3f2a7c7d989800e6888d90ddabf9140c1587",
+    "scope": "Pins observed summary, not complete evolving documentation pages"
+  },
+  "web_dependencies": {
+    "status": "installed and exact-pinned",
+    "runtime_dependencies": [],
+    "dev_dependencies": {
+      "typescript": "7.0.2",
+      "vite": "8.3.8",
+      "@types/node": "22.19.3"
+    },
+    "package_lock": {
+      "path": "package-lock.json",
+      "sha256": "684dbbc8877a2950d5d45df1240bce38162994ceb214cdaea929ae0ad320b45a"
+    },
+    "tested_runtime": {
+      "node": "26.12.1",
+      "npm": "11.20.0"
+    },
+    "install": "npm ci",
+    "build": "npm run build",
+    "test": "npm test",
+    "cache": "runtime/npm-cache"
+  },
+  "browser_reference_fixture": {
+    "path": "tests/fixtures/catalog-reference.json",
+    "sha256": "fd0b351af638c62fe6a2c61562c10e7c5605685ac637d1c5344c449dfed7d3ae",
+    "source": "Independent Python parser output in artifacts/planning/catalog-inspection.json; hashes/content IDs/program words for all 71 original packages"
+  },
+  "github_pages": {
+    "node": "26.12.1",
+    "workflow": ".github/workflows/pages.yml",
+    "actions": {
+      "actions/checkout": {
+        "ref": "v6",
+        "commit": "d23441a48e516b6c34aea4fa41551a30e30af803"
+      },
+      "actions/setup-node": {
+        "ref": "v6",
+        "commit": "249970729cb0ef3589644e2896645e5dc5ba9c38"
+      },
+      "actions/configure-pages": {
+        "ref": "v5",
+        "commit": "983d7736d9b0ae728b81ab479565c72886d7745b"
+      },
+      "actions/upload-pages-artifact": {
+        "ref": "v4",
+        "commit": "7b1f4a764d45c48632c6b24a0339c27f5614fb0b"
+      },
+      "actions/deploy-pages": {
+        "ref": "v4",
+        "commit": "d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e"
+      }
+    }
+  },
+  "qr_artifact_tools": {
+    "qrcode": "8.2",
+    "Pillow": "12.0.0",
+    "zxing-cpp": "2.3.0",
+    "scope": "Optional local QR generation and independent decoding; not website runtime",
+    "script": "scripts/generate_qr.py"
+  }
+}
