@@ -109,10 +109,10 @@ Neue Paare unter `machines/<hersteller>/name.syx` und `name.png` ablegen.
 `npm run catalog` validiert alle MDS-Pakete und erstellt `catalog.json`.
 Der Katalog enthält Metadaten, Inhaltskennungen, Dateihashes und Bildpfade.
 
-`machines/jamma/` enthält die 55 unveränderten User Machines aus der
+`machines/jmamma/` enthält die 55 unveränderten User Machines aus der
 X.20-C-Sammlung. Die zugehörigen PNGs zeigen die Originalbeschreibungen,
 Machine-Symbole sowie Parameternamen, Standardwerte und numerische Bereiche.
-Herkunft und reproduzierbare Bilderzeugung: [jamma](machines/jamma/README.md).
+Herkunft und reproduzierbare Bilderzeugung: [jmamma](machines/jmamma/README.md).
 
 ```powershell
 npm test

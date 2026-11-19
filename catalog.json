@@ -326,11 +326,11 @@
           "max": 127
         }
       ],
-      "key": "jamma/NFX-BC.syx",
-      "manufacturer": "jamma",
+      "key": "jmamma/NFX-BC.syx",
+      "manufacturer": "jmamma",
       "fileVersion": "",
-      "file": "machines/jamma/NFX-BC.syx",
-      "image": "machines/jamma/NFX-BC.png",
+      "file": "machines/jmamma/NFX-BC.syx",
+      "image": "machines/jmamma/NFX-BC.png",
       "fileHash": "e152654445b770f505dd2277f75ee66f28f18daf15f43db64980a5a4f9adc655",
       "originalSlot": 4
     },
@@ -437,11 +437,11 @@
           "max": 127
         }
       ],
-      "key": "jamma/NFX-CH.syx",
-      "manufacturer": "jamma",
+      "key": "jmamma/NFX-CH.syx",
+      "manufacturer": "jmamma",
       "fileVersion": "",
-      "file": "machines/jamma/NFX-CH.syx",
-      "image": "machines/jamma/NFX-CH.png",
+      "file": "machines/jmamma/NFX-CH.syx",
+      "image": "machines/jmamma/NFX-CH.png",
       "fileHash": "8a4a3d14bc463ea8d2fa84c692372d34c63a48cb751eb67d0910b3833bcb5598",
       "originalSlot": 1
     },
@@ -536,11 +536,11 @@
           "max": 127
         }
       ],
-      "key": "jamma/NFX-D1.syx",
-      "manufacturer": "jamma",
+      "key": "jmamma/NFX-D1.syx",
+      "manufacturer": "jmamma",
       "fileVersion": "",
-      "file": "machines/jamma/NFX-D1.syx",
-      "image": "machines/jamma/NFX-D1.png",
+      "file": "machines/jmamma/NFX-D1.syx",
+      "image": "machines/jmamma/NFX-D1.png",
       "fileHash": "843653641ecc08e2c13889fd4150a408ad891c2775dbfe7b3b739c8d34a7620b",
       "originalSlot": 6
     },
@@ -635,11 +635,11 @@
           "max": 127
         }
       ],
-      "key": "jamma/NFX-D2.syx",
-      "manufacturer": "jamma",
+      "key": "jmamma/NFX-D2.syx",
+      "manufacturer": "jmamma",
       "fileVersion": "",
-      "file": "machines/jamma/NFX-D2.syx",
-      "image": "machines/jamma/NFX-D2.png",
+      "file": "machines/jmamma/NFX-D2.syx",
+      "image": "machines/jmamma/NFX-D2.png",
       "fileHash": "532547f84fe14524b431d626f38b838a39c72f6d418a131c8f2ed21a505c3b97",
       "originalSlot": 8
     },
@@ -734,11 +734,11 @@
           "max": 127
         }
       ],
-      "key": "jamma/NFX-D3.syx",
-      "manufacturer": "jamma",
+      "key": "jmamma/NFX-D3.syx",
+      "manufacturer": "jmamma",
       "fileVersion": "",
-      "file": "machines/jamma/NFX-D3.syx",
-      "image": "machines/jamma/NFX-D3.png",
+      "file": "machines/jmamma/NFX-D3.syx",
+      "image": "machines/jmamma/NFX-D3.png",
       "fileHash": "817fb5263b2422be3302dd7f27a58d6a3000d8b6d8fb916cba311087d39b1502",
       "originalSlot": 9
     },
@@ -833,11 +833,11 @@
           "max": 127
         }
       ],
-      "key": "jamma/NFX-D4.syx",
-      "manufacturer": "jamma",
+      "key": "jmamma/NFX-D4.syx",
+      "manufacturer": "jmamma",
       "fileVersion": "",
-      "file": "machines/jamma/NFX-D4.syx",
-      "image": "machines/jamma/NFX-D4.png",
+      "file": "machines/jmamma/NFX-D4.syx",
+      "image": "machines/jmamma/NFX-D4.png",
       "fileHash": "7d3d4da23fcd2d4dfde524d059d0923c2cc2d505977960f56be80a8ff362165e",
       "originalSlot": 10
     },
@@ -944,11 +944,11 @@
           "max": 127
         }
       ],
-      "key": "jamma/NFX-EN.syx",
-      "manufacturer": "jamma",
+      "key": "jmamma/NFX-EN.syx",
+      "manufacturer": "jmamma",
       "fileVersion": "",
-      "file": "machines/jamma/NFX-EN.syx",
-      "image": "machines/jamma/NFX-EN.png",
+      "file": "machines/jmamma/NFX-EN.syx",
+      "image": "machines/jmamma/NFX-EN.png",
       "fileHash": "814b6ac40c542dc0ede0e73c80dfb2f046026488c33a5dd305d57038379c3045",
       "originalSlot": 2
     },
@@ -1055,11 +1055,11 @@
           "max": 127
         }
       ],
-      "key": "jamma/NFX-FC.syx",
-      "manufacturer": "jamma",
+      "key": "jmamma/NFX-FC.syx",
+      "manufacturer": "jmamma",
       "fileVersion": "",
-      "file": "machines/jamma/NFX-FC.syx",
-      "image": "machines/jamma/NFX-FC.png",
+      "file": "machines/jmamma/NFX-FC.syx",
+      "image": "machines/jmamma/NFX-FC.png",
       "fileHash": "5d454451fec02c81ab3f8bd087d1bf2217f28d80710ccb289511437b9d446e10",
       "originalSlot": 5
     },
@@ -1142,11 +1142,11 @@
           "max": 127
         }
       ],
-      "key": "jamma/NFX-MX.syx",
-      "manufacturer": "jamma",
+      "key": "jmamma/NFX-MX.syx",
+      "manufacturer": "jmamma",
       "fileVersion": "",
-      "file": "machines/jamma/NFX-MX.syx",
-      "image": "machines/jamma/NFX-MX.png",
+      "file": "machines/jmamma/NFX-MX.syx",
+      "image": "machines/jmamma/NFX-MX.png",
       "fileHash": "99b77c646a566deb3c0c0ed5c10d7f283054b1308b8ae29bfc314504a5f49723",
       "originalSlot": 7
     },
@@ -1253,11 +1253,11 @@
           "max": 127
         }
       ],
-      "key": "jamma/P-I-BW.syx",
-      "manufacturer": "jamma",
+      "key": "jmamma/P-I-BW.syx",
+      "manufacturer": "jmamma",
       "fileVersion": "",
-      "file": "machines/jamma/P-I-BW.syx",
-      "image": "machines/jamma/P-I-BW.png",
+      "file": "machines/jmamma/P-I-BW.syx",
+      "image": "machines/jmamma/P-I-BW.png",
       "fileHash": "fda99599ea9fe6a375595e35635c3a5490942b6d324000c9f373fc37d0b18125",
       "originalSlot": 5
     },
@@ -1364,11 +1364,11 @@
           "max": 127
         }
       ],
-      "key": "jamma/P-I-EP.syx",
-      "manufacturer": "jamma",
+      "key": "jmamma/P-I-EP.syx",
+      "manufacturer": "jmamma",
       "fileVersion": "",
-      "file": "machines/jamma/P-I-EP.syx",
-      "image": "machines/jamma/P-I-EP.png",
+      "file": "machines/jmamma/P-I-EP.syx",
+      "image": "machines/jmamma/P-I-EP.png",
       "fileHash": "474affeefbd0a5d75da2e5d5c5318bf64a5580947efc0f3cd12a35a61e2a98d6",
       "originalSlot": 2
     },
@@ -1469,11 +1469,11 @@
           "max": 127
         }
       ],
-      "key": "jamma/P-I-HP.syx",
-      "manufacturer": "jamma",
+      "key": "jmamma/P-I-HP.syx",
+      "manufacturer": "jmamma",
       "fileVersion": "",
-      "file": "machines/jamma/P-I-HP.syx",
-      "image": "machines/jamma/P-I-HP.png",
+      "file": "machines/jmamma/P-I-HP.syx",
+      "image": "machines/jmamma/P-I-HP.png",
       "fileHash": "4ef95e12b1397529524159e098fb9d3847d5d60089c85bad983aa0d5db907d65",
       "originalSlot": 3
     },
@@ -1580,11 +1580,11 @@
           "max": 127
         }
       ],
-      "key": "jamma/P-I-PN.syx",
-      "manufacturer": "jamma",
+      "key": "jmamma/P-I-PN.syx",
+      "manufacturer": "jmamma",
       "fileVersion": "",
-      "file": "machines/jamma/P-I-PN.syx",
-      "image": "machines/jamma/P-I-PN.png",
+      "file": "machines/jmamma/P-I-PN.syx",
+      "image": "machines/jmamma/P-I-PN.png",
       "fileHash": "8589bf0b11026f2af21465a4f9ab85926d25a5e42e35d29483bb3398f99c2848",
       "originalSlot": 1
     },
@@ -1691,11 +1691,11 @@
           "max": 127
         }
       ],
-      "key": "jamma/P-I-ST.syx",
-      "manufacturer": "jamma",
+      "key": "jmamma/P-I-ST.syx",
+      "manufacturer": "jmamma",
       "fileVersion": "",
-      "file": "machines/jamma/P-I-ST.syx",
-      "image": "machines/jamma/P-I-ST.png",
+      "file": "machines/jmamma/P-I-ST.syx",
+      "image": "machines/jmamma/P-I-ST.png",
       "fileHash": "c238156f23fc302978d5fb209b1e726a714f71d0ca2e4c41162e713f294bb18f",
       "originalSlot": 4
     },
@@ -1802,11 +1802,11 @@
           "max": 127
         }
       ],
-      "key": "jamma/SYN-F1.syx",
-      "manufacturer": "jamma",
+      "key": "jmamma/SYN-F1.syx",
+      "manufacturer": "jmamma",
       "fileVersion": "",
-      "file": "machines/jamma/SYN-F1.syx",
-      "image": "machines/jamma/SYN-F1.png",
+      "file": "machines/jmamma/SYN-F1.syx",
+      "image": "machines/jmamma/SYN-F1.png",
       "fileHash": "6cd5fe066ecacb8bbadb075da620d4651df52b50336c8de096acfb10ececfe44",
       "originalSlot": 2
     },
@@ -1913,11 +1913,11 @@
           "max": 127
         }
       ],
-      "key": "jamma/SYN-F3.syx",
-      "manufacturer": "jamma",
+      "key": "jmamma/SYN-F3.syx",
+      "manufacturer": "jmamma",
       "fileVersion": "",
-      "file": "machines/jamma/SYN-F3.syx",
-      "image": "machines/jamma/SYN-F3.png",
+      "file": "machines/jmamma/SYN-F3.syx",
+      "image": "machines/jmamma/SYN-F3.png",
       "fileHash": "ad71354a638b0e35502198b35ae3531db8b989e76712db1e2f45f791ac064e01",
       "originalSlot": 4
     },
@@ -2024,11 +2024,11 @@
           "max": 127
         }
       ],
-      "key": "jamma/SYN-F8.syx",
-      "manufacturer": "jamma",
+      "key": "jmamma/SYN-F8.syx",
+      "manufacturer": "jmamma",
       "fileVersion": "",
-      "file": "machines/jamma/SYN-F8.syx",
-      "image": "machines/jamma/SYN-F8.png",
+      "file": "machines/jmamma/SYN-F8.syx",
+      "image": "machines/jmamma/SYN-F8.png",
       "fileHash": "f84f410453299699e8a18387871b184d917b1da00907d572b2fabca2a0be3d79",
       "originalSlot": 6
     },
@@ -2135,11 +2135,11 @@
           "max": 127
         }
       ],
-      "key": "jamma/SYN-FJ.syx",
-      "manufacturer": "jamma",
+      "key": "jmamma/SYN-FJ.syx",
+      "manufacturer": "jmamma",
       "fileVersion": "",
-      "file": "machines/jamma/SYN-FJ.syx",
-      "image": "machines/jamma/SYN-FJ.png",
+      "file": "machines/jmamma/SYN-FJ.syx",
+      "image": "machines/jmamma/SYN-FJ.png",
       "fileHash": "5beae9fdc627050365398ad05ea5390efb0509e2d2fd9667e4a5077d34d3d532",
       "originalSlot": 8
     },
@@ -2246,11 +2246,11 @@
           "max": 127
         }
       ],
-      "key": "jamma/SYN-O1.syx",
-      "manufacturer": "jamma",
+      "key": "jmamma/SYN-O1.syx",
+      "manufacturer": "jmamma",
       "fileVersion": "",
-      "file": "machines/jamma/SYN-O1.syx",
-      "image": "machines/jamma/SYN-O1.png",
+      "file": "machines/jmamma/SYN-O1.syx",
+      "image": "machines/jmamma/SYN-O1.png",
       "fileHash": "a5b398ddba6abbc842a7d18c89cf66a192b11105ded6904217ac105527f207b2",
       "originalSlot": 1
     },
@@ -2339,11 +2339,11 @@
           "max": 127
         }
       ],
-      "key": "jamma/SYN-O3.syx",
-      "manufacturer": "jamma",
+      "key": "jmamma/SYN-O3.syx",
+      "manufacturer": "jmamma",
       "fileVersion": "",
-      "file": "machines/jamma/SYN-O3.syx",
-      "image": "machines/jamma/SYN-O3.png",
+      "file": "machines/jmamma/SYN-O3.syx",
+      "image": "machines/jmamma/SYN-O3.png",
       "fileHash": "c29338c3665613af29bf83ccaee00eb238d7139dd3c3176ad57ed7b5225e20a1",
       "originalSlot": 3
     },
@@ -2450,11 +2450,11 @@
           "max": 127
         }
       ],
-      "key": "jamma/SYN-O8.syx",
-      "manufacturer": "jamma",
+      "key": "jmamma/SYN-O8.syx",
+      "manufacturer": "jmamma",
       "fileVersion": "",
-      "file": "machines/jamma/SYN-O8.syx",
-      "image": "machines/jamma/SYN-O8.png",
+      "file": "machines/jmamma/SYN-O8.syx",
+      "image": "machines/jmamma/SYN-O8.png",
       "fileHash": "f6d036f862116aff5afb5cda8ea30db16df1c78793b4e5af88e9f75829630041",
       "originalSlot": 5
     },
@@ -2561,11 +2561,11 @@
           "max": 127
         }
       ],
-      "key": "jamma/SYN-OJ.syx",
-      "manufacturer": "jamma",
+      "key": "jmamma/SYN-OJ.syx",
+      "manufacturer": "jmamma",
       "fileVersion": "",
-      "file": "machines/jamma/SYN-OJ.syx",
-      "image": "machines/jamma/SYN-OJ.png",
+      "file": "machines/jmamma/SYN-OJ.syx",
+      "image": "machines/jmamma/SYN-OJ.png",
       "fileHash": "3843f5abfc1a151ba5f84030ef388d1ba79a75840f5bca480e3f8d894a99f051",
       "originalSlot": 7
     },
@@ -2672,11 +2672,11 @@
           "max": 127
         }
       ],
-      "key": "jamma/SYN-VP.syx",
-      "manufacturer": "jamma",
+      "key": "jmamma/SYN-VP.syx",
+      "manufacturer": "jmamma",
       "fileVersion": "",
-      "file": "machines/jamma/SYN-VP.syx",
-      "image": "machines/jamma/SYN-VP.png",
+      "file": "machines/jmamma/SYN-VP.syx",
+      "image": "machines/jmamma/SYN-VP.png",
       "fileHash": "453482c936aa2802657a767cd6655d4f6e49be3af933830a4fba1b75e2b9d890",
       "originalSlot": 9
     },
@@ -2759,11 +2759,11 @@
           "max": 127
         }
       ],
-      "key": "jamma/TX6-BD.syx",
-      "manufacturer": "jamma",
+      "key": "jmamma/TX6-BD.syx",
+      "manufacturer": "jmamma",
       "fileVersion": "",
-      "file": "machines/jamma/TX6-BD.syx",
-      "image": "machines/jamma/TX6-BD.png",
+      "file": "machines/jmamma/TX6-BD.syx",
+      "image": "machines/jmamma/TX6-BD.png",
       "fileHash": "ba40ef11a6aadafbababe89a8029cc22166ab8c3651a245f603ff22bd9101514",
       "originalSlot": 1
     },
@@ -2840,11 +2840,11 @@
           "max": 127
         }
       ],
-      "key": "jamma/TX6-CH.syx",
-      "manufacturer": "jamma",
+      "key": "jmamma/TX6-CH.syx",
+      "manufacturer": "jmamma",
       "fileVersion": "",
-      "file": "machines/jamma/TX6-CH.syx",
-      "image": "machines/jamma/TX6-CH.png",
+      "file": "machines/jmamma/TX6-CH.syx",
+      "image": "machines/jmamma/TX6-CH.png",
       "fileHash": "a0cced8155bb23305bc74417f3dbbbafa71e4e7bf01c04eb2f0158d4e7c88588",
       "originalSlot": 4
     },
@@ -2921,11 +2921,11 @@
           "max": 127
         }
       ],
-      "key": "jamma/TX6-CY.syx",
-      "manufacturer": "jamma",
+      "key": "jmamma/TX6-CY.syx",
+      "manufacturer": "jmamma",
       "fileVersion": "",
-      "file": "machines/jamma/TX6-CY.syx",
-      "image": "machines/jamma/TX6-CY.png",
+      "file": "machines/jmamma/TX6-CY.syx",
+      "image": "machines/jmamma/TX6-CY.png",
       "fileHash": "28db23db22b120604adcc10273cfa019ec3041fa39d8bc44fa9553ee934209c7",
       "originalSlot": 6
     },
@@ -3002,11 +3002,11 @@
           "max": 127
         }
       ],
-      "key": "jamma/TX6-OH.syx",
-      "manufacturer": "jamma",
+      "key": "jmamma/TX6-OH.syx",
+      "manufacturer": "jmamma",
       "fileVersion": "",
-      "file": "machines/jamma/TX6-OH.syx",
-      "image": "machines/jamma/TX6-OH.png",
+      "file": "machines/jmamma/TX6-OH.syx",
+      "image": "machines/jmamma/TX6-OH.png",
       "fileHash": "619e7760b441568c2f7165748561524cd964bfbc831da766f7e00b0978a92a1d",
       "originalSlot": 5
     },
@@ -3089,11 +3089,11 @@
           "max": 127
         }
       ],
-      "key": "jamma/TX6-SD.syx",
-      "manufacturer": "jamma",
+      "key": "jmamma/TX6-SD.syx",
+      "manufacturer": "jmamma",
       "fileVersion": "",
-      "file": "machines/jamma/TX6-SD.syx",
-      "image": "machines/jamma/TX6-SD.png",
+      "file": "machines/jmamma/TX6-SD.syx",
+      "image": "machines/jmamma/TX6-SD.png",
       "fileHash": "6012eb9f4b943685ea29c562815dc7e49078cd35d981ab05a12bc0ac6517604c",
       "originalSlot": 2
     },
@@ -3188,11 +3188,11 @@
           "max": 127
         }
       ],
-      "key": "jamma/TX6-XT.syx",
-      "manufacturer": "jamma",
+      "key": "jmamma/TX6-XT.syx",
+      "manufacturer": "jmamma",
       "fileVersion": "",
-      "file": "machines/jamma/TX6-XT.syx",
-      "image": "machines/jamma/TX6-XT.png",
+      "file": "machines/jmamma/TX6-XT.syx",
+      "image": "machines/jmamma/TX6-XT.png",
       "fileHash": "bea2f66cd3c5b4afb61f99e7a13765748a20f4cf7b6da8272eda397665ce5415",
       "originalSlot": 3
     },
@@ -3287,11 +3287,11 @@
           "max": 127
         }
       ],
-      "key": "jamma/TX8-BD.syx",
-      "manufacturer": "jamma",
+      "key": "jmamma/TX8-BD.syx",
+      "manufacturer": "jmamma",
       "fileVersion": "",
-      "file": "machines/jamma/TX8-BD.syx",
-      "image": "machines/jamma/TX8-BD.png",
+      "file": "machines/jmamma/TX8-BD.syx",
+      "image": "machines/jmamma/TX8-BD.png",
       "fileHash": "67d10021dae424a108006f20e022184f73add6445b831e5652a065ec33b1ab1f",
       "originalSlot": 1
     },
@@ -3380,11 +3380,11 @@
           "max": 127
         }
       ],
-      "key": "jamma/TX8-CB.syx",
-      "manufacturer": "jamma",
+      "key": "jmamma/TX8-CB.syx",
+      "manufacturer": "jmamma",
       "fileVersion": "",
-      "file": "machines/jamma/TX8-CB.syx",
-      "image": "machines/jamma/TX8-CB.png",
+      "file": "machines/jmamma/TX8-CB.syx",
+      "image": "machines/jmamma/TX8-CB.png",
       "fileHash": "bd50c684332e7580f30c48caaf9e04378c42df7b0b4ff696e70c681e8af8c324",
       "originalSlot": 9
     },
@@ -3467,11 +3467,11 @@
           "max": 127
         }
       ],
-      "key": "jamma/TX8-CL.syx",
-      "manufacturer": "jamma",
+      "key": "jmamma/TX8-CL.syx",
+      "manufacturer": "jmamma",
       "fileVersion": "",
-      "file": "machines/jamma/TX8-CL.syx",
-      "image": "machines/jamma/TX8-CL.png",
+      "file": "machines/jmamma/TX8-CL.syx",
+      "image": "machines/jmamma/TX8-CL.png",
       "fileHash": "b8386efe8c17666fe89488b6aedb68e78be2d774b36b33f92d7cbf0c4b868e0d",
       "originalSlot": 10
     },
@@ -3572,11 +3572,11 @@
           "max": 127
         }
       ],
-      "key": "jamma/TX8-CP.syx",
-      "manufacturer": "jamma",
+      "key": "jmamma/TX8-CP.syx",
+      "manufacturer": "jmamma",
       "fileVersion": "",
-      "file": "machines/jamma/TX8-CP.syx",
-      "image": "machines/jamma/TX8-CP.png",
+      "file": "machines/jmamma/TX8-CP.syx",
+      "image": "machines/jmamma/TX8-CP.png",
       "fileHash": "d00cbce2428ca7821324d74b79b795365c22e70dd0a0c35390a6a024447b1beb",
       "originalSlot": 4
     },
@@ -3659,11 +3659,11 @@
           "max": 127
         }
       ],
-      "key": "jamma/TX8-CY.syx",
-      "manufacturer": "jamma",
+      "key": "jmamma/TX8-CY.syx",
+      "manufacturer": "jmamma",
       "fileVersion": "",
-      "file": "machines/jamma/TX8-CY.syx",
-      "image": "machines/jamma/TX8-CY.png",
+      "file": "machines/jmamma/TX8-CY.syx",
+      "image": "machines/jmamma/TX8-CY.png",
       "fileHash": "bdc3d9557a6353dd119c73059c52a8fdf126766d5f39ca3a8fa4028efdcba2e7",
       "originalSlot": 8
     },
@@ -3746,11 +3746,11 @@
           "max": 1
         }
       ],
-      "key": "jamma/TX8-HH.syx",
-      "manufacturer": "jamma",
+      "key": "jmamma/TX8-HH.syx",
+      "manufacturer": "jmamma",
       "fileVersion": "",
-      "file": "machines/jamma/TX8-HH.syx",
-      "image": "machines/jamma/TX8-HH.png",
+      "file": "machines/jmamma/TX8-HH.syx",
+      "image": "machines/jmamma/TX8-HH.png",
       "fileHash": "6e4a6b2d392a7b79cae818b37f3c85de167a1cdbb077fe3562c1eac2a9c5fb1b",
       "originalSlot": 6
     },
@@ -3833,11 +3833,11 @@
           "max": 127
         }
       ],
-      "key": "jamma/TX8-MA.syx",
-      "manufacturer": "jamma",
+      "key": "jmamma/TX8-MA.syx",
+      "manufacturer": "jmamma",
       "fileVersion": "",
-      "file": "machines/jamma/TX8-MA.syx",
-      "image": "machines/jamma/TX8-MA.png",
+      "file": "machines/jmamma/TX8-MA.syx",
+      "image": "machines/jmamma/TX8-MA.png",
       "fileHash": "632af2fde53be7ff534eec722d05e96cf5e513b53a9f32f584c2479ce4265ddc",
       "originalSlot": 11
     },
@@ -3920,11 +3920,11 @@
           "max": 127
         }
       ],
-      "key": "jamma/TX8-RS.syx",
-      "manufacturer": "jamma",
+      "key": "jmamma/TX8-RS.syx",
+      "manufacturer": "jmamma",
       "fileVersion": "",
-      "file": "machines/jamma/TX8-RS.syx",
-      "image": "machines/jamma/TX8-RS.png",
+      "file": "machines/jmamma/TX8-RS.syx",
+      "image": "machines/jmamma/TX8-RS.png",
       "fileHash": "51a8ae163b78ee27b31a8645b645a1ec53d7828d39dacea6a9fb94e7c3171d10",
       "originalSlot": 5
     },
@@ -4013,11 +4013,11 @@
           "max": 127
         }
       ],
-      "key": "jamma/TX8-SD.syx",
-      "manufacturer": "jamma",
+      "key": "jmamma/TX8-SD.syx",
+      "manufacturer": "jmamma",
       "fileVersion": "",
-      "file": "machines/jamma/TX8-SD.syx",
-      "image": "machines/jamma/TX8-SD.png",
+      "file": "machines/jmamma/TX8-SD.syx",
+      "image": "machines/jmamma/TX8-SD.png",
       "fileHash": "3c25d164781d52c6820ce44e11f5238943511f0154b5c841ff87ad9852a11472",
       "originalSlot": 2
     },
@@ -4118,11 +4118,11 @@
           "max": 127
         }
       ],
-      "key": "jamma/TX8-XT.syx",
-      "manufacturer": "jamma",
+      "key": "jmamma/TX8-XT.syx",
+      "manufacturer": "jmamma",
       "fileVersion": "",
-      "file": "machines/jamma/TX8-XT.syx",
-      "image": "machines/jamma/TX8-XT.png",
+      "file": "machines/jmamma/TX8-XT.syx",
+      "image": "machines/jmamma/TX8-XT.png",
       "fileHash": "91469016b42286fa03a97ffcb239c8d31087b7557baa4a9087fb7b5b65877496",
       "originalSlot": 3
     },
@@ -4223,11 +4223,11 @@
           "max": 127
         }
       ],
-      "key": "jamma/TX9-BD.syx",
-      "manufacturer": "jamma",
+      "key": "jmamma/TX9-BD.syx",
+      "manufacturer": "jmamma",
       "fileVersion": "",
-      "file": "machines/jamma/TX9-BD.syx",
-      "image": "machines/jamma/TX9-BD.png",
+      "file": "machines/jmamma/TX9-BD.syx",
+      "image": "machines/jmamma/TX9-BD.png",
       "fileHash": "27219bed122eccf947bda2bf72282c4acfcdbcb16ec0c089f24020f9baf56ce6",
       "originalSlot": 1
     },
@@ -4328,11 +4328,11 @@
           "max": 127
         }
       ],
-      "key": "jamma/TX9-CP.syx",
-      "manufacturer": "jamma",
+      "key": "jmamma/TX9-CP.syx",
+      "manufacturer": "jmamma",
       "fileVersion": "",
-      "file": "machines/jamma/TX9-CP.syx",
-      "image": "machines/jamma/TX9-CP.png",
+      "file": "machines/jmamma/TX9-CP.syx",
+      "image": "machines/jmamma/TX9-CP.png",
       "fileHash": "d3e3f65e4bcf7769dcebbae5db96cb590d732caa906a75d10d7c75c87c7076dc",
       "originalSlot": 4
     },
@@ -4415,11 +4415,11 @@
           "max": 127
         }
       ],
-      "key": "jamma/TX9-RS.syx",
-      "manufacturer": "jamma",
+      "key": "jmamma/TX9-RS.syx",
+      "manufacturer": "jmamma",
       "fileVersion": "",
-      "file": "machines/jamma/TX9-RS.syx",
-      "image": "machines/jamma/TX9-RS.png",
+      "file": "machines/jmamma/TX9-RS.syx",
+      "image": "machines/jmamma/TX9-RS.png",
       "fileHash": "c9f69bbbd8956a075e91a2d66ed95ce03bede904d5d634ccc1aed3e6a0526063",
       "originalSlot": 5
     },
@@ -4520,11 +4520,11 @@
           "max": 127
         }
       ],
-      "key": "jamma/TX9-SD.syx",
-      "manufacturer": "jamma",
+      "key": "jmamma/TX9-SD.syx",
+      "manufacturer": "jmamma",
       "fileVersion": "",
-      "file": "machines/jamma/TX9-SD.syx",
-      "image": "machines/jamma/TX9-SD.png",
+      "file": "machines/jmamma/TX9-SD.syx",
+      "image": "machines/jmamma/TX9-SD.png",
       "fileHash": "918f5c9ed1488a177de199d01af5f4d37057cfd634819c025dd5196c71048991",
       "originalSlot": 2
     },
@@ -4619,11 +4619,11 @@
           "max": 127
         }
       ],
-      "key": "jamma/TX9-XT.syx",
-      "manufacturer": "jamma",
+      "key": "jmamma/TX9-XT.syx",
+      "manufacturer": "jmamma",
       "fileVersion": "",
-      "file": "machines/jamma/TX9-XT.syx",
-      "image": "machines/jamma/TX9-XT.png",
+      "file": "machines/jmamma/TX9-XT.syx",
+      "image": "machines/jmamma/TX9-XT.png",
       "fileHash": "ca1b94dd73cd9a94eb452cccff24cecef04155db25a04d773dbc4090b332901f",
       "originalSlot": 3
     },
@@ -4730,11 +4730,11 @@
           "max": 63
         }
       ],
-      "key": "jamma/TXZ-BB.syx",
-      "manufacturer": "jamma",
+      "key": "jmamma/TXZ-BB.syx",
+      "manufacturer": "jmamma",
       "fileVersion": "",
-      "file": "machines/jamma/TXZ-BB.syx",
-      "image": "machines/jamma/TXZ-BB.png",
+      "file": "machines/jmamma/TXZ-BB.syx",
+      "image": "machines/jmamma/TXZ-BB.png",
       "fileHash": "6579e8b22ab98c64bcbc5bd23a961faf4487d4ae549096bcaaae91ccb35e24ea",
       "originalSlot": 6
     },
@@ -4841,11 +4841,11 @@
           "max": 63
         }
       ],
-      "key": "jamma/TXZ-CE.syx",
-      "manufacturer": "jamma",
+      "key": "jmamma/TXZ-CE.syx",
+      "manufacturer": "jmamma",
       "fileVersion": "",
-      "file": "machines/jamma/TXZ-CE.syx",
-      "image": "machines/jamma/TXZ-CE.png",
+      "file": "machines/jmamma/TXZ-CE.syx",
+      "image": "machines/jmamma/TXZ-CE.png",
       "fileHash": "b2a7f05f96d04557547f92a1ec631540eab7fcccb3e74b2fe65c0cd141a9efa2",
       "originalSlot": 7
     },
@@ -4952,11 +4952,11 @@
           "max": 127
         }
       ],
-      "key": "jamma/TXZ-EO.syx",
-      "manufacturer": "jamma",
+      "key": "jmamma/TXZ-EO.syx",
+      "manufacturer": "jmamma",
       "fileVersion": "",
-      "file": "machines/jamma/TXZ-EO.syx",
-      "image": "machines/jamma/TXZ-EO.png",
+      "file": "machines/jmamma/TXZ-EO.syx",
+      "image": "machines/jmamma/TXZ-EO.png",
       "fileHash": "ba06262bcac83961f3086a168511d1b2d16e00cbe131698b80d78632854326c6",
       "originalSlot": 8
     },
@@ -5063,11 +5063,11 @@
           "max": 127
         }
       ],
-      "key": "jamma/TXZ-EP.syx",
-      "manufacturer": "jamma",
+      "key": "jmamma/TXZ-EP.syx",
+      "manufacturer": "jmamma",
       "fileVersion": "",
-      "file": "machines/jamma/TXZ-EP.syx",
-      "image": "machines/jamma/TXZ-EP.png",
+      "file": "machines/jmamma/TXZ-EP.syx",
+      "image": "machines/jmamma/TXZ-EP.png",
       "fileHash": "287c4187926c0353e06e1e1089ef5321de54b200afa587abcb01bd4f58eeff7e",
       "originalSlot": 1
     },
@@ -5174,11 +5174,11 @@
           "max": 127
         }
       ],
-      "key": "jamma/TXZ-FL.syx",
-      "manufacturer": "jamma",
+      "key": "jmamma/TXZ-FL.syx",
+      "manufacturer": "jmamma",
       "fileVersion": "",
-      "file": "machines/jamma/TXZ-FL.syx",
-      "image": "machines/jamma/TXZ-FL.png",
+      "file": "machines/jmamma/TXZ-FL.syx",
+      "image": "machines/jmamma/TXZ-FL.png",
       "fileHash": "b6117d77a44ec79afd695e9b6530627ec9d049b3967a530ad93a8bf7c471e71d",
       "originalSlot": 9
     },
@@ -5285,11 +5285,11 @@
           "max": 127
         }
       ],
-      "key": "jamma/TXZ-LB.syx",
-      "manufacturer": "jamma",
+      "key": "jmamma/TXZ-LB.syx",
+      "manufacturer": "jmamma",
       "fileVersion": "",
-      "file": "machines/jamma/TXZ-LB.syx",
-      "image": "machines/jamma/TXZ-LB.png",
+      "file": "machines/jmamma/TXZ-LB.syx",
+      "image": "machines/jmamma/TXZ-LB.png",
       "fileHash": "e52afb9627a20dd97c87e521259ac3b9380d18c53e9170a5226a775d5b191907",
       "originalSlot": 2
     },
@@ -5396,11 +5396,11 @@
           "max": 127
         }
       ],
-      "key": "jamma/TXZ-LD.syx",
-      "manufacturer": "jamma",
+      "key": "jmamma/TXZ-LD.syx",
+      "manufacturer": "jmamma",
       "fileVersion": "",
-      "file": "machines/jamma/TXZ-LD.syx",
-      "image": "machines/jamma/TXZ-LD.png",
+      "file": "machines/jmamma/TXZ-LD.syx",
+      "image": "machines/jmamma/TXZ-LD.png",
       "fileHash": "5d0308ca79f1df4f5d6e76c5e508cb56c801f008833ade6bef3ff7530c345bbe",
       "originalSlot": 3
     },
@@ -5507,11 +5507,11 @@
           "max": 127
         }
       ],
-      "key": "jamma/TXZ-PD.syx",
-      "manufacturer": "jamma",
+      "key": "jmamma/TXZ-PD.syx",
+      "manufacturer": "jmamma",
       "fileVersion": "",
-      "file": "machines/jamma/TXZ-PD.syx",
-      "image": "machines/jamma/TXZ-PD.png",
+      "file": "machines/jmamma/TXZ-PD.syx",
+      "image": "machines/jmamma/TXZ-PD.png",
       "fileHash": "9268acf6b128efa3a6a157182129b2ba32325af91cbbf37415dc4172b2e6dcc7",
       "originalSlot": 4
     },
@@ -5618,11 +5618,11 @@
           "max": 127
         }
       ],
-      "key": "jamma/TXZ-SC.syx",
-      "manufacturer": "jamma",
+      "key": "jmamma/TXZ-SC.syx",
+      "manufacturer": "jmamma",
       "fileVersion": "",
-      "file": "machines/jamma/TXZ-SC.syx",
-      "image": "machines/jamma/TXZ-SC.png",
+      "file": "machines/jmamma/TXZ-SC.syx",
+      "image": "machines/jmamma/TXZ-SC.png",
       "fileHash": "becc0af3bb915f04f6622e2d9f0ebb264177073adc1bbb1fe85cd2f472f8338c",
       "originalSlot": 10
     },
@@ -5729,11 +5729,11 @@
           "max": 127
         }
       ],
-      "key": "jamma/TXZ-SS.syx",
-      "manufacturer": "jamma",
+      "key": "jmamma/TXZ-SS.syx",
+      "manufacturer": "jmamma",
       "fileVersion": "",
-      "file": "machines/jamma/TXZ-SS.syx",
-      "image": "machines/jamma/TXZ-SS.png",
+      "file": "machines/jmamma/TXZ-SS.syx",
+      "image": "machines/jmamma/TXZ-SS.png",
       "fileHash": "b5193a33ef4b197e3398489198a91563500590874e7e59629ded204521735531",
       "originalSlot": 11
     },
@@ -5840,11 +5840,11 @@
           "max": 127
         }
       ],
-      "key": "jamma/TXZ-ST.syx",
-      "manufacturer": "jamma",
+      "key": "jmamma/TXZ-ST.syx",
+      "manufacturer": "jmamma",
       "fileVersion": "",
-      "file": "machines/jamma/TXZ-ST.syx",
-      "image": "machines/jamma/TXZ-ST.png",
+      "file": "machines/jmamma/TXZ-ST.syx",
+      "image": "machines/jmamma/TXZ-ST.png",
       "fileHash": "84dfc5c274454b339c9db72c3ca88da02a65bb5ad974f83a75834c596b102dd0",
       "originalSlot": 5
     },
