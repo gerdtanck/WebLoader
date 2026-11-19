@@ -3,10 +3,12 @@ import './mobile.css';
 import { decodeDump, sha256, equal } from './protocol.ts';
 import type { MachineInfo } from './protocol.ts';
 import { Session } from './session.ts';
-import type { SlotState, Backup, Commit } from './session.ts';
+import type { SlotState, Commit } from './session.ts';
 import { WebMidiLink } from './webmidi.ts';
 import { DemoLink } from './demo.ts';
-import { saveBackup, getBackups, download } from './storage.ts';
+import { download } from './download.ts';
+import { Navigation } from './navigation.ts';
+import type { MobileView, Route } from './navigation.ts';
 
 interface Machine extends MachineInfo { key: string; manufacturer: string; file: string; image: string; fileHash: string; originalSlot: number; fileVersion?: string }
 interface Job { id: string; machine: Machine; target: SlotState; status: 'queued' | 'running' | 'done' | 'error'; message: string; fraction: number; commit?: Commit }
@@ -18,11 +20,19 @@ let machines: Machine[] = [], selected: Machine | undefined, session: Session | 
 let demo = false, working = false, controller: AbortController | undefined, jobs: Job[] = [], selectedSlot = 1;
 let slots: SlotState[] = Array.from({ length: 48 }, (_, i) => ({ slot: i + 1, status: 'unknown' }));
 let lockRelease: (() => void) | undefined;
-type MobileView = 'library' | 'detail' | 'slots' | 'queue';
 const mobile = matchMedia('(max-width: 740px)');
+let navigation: Navigation | undefined;
 let mobileView: MobileView = 'library', mobileMachine: Machine | undefined;
 const mobileScroll: Record<MobileView, number> = { library: 0, detail: 0, slots: 0, queue: 0 };
 function showMobileView(view: MobileView, resetScroll = false) {
+  if (navigation && mobile.matches) {
+    if (view === 'library') navigation.toLibrary();
+    else navigation.open({ view, machine: selected?.key, image: false }, resetScroll);
+    return;
+  }
+  renderMobileView(view, resetScroll);
+}
+function renderMobileView(view: MobileView, resetScroll = false) {
   if (mobile.matches) mobileScroll[mobileView] = window.scrollY;
   mobileView = view; document.body.dataset.mobileView = view;
   document.querySelectorAll<HTMLElement>('.mobile-nav [data-mobile-view]').forEach(button => {
@@ -36,6 +46,18 @@ function showMobileView(view: MobileView, resetScroll = false) {
     heading?.setAttribute('tabindex', '-1'); heading?.focus({ preventScroll: true });
   }
 }
+function applyRoute(route: Route, resetScroll: boolean) {
+  const dialog = $<HTMLDialogElement>('image-dialog');
+  if (!route.image && dialog.open) dialog.close();
+  const machine = machines.find(m => m.key === route.machine);
+  if (machine && machine !== selected) { selected = machine; renderLibrary(); renderDetail(); }
+  if (route.view !== mobileView || resetScroll) renderMobileView(route.view, resetScroll);
+  if (route.image && machine) {
+    $<HTMLImageElement>('large-image').src = machine.image;
+    $<HTMLImageElement>('large-image').alt = 'Beschreibung ' + machine.name;
+    if (!dialog.open) { $('image-dialog-content').scrollTop = 0; dialog.showModal(); }
+  }
+}
 function renderMobileSelection() {
   $('mobile-selection').hidden = !mobileMachine;
   $('mobile-machine-name').textContent = mobileMachine?.name ?? '';
@@ -45,7 +67,7 @@ function reviewMobileSlot(slot: number) {
   selectedSlot = slot; renderSlots();
   const target = slots[slot - 1], duplicate = jobs.some(j => j.target.slot === slot && j.status !== 'done');
   $('slot-review-title').textContent = mobileMachine.name + ' → ' + slotName(slot);
-  $('slot-review-content').textContent = duplicate ? 'Für diesen Slot gibt es bereits einen Auftrag. Entferne ihn zuerst unter Laden.' : target.status === 'occupied' ? 'Ersetzt ' + target.info!.name + '. Vor dem Laden wird die vorhandene Machine gesichert.' : target.status === 'empty' ? 'Dieser Slot ist frei.' : 'Der Slotstatus ist noch unbekannt. Vor dem Laden muss der Gerätebestand eingelesen werden.';
+  $('slot-review-content').textContent = duplicate ? 'Für diesen Slot gibt es bereits einen Auftrag. Entferne ihn zuerst unter Laden.' : target.status === 'occupied' ? 'Ersetzt ' + target.info!.name + '.' : target.status === 'empty' ? 'Dieser Slot ist frei.' : 'Der Slotstatus ist noch unbekannt. Vor dem Laden muss der Gerätebestand eingelesen werden.';
   $<HTMLButtonElement>('confirm-slot').disabled = duplicate;
   $<HTMLDialogElement>('slot-dialog').showModal();
 }
@@ -66,7 +88,7 @@ function shell() {
   $('app').innerHTML = `
     <header class="topbar">
       <a class="brand" href="./"><span class="brand-mark">m<span>d</span></span><span>MACHINEDRUM<small>USER MACHINE WEBLOADER</small></span></a>
-      <div class="header-actions"><span class="version">v0.1</span><button id="backups" class="quiet">${icon('arrow')} Backups</button><button id="connection" class="connect">${icon('plug')} MIDI verbinden</button></div>
+      <div class="header-actions"><span class="version">v0.1</span><button id="connection" class="connect">${icon('plug')} MIDI verbinden</button></div>
     </header>
     <main>
       <div class="page-heading"><div><div class="eyebrow">DEINE MACHINEDRUM. NEUE MÖGLICHKEITEN.</div><h1>Machines laden.<br><span>Sounds entdecken.</span></h1></div><p>Eine Bibliothek voller neuer Klänge.<br>Ziehe eine Machine auf einen Slot<br>und bring sie auf deine Machinedrum.</p></div>
@@ -100,8 +122,8 @@ function shell() {
     <nav class="mobile-nav" aria-label="Hauptbereiche"><button data-mobile-view="library" aria-current="page">${icon('book')}<span>Bibliothek</span></button><button data-mobile-view="slots">${icon('plug')}<span>Slots</span></button><button data-mobile-view="queue">${icon('arrow')}<span>Laden <b id="mobile-queue-count">0</b></span></button></nav>
     <dialog id="slot-dialog" aria-labelledby="slot-review-title"><form method="dialog"><div class="dialog-heading"><h2 id="slot-review-title"></h2><button class="icon-button" aria-label="Slotwahl schließen">${icon('close')}</button></div></form><p id="slot-review-content"></p><p>Der Auftrag wird zunächst vorgemerkt. Die Übertragung startest du anschließend unter „Laden“.</p><button id="confirm-slot" class="primary">Auftrag vormerken</button></dialog>
     <dialog id="midi-dialog"><form method="dialog"><div class="dialog-heading"><h2>MIDI verbinden</h2><button class="icon-button" aria-label="Schließen">${icon('close')}</button></div></form><p>Wähle beide Ports deines MIDI-Interfaces. Die Machinedrum benötigt MDX X.20.</p><button id="midi-access" class="primary">MIDI-Zugriff erlauben</button><div id="port-fields" hidden><label>MIDI-Eingang<select id="input-port"></select></label><label>MIDI-Ausgang<select id="output-port"></select></label><label>Geräteprofil<select id="profile"><option value="x20c">MKI UW+ · X.20 C (NAK-12/15-Kompatibilität)</option><option value="standard">X.20 · Standardabfragen</option></select></label><button id="connect-now" class="primary">Verbinden und einlesen</button></div><p id="midi-error" class="dialog-message" role="status"></p></dialog>
-    <dialog id="image-dialog"><form method="dialog"><button class="icon-button" aria-label="Beschreibung schließen">${icon('close')}</button></form><img id="large-image" alt="Originalbeschreibung der Machine"></dialog>
-    <dialog id="backup-dialog"><form method="dialog"><div class="dialog-heading"><h2>Deine Backups</h2><button class="icon-button" aria-label="Schließen">${icon('close')}</button></div></form><p>Vor dem Ersetzen belegter Slots lokal gesichert. Lade wichtige Sicherungen zusätzlich als Datei herunter.</p><div id="backup-list"></div></dialog>`;
+    <dialog id="image-dialog" aria-label="Machine-Beschreibung"><div id="image-dialog-content" class="image-dialog-content" tabindex="0" autofocus role="region" aria-label="Beschreibungsbild"><form method="dialog" class="desktop-only"><button class="icon-button" aria-label="Beschreibung schließen">${icon('close')}</button></form><img id="large-image" alt="Beschreibung der Machine"></div><div class="mobile-only image-dialog-actions"><button id="image-to-library">Zur Bibliothek</button><button id="close-image">Schließen</button></div></dialog>
+    `;
 }
 function renderLibrary() {
   const query = $<HTMLInputElement>('search').value.toLowerCase(), manufacturer = $<HTMLSelectElement>('manufacturer').value, category = $<HTMLSelectElement>('category').value;
@@ -113,7 +135,7 @@ function renderDetail() {
   if (!selected) return;
   const m = selected;
   $('detail-content').innerHTML = `<div class="detail-sprite">${sprite(m, 112)}<span>${esc(m.category)} / ${esc(m.label)}</span></div><div class="detail-heading"><div class="eyebrow">${esc(m.manufacturer)}</div><h2>${esc(m.name)}</h2><span class="tag">${m.fileVersion ? 'DATEI v' + esc(m.fileVersion) : 'MDS ' + esc(m.mdsVersion)}</span></div><button id="show-image" class="description-preview" aria-label="Beschreibung vergrößern"><img src="${esc(m.image)}" alt="Beschreibung ${esc(m.name)}" loading="lazy"><span>Beschreibung öffnen ↗</span></button><dl><div><dt>Paketversion</dt><dd>${esc(m.version || 'Nicht angegeben')}</dd></div><div><dt>Programm</dt><dd>${kb(m.programWords * 3)}</dd></div><div><dt>MDS-Paket</dt><dd>${kb(m.bytes)}</dd></div><div><dt>Parameter</dt><dd>${m.parameters.length}</dd></div></dl><div class="target-control"><label for="target-slot">Zielslot</label><select id="target-slot">${Array.from({ length: 16 }, (_, i) => `<option value="${i + 1}" ${selectedSlot === i + 1 ? 'selected' : ''}>${slotName(i + 1)}</option>`).join('')}</select><button id="add-job" class="primary" ${working ? 'disabled' : ''}>Zum Laden vormerken</button></div><a class="sysex-download" href="${esc(m.file)}" download>Original-SysEx herunterladen ↗</a>`;
-  $('show-image').onclick = () => { $<HTMLImageElement>('large-image').src = m.image; $<HTMLDialogElement>('image-dialog').showModal(); };
+  $('show-image').onclick = () => navigation?.open({ view: mobileView, machine: m.key, image: true });
   $('add-job').onclick = () => addJob(m, Number($<HTMLSelectElement>('target-slot').value));
   $('detail-content').insertAdjacentHTML('beforeend', '<div class="mobile-only mobile-detail-action"><button id="choose-mobile-slot" class="primary">Zielslot wählen →</button></div>');
   $('choose-mobile-slot').onclick = () => { mobileMachine = m; renderMobileSelection(); showMobileView('slots', true); };
@@ -136,7 +158,7 @@ function renderStats() {
 function renderQueue() {
   $('queue-count').textContent = String(jobs.filter(j => j.status === 'queued').length);
   $('mobile-queue-count').textContent = String(jobs.filter(j => ['queued', 'running'].includes(j.status)).length);
-  $('jobs').innerHTML = jobs.map(j => `<div class="job ${j.status}"><span class="job-target">${slotName(j.target.slot)}</span><div class="job-name"><strong>${esc(j.machine.name)}</strong><span>${esc(j.target.info ? 'Ersetzt ' + j.target.info.name : j.target.status === 'empty' ? 'Leerer Slot' : 'Ziel wird vor dem Laden geprüft')}</span></div><span class="job-message">${esc(j.message)}</span><progress max="1" value="${j.fraction}" aria-label="Ladefortschritt ${slotName(j.target.slot)}"></progress><button data-remove="${j.id}" class="icon-button" aria-label="Auftrag entfernen" ${working ? 'disabled' : ''}>${icon('close')}</button></div>`).join('') || '<div class="queue-empty"><span>↳</span> <span class="desktop-only">Ziehe eine Machine aus der Bibliothek auf einen Slot.</span><span class="mobile-only">Wähle eine Machine in der Bibliothek und danach ihren Zielslot.</span><small>Vorhandene Machines werden vor dem Ersetzen gesichert.</small></div>';
+  $('jobs').innerHTML = jobs.map(j => `<div class="job ${j.status}"><span class="job-target">${slotName(j.target.slot)}</span><div class="job-name"><strong>${esc(j.machine.name)}</strong><span>${esc(j.target.info ? 'Ersetzt ' + j.target.info.name : j.target.status === 'empty' ? 'Leerer Slot' : 'Ziel wird vor dem Laden geprüft')}</span></div><span class="job-message">${esc(j.message)}</span><progress max="1" value="${j.fraction}" aria-label="Ladefortschritt ${slotName(j.target.slot)}"></progress><button data-remove="${j.id}" class="icon-button" aria-label="Auftrag entfernen" ${working ? 'disabled' : ''}>${icon('close')}</button></div>`).join('') || '<div class="queue-empty"><span>↳</span> <span class="desktop-only">Ziehe eine Machine aus der Bibliothek auf einen Slot.</span><span class="mobile-only">Wähle eine Machine in der Bibliothek und danach ihren Zielslot.</span></div>';
   $<HTMLButtonElement>('load').disabled = working || !session?.state || session.needsReconnect || !jobs.some(j => j.status === 'queued');
 }
 function renderConnection() {
@@ -209,13 +231,21 @@ function fillPorts() {
 function events() {
   document.querySelectorAll<HTMLElement>('.mobile-nav [data-mobile-view]').forEach(button => { button.onclick = () => showMobileView(button.dataset.mobileView as MobileView); });
   $('back-to-library').onclick = () => showMobileView('library');
+  $('image-to-library').onclick = () => navigation?.toLibrary();
+  $('close-image').onclick = () => $<HTMLDialogElement>('image-dialog').close();
+  // Native Android dismiss gestures and Escape close the dialog first. Consume
+  // its history entry too, so the next Back goes to the library, not an empty step.
+  $('image-dialog').addEventListener('close', () => {
+    if (!$<HTMLDialogElement>('image-dialog').open && navigation?.current.image) navigation.back();
+  });
+  window.addEventListener('popstate', event => navigation?.restore(event.state));
   $('clear-mobile-selection').onclick = () => { mobileMachine = undefined; renderMobileSelection(); };
   $('confirm-slot').onclick = () => {
     if (mobileMachine && addJob(mobileMachine, selectedSlot)) {
       $<HTMLDialogElement>('slot-dialog').close(); mobileMachine = undefined; renderMobileSelection(); showMobileView('queue', true);
     }
   };
-  mobile.addEventListener('change', () => { renderLibrary(); showMobileView(mobileView); });
+  mobile.addEventListener('change', () => { renderLibrary(); renderMobileView(mobileView); });
   for (const id of ['search', 'manufacturer', 'category']) $(id).addEventListener(id === 'search' ? 'input' : 'change', renderLibrary);
   $('library-list').addEventListener('click', event => { const card = (event.target as HTMLElement).closest<HTMLElement>('[data-machine]'); if (!card) return; selected = machines.find(m => m.key === card.dataset.machine); renderLibrary(); renderDetail(); if (mobile.matches) showMobileView('detail', true); });
   $('library-list').addEventListener('dragstart', event => { const card = (event.target as HTMLElement).closest<HTMLElement>('[data-machine]'); if (!card || !event.dataTransfer || working) { event.preventDefault(); return; } event.dataTransfer.setData('application/x-md-machine', card.dataset.machine!); event.dataTransfer.setData('text/plain', card.dataset.machine!); event.dataTransfer.effectAllowed = 'copy'; document.body.classList.add('dragging'); });
@@ -267,7 +297,7 @@ function events() {
       job.status = 'running'; job.message = 'Vorbereitung'; renderQueue();
       try {
         const data = await packageFor(job.machine);
-        const result = await session.install(data, job.target, async backup => { if (!demo) await saveBackup(backup); }, p => { job.message = p.stage; job.fraction = p.fraction; renderQueue(); }, commit => {
+        const result = await session.install(data, job.target, p => { job.message = p.stage; job.fraction = p.fraction; renderQueue(); }, commit => {
           job.commit = commit; job.status = 'done'; job.fraction = 1; job.message = demo ? 'Demo: geladen' : 'Geladen';
           slots[job.target.slot - 1] = { slot: job.target.slot, status: 'occupied', info: job.machine, source: 'Durch Commit-ACK bestätigt', checkedAt: commit.receivedAt };
           renderSlots(); renderStats(); renderQueue();
@@ -281,14 +311,6 @@ function events() {
       }
     }
   });
-  $('backups').onclick = async () => {
-    $<HTMLDialogElement>('backup-dialog').showModal();
-    try {
-      const backups = await getBackups();
-      $('backup-list').innerHTML = backups.map(b => `<button class="backup-row" data-backup="${b.id}"><span><strong>${slotName(b.slot)} · ${esc(b.name)}</strong><small>${new Date(b.createdAt).toLocaleString('de-DE')} · ${esc(b.kind)}</small></span>${icon('arrow')}</button>`).join('') || '<p class="empty-state">Noch keine Backups. Vor jedem echten Ladevorgang werden Sicherungen angelegt.</p>';
-      $('backup-list').onclick = event => { const id = (event.target as HTMLElement).closest<HTMLElement>('[data-backup]')?.dataset.backup, b = backups.find(b => b.id === id); if (b) download(b.bytes, 'MD-' + slotName(b.slot) + '-' + b.kind + '-' + b.createdAt.replace(/[:.]/g, '-') + (b.kind === 'commit' ? '.json' : '.syx')); };
-    } catch (e) { $('backup-list').textContent = 'Browserspeicher nicht verfügbar: ' + String(e); }
-  };
   $('log').onclick = () => download(new TextEncoder().encode(JSON.stringify({ version: '0.1.0', demo, device: session?.state, slots, jobs, trace: session?.trace ?? [] }, null, 2)), 'webloader-protokoll.json', 'application/json');
   document.addEventListener('keydown', event => { if (event.key === '/' && !(event.target instanceof HTMLInputElement) && !document.querySelector('dialog[open]')) { event.preventDefault(); $('search').focus(); } });
   window.addEventListener('beforeunload', event => { if (working) { event.preventDefault(); event.returnValue = ''; } });
@@ -303,6 +325,9 @@ async function init() {
       $<HTMLSelectElement>(id).insertAdjacentHTML('beforeend', values.map(value => `<option value="${esc(value)}">${esc(value)}</option>`).join(''));
     }
     selected = machines.find(m => m.key.includes('SYN-MW')) ?? machines[0]; renderLibrary(); renderDetail();
+    history.scrollRestoration = 'manual';
+    navigation = new Navigation(history, applyRoute);
+    navigation.restore(history.state);
   } catch (error) { toast(String(error), true); }
 }
 void init();

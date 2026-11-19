@@ -21,8 +21,6 @@
   .brand-mark { font-size: 32px; padding-right: 12px; }
   .header-actions { gap: 5px; flex-shrink: 0; }
   .header-actions button { font-size: 12px; padding: 9px 11px; }
-  #backups { width: 44px; min-width: 44px; flex: 0 0 44px; overflow: hidden; font-size: 0; gap: 0; padding: 10px; }
-  #backups svg { width: 20px; height: 20px; }
   #connection svg { display: none; }
   main { padding: 18px 12px 14px; }
   .page-heading { margin: 0 5px 20px; }
@@ -146,10 +144,25 @@
   dialog p { font-size: 14px; }
   dialog label { font-size: 14px; }
   dialog .primary { min-height: 48px; font-size: 16px; width: 100%; }
-  .backup-row strong { font-size: 14px; }
-  .backup-row small { font-size: 12px; }
-  #image-dialog { width: calc(100vw - 12px); padding: 5px; }
-  #image-dialog img { max-height: none; }
+  body:has(#image-dialog[open]) { overflow: hidden; }
+  #image-dialog {
+    position: fixed; inset: 0; margin: 0; width: 100%; max-width: none;
+    height: 100dvh; max-height: none; padding: 0; border: 0; border-radius: 0;
+    overflow: hidden;
+  }
+  #image-dialog[open] { display: flex; flex-direction: column; }
+  .image-dialog-content {
+    flex: 1; min-height: 0; overflow: auto; overscroll-behavior: contain;
+    padding: max(6px, env(safe-area-inset-top)) max(6px, env(safe-area-inset-right)) 6px max(6px, env(safe-area-inset-left));
+  }
+  #image-dialog img { width: 100%; height: auto; max-height: none; }
+  .image-dialog-actions {
+    display: grid; grid-template-columns: 1.35fr 1fr; gap: 10px; flex-shrink: 0;
+    padding: 10px max(12px, env(safe-area-inset-right)) calc(10px + env(safe-area-inset-bottom)) max(12px, env(safe-area-inset-left));
+    background: #1b241d; color: #e5f0d7; border-top: 1px solid #526046;
+  }
+  .image-dialog-actions button { min-height: 50px; font-size: 16px; padding: 10px 8px; }
+  #image-to-library { background: #34432c; border-color: #687f53; }
 }
 
 @media (max-width: 360px) {

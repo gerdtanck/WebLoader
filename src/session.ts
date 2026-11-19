@@ -4,7 +4,6 @@ import type { Packet, MachineInfo, Capabilities } from './protocol.ts';
 export interface Link { send(bytes: Uint8Array): void; subscribe(receive: (bytes: Uint8Array) => void, failed: (error: Error) => void): () => void }
 export interface SlotState { slot: number; status: 'unknown' | 'empty' | 'occupied'; info?: MachineInfo; source?: string; checkedAt?: string }
 export interface DeviceState { revision: string; enhancedGui: boolean; caps: Capabilities; kit?: number; pattern?: number; bpm?: number }
-export interface Backup { id: string; kind: 'machine' | 'kit' | 'commit'; slot: number; createdAt: string; bytes: Uint8Array; name: string; note?: string }
 export interface Progress { stage: string; fraction: number }
 export interface Commit { generation: number; contentPrefix: string; slot: number; receivedAt: string }
 export class TimeoutError extends Error { constructor() { super('Keine passende MIDI-Antwort innerhalb der Frist.'); } }
@@ -201,7 +200,7 @@ export class Session {
       throw error;
     } finally { box.close(); }
   }
-  install(data: Uint8Array, target: SlotState, persist: (b: Backup) => Promise<void>, onProgress: (p: Progress) => void, onCommit: (c: Commit) => void, signal?: AbortSignal) {
+  install(data: Uint8Array, target: SlotState, onProgress: (p: Progress) => void, onCommit: (c: Commit) => void, signal?: AbortSignal) {
     return this.exclusive(async () => {
       check(this.state && this.state.enhancedGui, 'Enhanced GUI ist für den sicheren Empfang erforderlich.');
       check(target.status !== 'unknown', 'Zielslot vor dem Laden aktualisieren.');
@@ -209,9 +208,7 @@ export class Session {
       const revision = await this.identity(signal); check(revision === 'X20', 'Gerät hat gewechselt. Neu verbinden.');
       const prior = await this.readSlot(target.slot, signal);
       check(prior.status === target.status && (prior.status !== 'occupied' || prior.info?.sha256 === target.info?.sha256), 'Zielinhalt hat sich geändert. Aktualisieren und Auftrag neu anlegen.');
-      const makeBackup = (kind: Backup['kind'], bytes: Uint8Array, name: string, note?: string): Backup => ({ id: crypto.randomUUID(), kind, slot: target.slot, bytes, name, note, createdAt: new Date().toISOString() });
-      if (prior.bytes) { onProgress({ stage: 'Backup sichern', fraction: 0.04 }); await persist(makeBackup('machine', prior.bytes, prior.info!.name)); }
-      const kit = await this.workspace(signal); await persist(makeBackup('kit', kit.bytes, 'Kit-Arbeitsstand'));
+      const kit = await this.workspace(signal);
       check(!kit.models.includes(193 + target.slot), 'Zielslot wird im aktuellen Kit verwendet. Bitte am Gerät zuerst eine andere Machine zuweisen.');
       check(await this.mdx(signal), 'Enhanced GUI ist nicht verfügbar.');
       onProgress({ stage: 'Empfang vorbereiten', fraction: 0.06 }); await this.prepare(signal);
@@ -219,7 +216,6 @@ export class Session {
       // Capacity measurements predate this commit. A later scan refreshes them.
       this.state.caps = { ...this.state.caps, freeBytes: undefined, freeWords: undefined };
       onCommit(commit);
-      await persist(makeBackup('commit', new TextEncoder().encode(JSON.stringify(commit, null, 2)), 'Commit', 'Laden durch finales Commit-ACK bestätigt.'));
       // The final ACK completes installation; no dump or byte comparison follows.
       const installed: SlotState = { slot: target.slot, status: 'occupied', info, source: 'Durch Commit-ACK bestätigt', checkedAt: commit.receivedAt };
       onProgress({ stage: 'Geladen', fraction: 1 }); return installed;

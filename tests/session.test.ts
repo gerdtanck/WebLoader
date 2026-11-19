@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import { DemoLink, demoKit } from '../src/demo.ts';
 import { Session, Rejected, TimeoutError } from '../src/session.ts';
-import type { Backup, Commit } from '../src/session.ts';
+import type { Commit } from '../src/session.ts';
 import { CMD, packet, decodePacket, encodePacket, decodeDump, equal } from '../src/protocol.ts';
 import type { Packet } from '../src/protocol.ts';
 const sample = await decodeDump(new Uint8Array(await readFile(new URL('../machines/dbx/drone-0.5.syx', import.meta.url))));
@@ -75,26 +75,23 @@ test('A missing final ACK retries END only and does not duplicate the commit', a
   assert.equal(link.commands().filter(p => p.command === CMD.HEADER).length, 1);
   assert.equal(link.commands().filter(p => p.command === CMD.END).length, 2); assert.equal(link.generation, 2);
 });
-test('Install backs up target and kit, then finishes with the commit ACK', async () => {
+test('Install checks target and kit without persistence, then finishes with the commit ACK', async () => {
   const { link, session } = await setup(); link.memory.set(3, sample.data);
   session.state!.caps.freeWords = 1000; session.state!.caps.freeBytes = 4000;
-  const target = await session.readSlot(3), backups: Backup[] = [], commits: Commit[] = [];
-  const after = await session.install(replacement.data, target, async backup => {
-    if (backup.kind !== 'commit') assert.equal(link.commands().filter(p => p.command === CMD.HEADER).length, 0);
-    backups.push(backup);
-  }, () => {}, commit => commits.push(commit));
-  assert.deepEqual(backups.map(b => b.kind), ['machine', 'kit', 'commit']); assert.equal(commits.length, 1);
+  const target = await session.readSlot(3), commits: Commit[] = [];
+  const after = await session.install(replacement.data, target, () => {}, commit => commits.push(commit));
+  assert.equal(commits.length, 1);
   assert.equal(after.info?.sha256, replacement.info.sha256); assert.equal(after.slot, 3);
   assert.equal(after.source, 'Durch Commit-ACK bestätigt');
   assert.equal(link.commands().at(-1)?.command, CMD.END);
   assert.equal(session.state!.caps.freeWords, undefined); assert.equal(session.state!.caps.freeBytes, undefined);
 });
-test('Changed target, in-use target, and backup storage failure send no header', async () => {
-  for (const scenario of ['changed', 'in-use', 'storage']) {
+test('Changed targets and targets in use by the kit send no upload header', async () => {
+  for (const scenario of ['changed', 'in-use']) {
     const { link, session } = await setup(); link.memory.set(3, sample.data); const target = await session.readSlot(3);
     if (scenario === 'changed') link.memory.set(3, replacement.data);
     if (scenario === 'in-use') link.behavior = 'in-use';
-    await assert.rejects(session.install(replacement.data, target, async () => { if (scenario === 'storage') throw new Error('Disk full'); }, () => {}, () => {}));
+    await assert.rejects(session.install(replacement.data, target, () => {}, () => {}));
     assert.equal(link.commands().filter(p => p.command === CMD.HEADER).length, 0);
   }
 });
@@ -102,16 +99,19 @@ test('Install sends no dump after commit, including cancellation after the ACK',
   const { link, session } = await setup('no-read-after-commit');
   const target = await session.readSlot(3), abort = new AbortController(), stages: string[] = [];
   link.sent = [];
-  const result = await session.install(replacement.data, target, async () => {}, p => stages.push(p.stage), () => abort.abort(), abort.signal);
+  const result = await session.install(replacement.data, target, p => stages.push(p.stage), () => abort.abort(), abort.signal);
   assert.equal(result.status, 'occupied'); assert.equal(result.info?.sha256, replacement.info.sha256);
   assert.equal(link.commands().filter(p => p.command === CMD.REQUEST).length, 1); // Target check before upload only.
   assert.equal(link.commands().at(-1)?.command, CMD.END);
-  assert.equal(stages.at(-1), 'Geladen'); assert(stages.every(stage => !/Rücklesen|vergleichen/.test(stage)));
+  assert.equal(stages.at(-1), 'Geladen'); assert(stages.every(stage => !/Rücklesen|vergleichen|Backup/.test(stage)));
 });
-test('A commit log storage failure preserves commit evidence without requesting a dump', async () => {
-  const { link, session } = await setup('no-read-after-commit'), commits: Commit[] = [];
+test('Install needs no IndexedDB access even when browser storage is unavailable', async () => {
+  const { link, session } = await setup(), commits: Commit[] = [];
   const target = await session.readSlot(3);
-  await assert.rejects(session.install(replacement.data, target, async b => { if (b.kind === 'commit') throw new Error('Disk full'); }, () => {}, c => commits.push(c)), /Disk full/);
+  const original = Object.getOwnPropertyDescriptor(globalThis, 'indexedDB');
+  Object.defineProperty(globalThis, 'indexedDB', { configurable: true, get() { throw new Error('Storage disabled'); } });
+  try { await session.install(replacement.data, target, () => {}, c => commits.push(c)); }
+  finally { if (original) Object.defineProperty(globalThis, 'indexedDB', original); else Reflect.deleteProperty(globalThis, 'indexedDB'); }
   assert.equal(commits.length, 1); assert(equal(link.memory.get(3)!, replacement.data));
   assert.equal(link.commands().at(-1)?.command, CMD.END);
 });

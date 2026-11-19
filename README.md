@@ -9,8 +9,8 @@ werden beim Laden nicht verändert.
 
 **https://gerdtanck.github.io/WebLoader/**
 
-Die Webseite läuft vollständig im Browser. MIDI-Zugriff und Backups bleiben
-auf dem jeweiligen Gerät; GitHub Pages liefert die statischen Dateien.
+Die Webseite läuft vollständig im Browser. MIDI-Zugriff erfolgt auf dem
+jeweiligen Gerät; GitHub Pages liefert die statischen Dateien.
 
 ## Lokal starten
 
@@ -33,7 +33,10 @@ Bereiche **Bibliothek**, **Slots** und **Laden** erreichbar.
 
 1. In der Bibliothek suchen oder filtern und eine Machine antippen.
 2. In der Detailansicht die PNG-Beschreibung öffnen oder **Zielslot wählen**
-   drücken. Zurück zur Bibliothek erhält Suchfilter und Scrollposition.
+   drücken. Die PNG-Ansicht hat eine feste Leiste unten: **Zur Bibliothek**
+   führt direkt zur Übersicht, **Schließen** zu den Machine-Details.
+   Die Android-Zurück-Geste bzw. Browser-Zurück schließt zuerst das PNG und
+   führt danach zur Bibliothek. Suchfilter und Listenposition bleiben erhalten.
 3. Einen großen Slot im zweispaltigen Raster antippen. Die Übersicht zeigt,
    ob er frei ist oder welche vorhandene Machine ersetzt würde.
 4. **Auftrag vormerken** drücken, dann unter **Laden** die Übertragung starten.
@@ -41,7 +44,7 @@ Bereiche **Bibliothek**, **Slots** und **Laden** erreichbar.
 Antippen und Vormerken senden noch keine Machine an das Gerät. Drag & Drop
 bleibt auf dem Desktop verfügbar; auf dem Smartphone ist es nicht nötig.
 Wichtige Touch-Flächen sind mindestens 44 × 44 CSS-Pixel groß. Die Bedienung
-wurde mit simulierten Touch-Ereignissen im Desktop-Browser geprüft; ein Test
+wurde in mobilen Ansichten des Desktop-Browsers geprüft; ein Test
 auf einem physischen Smartphone steht aus. Der lokale Link `127.0.0.1` gilt
 weiterhin nur auf dem Rechner, auf dem der Webserver läuft.
 
@@ -62,8 +65,7 @@ weiterhin nur auf dem Rechner, auf dem der Webserver läuft.
    Empfangsvorbereitung muss Enhanced GUI verfügbar sein; der Loader sendet
    vier NO-Tastendrücke, um einen offenen MACHINE MGR zu verlassen.
 
-Vor dem Senden prüft WebLoader den Zielinhalt erneut und sichert belegte Slots
-sowie den aktuellen Kit-Arbeitsstand in IndexedDB. Ein vom aktuellen Kit
+Vor dem Senden prüft WebLoader den Zielinhalt erneut. Ein vom aktuellen Kit
 verwendeter Zielslot wird nicht überschrieben. Das Paket wird für den
 gewählten Slot neu eingerahmt; seine MDS-Nutzdaten bleiben bytegleich.
 
@@ -74,10 +76,8 @@ Bei **Commit nicht bestätigt** zuerst den Zielslot über **Aktualisieren** neu
 einlesen; nicht blind erneut senden. Abbrechen macht einen bereits erfolgten
 Commit nicht rückgängig.
 
-Unter **Backups** lassen sich Sicherungen herunterladen. Diese sind an den
-jeweiligen Browser und die Website-Adresse gebunden; ein Browser-Reset kann
-sie löschen. Das **Transferprotokoll** exportiert Status, Aufträge und SysEx-
-Trace als JSON. Demo-Daten landen nicht in den echten Backups.
+WebLoader erstellt keine automatischen Backups. Das **Transferprotokoll**
+exportiert Status, Aufträge und SysEx-Trace der aktuellen Sitzung als JSON.
 
 ## Grenzen von Version 0.1
 
@@ -123,7 +123,7 @@ npm run preview
 Der fertige statische Build liegt unter **artifacts/site/**; die Vorschau
 läuft auf **http://127.0.0.1:4173/**. Relative Assetpfade unterstützen einen
 GitHub-Pages-Unterpfad. Nur die erzeugte Website samt Katalog und referenzierten
-Machine-/PNG-Dateien wird eingepackt. Hardware-Dumps, Backups und Traces sind
+Machine-/PNG-Dateien wird eingepackt. Hardware-Dumps und Traces sind
 kein Bestandteil des Builds.
 
 Repository: **https://github.com/gerdtanck/WebLoader**. Jeder Push nach `main`
@@ -134,11 +134,12 @@ Lokale Lab-Notizen und Diagnoseprogramme werden nicht mit veröffentlicht.
 ## Entwicklung und Nachweise
 
 - `src/protocol.ts`: Paketformat, Prüfsummen, Inhaltskennung, Retargeting.
-- `src/session.ts`: serielle MIDI-Vorgänge, Timeouts/WAIT/NAK, Backup,
+- `src/session.ts`: serielle MIDI-Vorgänge, Timeouts/WAIT/NAK,
   Commit-Bestätigung und Schutz vor parallelen Aufträgen.
 - `src/webmidi.ts`, `src/demo.ts`: physischer bzw. simulierter MIDI-Adapter.
 - `src/main.ts`, `src/style.css`: Oberfläche ohne UI-Framework.
-- `tests/`: 22 Node-Tests einschließlich aller 126 Bibliothekspakete, beschädigter
+- `src/navigation.ts`, `src/mobile.css`: mobile Ansicht, PNG-Leiste und Browser-History.
+- `tests/`: 27 Node-Tests einschließlich Navigation, aller 126 Bibliothekspakete, beschädigter
   Daten, Fremdantworten, Zeitgrenzen und fehlender/falscher finaler ACKs.
 - `package-lock.json` und `toolchain.lock.json`: gepinnte Abhängigkeiten und
   Protokollquellen. Keine externen Fonts, Tracker oder Laufzeit-CDNs.

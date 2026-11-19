@@ -118,5 +118,10 @@
       "sha256": "dd5bb9df09d4940e15f37b63ffb49a1df6a6a8e5461a4485d2811df1d22085dd"
     },
     "reproduce": "python scripts/import_jmamma.py <path-to-USR-Machines>"
+  },
+  "navigation_documentation_observations": {
+    "path": "knowledge/references/web-navigation-2026-11-19.json",
+    "sha256": "75e8e2c202bbab29a2c00e530139ef2c15f4f0a519c4702f3f349bef8d4ddb87",
+    "scope": "Observed documentation summary, not a snapshot of the evolving pages"
   }
 }
