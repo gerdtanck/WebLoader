@@ -1,9 +1,9 @@
 # jmamma — X.20-C User Machines
 
-55 User Machines von **jmamma** aus dem vom Projektinhaber bereitgestellten
-Ordner `Machinedrum_SPS1-UW_OS_X.20_C/USR-Machines`.
+55 User Machines by **jmamma**, supplied by the project owner in
+`Machinedrum_SPS1-UW_OS_X.20_C/USR-Machines`.
 
-| Familie | Machines |
+| Family | Machines |
 | --- | ---: |
 | NFX | 9 |
 | P-I | 5 |
@@ -13,33 +13,30 @@ Ordner `Machinedrum_SPS1-UW_OS_X.20_C/USR-Machines`.
 | TX9 | 5 |
 | TXZ | 11 |
 
-Die SYX-Dateien sind bytegleiche Kopien der Originale. Jeder Datei steht
-eine gleichnamige PNG gegenüber. Die PNGs wurden für WebLoader erstellt:
-Kurzbeschreibung und Familienbeschreibung stammen aus der mitgelieferten
-`README.txt`; Name, Version, Symbol, Parameterreihenfolge, Standardwerte und
-numerische Wertebereiche stammen aus dem jeweiligen MDS-Paket.
-Die Reglergrafik ist eine schematische Darstellung der Standardwerte.
-Die Wertebereiche sind kodierte Parameterwerte, keine physikalischen Einheiten.
-Die Quelle enthält keine ausführlichen Erklärungen zu den einzelnen Reglern.
+The SYX files are byte-identical copies of the originals. Each has a matching
+PNG generated for WebLoader. Machine and family descriptions come from the
+supplied `README.txt`; names, versions, icons, parameter order, defaults, and
+numeric ranges come from the MDS packages. Knob graphics show default values.
+Ranges are encoded parameter values, not physical units. The source does not
+include detailed explanations for each control.
 
-## Bilder reproduzieren
+## Reproduce the images
 
-Voraussetzungen: Node.js ab 22.18, Python mit `Pillow==12.0.0`, die im
-Quellmanifest gepinnten Windows-Schriften Arial und Consolas sowie der
-ursprüngliche `USR-Machines`-Ordner. Aus dem WebLoader-Ordner:
+Requires Node.js 22.18 or newer, Python with `Pillow==12.0.0`, the pinned
+Windows Arial and Consolas fonts, and the original `USR-Machines` directory.
+Run from the WebLoader directory:
 
 ```powershell
-python scripts/import_jmamma.py "PFAD/USR-Machines"
+python scripts/import_jmamma.py "PATH/USR-Machines"
 npm run build
 ```
 
-Ein anderer Schriftordner kann mit `--font-dir` angegeben werden.
-Das Skript prüft alle Quelldateien und Schriften gegen SHA-256-Pins in
-`scripts/data/jmamma-sources.json`. Abweichende vorhandene SYX-Dateien werden
-nicht überschrieben. PNGs werden reproduzierbar neu erzeugt; der Importnachweis
-liegt unter `artifacts/jmamma-import/manifest.json`.
+Use `--font-dir` to specify another font directory. The script verifies source
+files and fonts against SHA-256 pins in `scripts/data/jmamma-sources.json`.
+It does not overwrite differing SYX files. PNG generation is reproducible;
+the import report is saved to `artifacts/jmamma-import/manifest.json`.
 
-Die Paketintegrität wurde mit dem WebLoader-Parser und unabhängig mit dem
-lokalen Python-MDS-Parser geprüft. Die Übernahme verändert keinen DSP-Code
-und stellt keine neue DSP-Zertifizierung oder Hardwareabnahme dar.
-Es sind ausschließlich User Machines enthalten, keine Firmware oder ROMs.
+Package integrity was checked with the WebLoader parser and independently
+with the local Python MDS parser. This import changes no DSP code and does
+not constitute new DSP certification or hardware validation. Only User
+Machines are included, without firmware or ROMs.

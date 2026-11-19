@@ -1,118 +1,76 @@
 # Machinedrum WebLoader
 
-Webseite für MDS User Machines auf **MDX X.20**. Bibliothek mit
-126 Machines, PNG-Beschreibungen, Slotansicht und Laden über WebMIDI.
-Alles zu diesem Unterprojekt liegt in diesem Ordner. Die Original-Machines
-werden beim Laden nicht verändert.
+Browse 126 MDS User Machines, view their descriptions, and load them into
+**MDX X.20** over WebMIDI.
 
-## Online
+**[Open WebLoader](https://gerdtanck.github.io/WebLoader/)**
 
-**https://gerdtanck.github.io/WebLoader/**
+The app runs in your browser. GitHub Pages serves the static files; MIDI
+access stays on the device running the browser.
 
-Die Webseite läuft vollständig im Browser. MIDI-Zugriff erfolgt auf dem
-jeweiligen Gerät; GitHub Pages liefert die statischen Dateien.
+## Usage
 
-## Lokal starten
+1. Choose **Connect MIDI → Allow MIDI access**, allow SysEx, and select the
+   MIDI input and output. Close other applications using those ports.
+2. Select a device profile and choose **Connect and scan**. The default
+   profile is for the MKI UW+ with X.20 C examined in this project.
+3. Choose a machine in **Library**. On a phone, choose **Choose slot**, tap
+   a slot, then **Add to queue**. On desktop, drag a machine onto a slot
+   or select a target in its details.
+4. Open **Transfers** and choose **Load machines**. Keep the device idle and
+   leave the current bank selected during the transfer.
 
-Node.js ab 22.18 und Desktop Chrome oder Edge verwenden. Die Abhängigkeiten
-sind auf diesem Rechner bereits installiert.
+The PNG viewer has a fixed bottom bar on phones. **Back to library** returns
+straight to the list; **Close** returns to the machine details. Browser Back
+and Android Back dismiss the image first, then return to the library.
+Filters and the list position are preserved. Selecting a machine or adding
+it to the queue does not send it to the device.
 
-1. `start.cmd` doppelklicken oder im WebLoader-Ordner `npm run dev` ausführen.
-2. Im Browser **http://127.0.0.1:5173/** öffnen.
-3. Mit **Ohne Gerät ausprobieren** lässt sich der gesamte Ablauf simulieren.
+WebLoader works with the bank selected on the Machinedrum. Use **Refresh**
+after changing banks on the device. Before sending, it checks the target
+contents and prevents replacing a machine used by the current kit. Enhanced
+GUI must be available; the loader sends four NO key presses to leave an open
+MACHINE MGR. Retargeting preserves the MDS payload bytes.
 
-Nach einem frischen Checkout zuerst `npm ci` im WebLoader-Ordner ausführen.
-Die HTML-Datei nicht per `file://` öffnen: WebMIDI benötigt localhost oder
-HTTPS. Das Terminal mit dem Webserver bleibt während der Nutzung geöffnet;
-zum Beenden Strg+C drücken.
+**Loaded** means the device returned the final commit ACK. There is no
+automatic backup or readback comparison. If a commit is unconfirmed, refresh
+the target slot before retrying. Canceling cannot undo a completed commit.
+**Export transfer log** saves the current session status and SysEx trace as JSON.
 
-## Bedienung auf dem Smartphone
+## Version 0.1 limits
 
-Die schmale Ansicht ist für Touch-Bedienung ausgelegt. Unten bleiben die
-Bereiche **Bibliothek**, **Slots** und **Laden** erreichbar.
+- U01–U16 are supported. U17–U48 remain unavailable; an earlier U17 hardware
+  read timed out. The bank number and remote bank switching are unverified.
+- The MKI UW+ / X.20 C profile treats matching dump-request **NAK 12, detail 0**
+  as an empty slot. This is a user-approved heuristic checked against the
+  observed slot contents, not a general rule for all firmware or models.
+  Timeouts and other errors never mean empty.
+- Matching capability **NAK 15, detail 0** enables conservative transfer
+  limits in that profile. Free memory stays unknown. An empty slot does not
+  guarantee enough DSP memory or package storage.
+- The **Standard** profile enables neither heuristic. Identity `X20` does
+  not distinguish hardware models or firmware subrevisions. Support for
+  other models has not been established.
+- File versions and MDS package versions may differ. Package integrity
+  checks are not DSP certification.
+- Responsive layouts and navigation were checked in desktop Chrome at
+  phone sizes. Physical Android gesture testing and a real WebMIDI write
+  test remain outstanding. Earlier hardware reads used Python/RtMidi.
 
-1. In der Bibliothek suchen oder filtern und eine Machine antippen.
-2. In der Detailansicht die PNG-Beschreibung öffnen oder **Zielslot wählen**
-   drücken. Die PNG-Ansicht hat eine feste Leiste unten: **Zur Bibliothek**
-   führt direkt zur Übersicht, **Schließen** zu den Machine-Details.
-   Die Android-Zurück-Geste bzw. Browser-Zurück schließt zuerst das PNG und
-   führt danach zur Bibliothek. Suchfilter und Listenposition bleiben erhalten.
-3. Einen großen Slot im zweispaltigen Raster antippen. Die Übersicht zeigt,
-   ob er frei ist oder welche vorhandene Machine ersetzt würde.
-4. **Auftrag vormerken** drücken, dann unter **Laden** die Übertragung starten.
+## Local development
 
-Antippen und Vormerken senden noch keine Machine an das Gerät. Drag & Drop
-bleibt auf dem Desktop verfügbar; auf dem Smartphone ist es nicht nötig.
-Wichtige Touch-Flächen sind mindestens 44 × 44 CSS-Pixel groß. Die Bedienung
-wurde in mobilen Ansichten des Desktop-Browsers geprüft; ein Test
-auf einem physischen Smartphone steht aus. Der lokale Link `127.0.0.1` gilt
-weiterhin nur auf dem Rechner, auf dem der Webserver läuft.
+Requires Node.js 22.18 or newer. Use a browser with WebMIDI and SysEx support,
+such as desktop Chrome or Edge.
 
-## Mit der Machinedrum arbeiten
+```powershell
+npm ci
+npm run dev
+```
 
-1. MIDI IN und OUT verbinden. Andere Programme, die dieselben Ports verwenden,
-   vorher schließen. **MIDI verbinden → MIDI-Zugriff erlauben** wählen und
-   MIDI einschließlich SysEx im Browser freigeben.
-2. Ein- und Ausgang wählen. Für die hier untersuchte MKI UW+ mit X.20 C das
-   vorausgewählte Geräteprofil verwenden. Das Profil ist eine Nutzerangabe;
-   die gelesene Identity `X20` unterscheidet Modell und Unterrevision nicht.
-3. **Verbinden und einlesen** liest U01–U16 der aktuell am Gerät ausgewählten
-   Machine Bank. Nach einem Bankwechsel am Gerät erneut **Aktualisieren**.
-4. Eine Machine auf einen Slot ziehen. Alternativ rechts den Zielslot wählen
-   und **Zum Laden vormerken** drücken. Der Auftrag zeigt, was ersetzt wird.
-5. **Machines laden** startet die vorgemerkten Aufträge nacheinander.
-   Die MD währenddessen nicht bedienen und keine Bank wechseln. Für die
-   Empfangsvorbereitung muss Enhanced GUI verfügbar sein; der Loader sendet
-   vier NO-Tastendrücke, um einen offenen MACHINE MGR zu verlassen.
-
-Vor dem Senden prüft WebLoader den Zielinhalt erneut. Ein vom aktuellen Kit
-verwendeter Zielslot wird nicht überschrieben. Das Paket wird für den
-gewählten Slot neu eingerahmt; seine MDS-Nutzdaten bleiben bytegleich.
-
-**Geladen** erscheint nach dem finalen Commit-ACK der Machinedrum. Es folgt
-kein automatisches Rücklesen oder Vergleichen. Die Slotanzeige übernimmt die
-Metadaten der gesendeten Machine und kennzeichnet das Commit-ACK als Quelle.
-Bei **Commit nicht bestätigt** zuerst den Zielslot über **Aktualisieren** neu
-einlesen; nicht blind erneut senden. Abbrechen macht einen bereits erfolgten
-Commit nicht rückgängig.
-
-WebLoader erstellt keine automatischen Backups. Das **Transferprotokoll**
-exportiert Status, Aufträge und SysEx-Trace der aktuellen Sitzung als JSON.
-
-## Grenzen von Version 0.1
-
-- Das Profil MKI UW+ / X.20 C interpretiert **nur** passende Dump-Request-
-  Antworten mit **NAK 12, Detail 0** als leer, entsprechend Nutzerentscheidung
-  und vorherigem Hardwareabgleich. Das ist eine dokumentierte Heuristik.
-  Timeout und andere Fehler bedeuten nicht leer.
-- Bei passendem Capability-NAK 15, Detail 0 gelten konservative Transferlimits.
-  Der freie Speicher bleibt unbekannt. Bestätigte freie Slots sind keine
-  Aussage über genügend DSP- oder Paketablageplatz.
-- U17–U48 werden angezeigt, aber weder gescannt noch beschrieben. Der frühere
-  Hardwaretest an U17 endete mit Timeout. 32 unbekannte Slots sind deshalb
-  auch bei erfolgreichem U01–U16-Scan erwartbar.
-- Die Banknummer und ein Machine-Bank-Wechsel sind nicht über MIDI belegt.
-  Version 0.1 arbeitet ausschließlich in der aktuell am Gerät gewählten Bank.
-- Das optionale Standardprofil aktiviert keine NAK-Heuristiken. Es ist kein
-  Nachweis für weitere Modelle oder Firmwarestände; unbekannte Antworten
-  stoppen den Vorgang.
-- Paketintegrität ist keine DSP-Zertifizierung. Dateiversion (aus dem
-  Dateinamen) und Paketversion (aus dem MDS-Header) können abweichen und werden
-  getrennt angezeigt.
-- **Die Browserinstallation wurde im Demomodus und mit simulierten
-  Protokollfehlern geprüft. Ein echter Schreibtest über WebMIDI steht aus.**
-  Die vorangegangenen Hardware-Lesebelege stammen aus Python/RtMidi.
-
-## Bibliothek und Build
-
-Neue Paare unter `machines/<hersteller>/name.syx` und `name.png` ablegen.
-`npm run catalog` validiert alle MDS-Pakete und erstellt `catalog.json`.
-Der Katalog enthält Metadaten, Inhaltskennungen, Dateihashes und Bildpfade.
-
-`machines/jmamma/` enthält die 55 unveränderten User Machines aus der
-X.20-C-Sammlung. Die zugehörigen PNGs zeigen die Originalbeschreibungen,
-Machine-Symbole sowie Parameternamen, Standardwerte und numerische Bereiche.
-Herkunft und reproduzierbare Bilderzeugung: [jmamma](machines/jmamma/README.md).
+Open **http://127.0.0.1:5173/**. After installing dependencies, `start.cmd`
+also starts the server. Keep its terminal open; stop with Ctrl+C.
+WebMIDI requires HTTPS or localhost. Opening `index.html` as a file does not
+work. The localhost address is accessible only on the computer running it.
 
 ```powershell
 npm test
@@ -120,34 +78,28 @@ npm run build
 npm run preview
 ```
 
-Der fertige statische Build liegt unter **artifacts/site/**; die Vorschau
-läuft auf **http://127.0.0.1:4173/**. Relative Assetpfade unterstützen einen
-GitHub-Pages-Unterpfad. Nur die erzeugte Website samt Katalog und referenzierten
-Machine-/PNG-Dateien wird eingepackt. Hardware-Dumps und Traces sind
-kein Bestandteil des Builds.
+The static build is in `artifacts/site/`; preview runs at
+**http://127.0.0.1:4173/**. Relative asset paths support GitHub Pages subpaths.
+Pushes to `main` run the tests, build, and Pages deployment.
 
-Repository: **https://github.com/gerdtanck/WebLoader**. Jeder Push nach `main`
-führt die Tests, den Build und das GitHub-Pages-Deployment aus. Die Actions
-sind auf Commit-SHAs gepinnt. Herkunft der Machine-Bibliothek: [CREDITS](CREDITS.md).
-Lokale Lab-Notizen und Diagnoseprogramme werden nicht mit veröffentlicht.
+## Library and sources
 
-## Entwicklung und Nachweise
+Add matching `name.syx` and `name.png` files under `machines/<author>/`.
+`npm run catalog` validates the packages and generates `catalog.json` with
+metadata, content IDs, hashes, and image paths.
 
-- `src/protocol.ts`: Paketformat, Prüfsummen, Inhaltskennung, Retargeting.
-- `src/session.ts`: serielle MIDI-Vorgänge, Timeouts/WAIT/NAK,
-  Commit-Bestätigung und Schutz vor parallelen Aufträgen.
-- `src/webmidi.ts`, `src/demo.ts`: physischer bzw. simulierter MIDI-Adapter.
-- `src/main.ts`, `src/style.css`: Oberfläche ohne UI-Framework.
-- `src/navigation.ts`, `src/mobile.css`: mobile Ansicht, PNG-Leiste und Browser-History.
-- `tests/`: 27 Node-Tests einschließlich Navigation, aller 126 Bibliothekspakete, beschädigter
-  Daten, Fremdantworten, Zeitgrenzen und fehlender/falscher finaler ACKs.
-- `package-lock.json` und `toolchain.lock.json`: gepinnte Abhängigkeiten und
-  Protokollquellen. Keine externen Fonts, Tracker oder Laufzeit-CDNs.
-- Die lokalen Entwicklungs- und Hardwarebelege liegen im ursprünglichen
-  Arbeitsordner unter `knowledge/` und `artifacts/`; sie gehören nicht zum
-  öffentlichen Website-Repository.
+The 55 original X.20-C machines by **jmamma** have generated description
+images. See [image generation](machines/jmamma/README.md) and [credits](CREDITS.md).
+Original machine payloads are unchanged. No firmware or ROM files are included.
 
-Das lokal erhaltene `scripts/probe_hardware.py` ist ein separater, nur lesender
-Lab-Diagnosepfad und wird nicht veröffentlicht.
-Er benötigt die Python-Umgebung des übergeordneten Projekts; die Webseite
-und deren Build benötigen dieses Lab nicht.
+- `src/protocol.ts`: package validation, checksums, content IDs, retargeting.
+- `src/session.ts`, `src/webmidi.ts`: serial transfers, WAIT/NAK/timeouts and
+  final commit validation. `src/demo.ts` is a test adapter only.
+- `src/main.ts`, `src/navigation.ts`, CSS: interface and browser history.
+- `tests/`: 27 tests covering navigation, all library packages, corrupt and
+  unrelated responses, time limits, and missing or incorrect final ACKs.
+- `package-lock.json`, `toolchain.lock.json`: pinned dependencies and sources.
+
+There are no external fonts, trackers, or runtime CDNs. Local lab notes,
+hardware traces, and diagnostic scripts are excluded from the public repository
+and website build.

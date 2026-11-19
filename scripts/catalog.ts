@@ -15,4 +15,4 @@ for (const manufacturer of (await readdir(new URL('machines/', root), { withFile
   }
 }
 await writeFile(new URL('catalog.json', root), JSON.stringify({ schema: 1, machines }, null, 2) + '\n');
-console.log(machines.length + ' geprüfte MDS-Machines mit Beschreibung.');
+console.log(machines.length + ' validated MDS machines with descriptions.');

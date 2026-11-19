@@ -82,7 +82,7 @@ test('Install checks target and kit without persistence, then finishes with the 
   const after = await session.install(replacement.data, target, () => {}, commit => commits.push(commit));
   assert.equal(commits.length, 1);
   assert.equal(after.info?.sha256, replacement.info.sha256); assert.equal(after.slot, 3);
-  assert.equal(after.source, 'Durch Commit-ACK bestätigt');
+  assert.equal(after.source, 'Confirmed by commit ACK');
   assert.equal(link.commands().at(-1)?.command, CMD.END);
   assert.equal(session.state!.caps.freeWords, undefined); assert.equal(session.state!.caps.freeBytes, undefined);
 });
@@ -103,7 +103,7 @@ test('Install sends no dump after commit, including cancellation after the ACK',
   assert.equal(result.status, 'occupied'); assert.equal(result.info?.sha256, replacement.info.sha256);
   assert.equal(link.commands().filter(p => p.command === CMD.REQUEST).length, 1); // Target check before upload only.
   assert.equal(link.commands().at(-1)?.command, CMD.END);
-  assert.equal(stages.at(-1), 'Geladen'); assert(stages.every(stage => !/Rücklesen|vergleichen|Backup/.test(stage)));
+  assert.equal(stages.at(-1), 'Loaded'); assert(stages.every(stage => !/readback|compar|backup/i.test(stage)));
 });
 test('Install needs no IndexedDB access even when browser storage is unavailable', async () => {
   const { link, session } = await setup(), commits: Commit[] = [];
@@ -118,7 +118,7 @@ test('Install needs no IndexedDB access even when browser storage is unavailable
 test('Legacy timeout quarantines subsequent operations until reconnection', async () => {
   const { session, link } = await setup(); link.behavior = 'legacy-timeout'; await assert.rejects(session.identity(), TimeoutError);
   assert.equal(session.needsReconnect, true); const before = link.sent.length;
-  await assert.rejects(session.scan(() => {}), /neu verbinden/); assert.equal(link.sent.length, before);
+  await assert.rejects(session.scan(() => {}), /Reconnect/); assert.equal(link.sent.length, before);
 });
 test('Abort releases the remote NO key and never uploads a package', async () => {
   const { session, link } = await setup(), abort = new AbortController();
@@ -130,5 +130,5 @@ test('Abort releases the remote NO key and never uploads a package', async () =>
 });
 test('Concurrent operations are rejected without opening another MIDI transaction', async () => {
   const { session, link } = await setup('read-timeout'); const running = session.scan(() => {});
-  await assert.rejects(session.scan(() => {}), /bereits/); await assert.rejects(running); assert.equal(session.busy, false);
+  await assert.rejects(session.scan(() => {}), /already/); await assert.rejects(running); assert.equal(session.busy, false);
 });

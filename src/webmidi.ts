@@ -10,12 +10,12 @@ export class WebMidiLink implements Link {
   message = (event: MIDIMessageEvent) => { if (event.data) for (const l of this.listeners) l.receive(new Uint8Array(event.data)); };
   state = () => {
     if (this.input.state === 'disconnected' || this.output.state === 'disconnected') {
-      for (const l of this.listeners) l.failed(new Error('MIDI-Verbindung unterbrochen.'));
+      for (const l of this.listeners) l.failed(new Error('MIDI connection lost.'));
       this.lost();
     }
   };
   send(bytes: Uint8Array) {
-    if (this.input.state !== 'connected' || this.output.state !== 'connected') throw new Error('MIDI-Port nicht verbunden.');
+    if (this.input.state !== 'connected' || this.output.state !== 'connected') throw new Error('MIDI port is disconnected.');
     this.output.send(bytes);
   }
   subscribe(receive: (b: Uint8Array) => void, failed: (e: Error) => void) {

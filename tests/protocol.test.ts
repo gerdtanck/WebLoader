@@ -15,7 +15,7 @@ test('Packing covers every byte and partial mask', () => {
     const data = new Uint8Array(Array.from({ length: size }, (_, i) => i));
     assert.deepEqual(unpack7(pack7(data)), data);
   }
-  assert.throws(() => unpack7(new Uint8Array([1, 0])), /Maske/);
+  assert.throws(() => unpack7(new Uint8Array([1, 0])), /mask/);
 });
 test('All library packages match Python references and roundtrip byte exactly', async () => {
   const reference = JSON.parse(await readFile(new URL('tests/fixtures/catalog-reference.json', root), 'utf8')) as Record<string, { hash: string; contentId: string; words: number }>;
@@ -40,9 +40,9 @@ test('Retargeting preserves MDS bytes for U01, U16, U17 and U48', async () => {
 });
 test('Corrupt packet checksums and reserved bits are rejected', () => {
   const raw = encodePacket(packet(CMD.REQUEST, 1, 0)); raw[10] ^= 1;
-  assert.throws(() => decodePacket(raw), /Prüfsumme/);
+  assert.throws(() => decodePacket(raw), /checksum/);
   const reserved = encodePacket(packet(CMD.REQUEST, 1, 0)); reserved[13] = 1;
-  assert.throws(() => decodePacket(reserved), /Header/);
+  assert.throws(() => decodePacket(reserved), /header/);
 });
 test('Missing end, reordered packets, mixed IDs and raw firmware are rejected', async () => {
   const frames = await encodeDump(decoded.data, 1, 1);
@@ -66,5 +66,5 @@ test('Realtime interleaving is stripped; incomplete frames are rejected', () => 
 test('Kit model decoding preserves all 16 BE32 values and validates checksum', () => {
   const models = Array.from({ length: 16 }, (_, i) => 194 + i);
   const raw = demoKit(models); assert.deepEqual(kitModels(raw), models);
-  raw[11] ^= 1; assert.throws(() => kitModels(raw), /Prüfsumme/);
+  raw[11] ^= 1; assert.throws(() => kitModels(raw), /checksum/);
 });

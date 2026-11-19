@@ -1,24 +1,22 @@
-# Herkunft
+# Credits
 
-Die Machine-Bibliothek enthält die vom Projektinhaber bereitgestellten
-User Machines, nach Herstellerordnern geordnet:
+The project owner supplied the User Machine library, grouped by author:
 
-| Ordner / Autorbezeichnung | Machines |
+| Author | Machines |
 | --- | ---: |
 | dbx | 2 |
 | jmamma | 55 |
 | murdenihcam | 13 |
 | waftlord | 56 |
 
-Die SysEx-Dateien werden unverändert bereitgestellt. Die PNGs unter `dbx`,
-`murdenihcam` und `waftlord` sind ebenfalls unveränderte Originaldateien.
-Für `jmamma` wurden die Beschreibungsbilder aus der mitgelieferten
-`USR-Machines/README.txt` und den Paketmetadaten erzeugt. Die Sammlung von
-jmamma stammt aus dem
-lokal bereitgestellten X.20-C-Paket. [Herkunft und Erzeugung](machines/jmamma/README.md).
-Autorbezeichnungen und Beschreibungen sind den jeweiligen Originaldateien zugeordnet.
-Dieses Repository erteilt keine pauschale Neulizenzierung dieser Drittbestände.
+SysEx files are unchanged. PNG files from dbx, murdenihcam, and waftlord are
+also unchanged originals. The jmamma images were generated from the supplied
+`USR-Machines/README.txt` and package metadata in the local X.20-C collection.
+See [sources and generation](machines/jmamma/README.md).
 
-Die Implementierung folgt den in `toolchain.lock.json` gepinnten MDS-/MDX-
-Protokollquellen. Es werden keine Machinedrum-Firmware- oder ROM-Dateien
-bereitgestellt. WebLoader ist ein unabhängiges Projekt.
+Author credits and descriptions correspond to the original files. This
+repository does not grant a blanket license for these third-party materials.
+
+The implementation follows the MDS/MDX sources pinned in `toolchain.lock.json`.
+No Machinedrum firmware or ROM files are provided. WebLoader is an independent
+project.

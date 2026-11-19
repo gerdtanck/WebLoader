@@ -9,4 +9,4 @@ for (const name of names) {
   await copyFile(new URL(name, root), destination);
 }
 await writeFile(new URL('artifacts/site/.nojekyll', root), '');
-console.log(`Statische Webseite: ${fileURLToPath(new URL('artifacts/site/', root))}`);
+console.log(`Static site: ${fileURLToPath(new URL('artifacts/site/', root))}`);
