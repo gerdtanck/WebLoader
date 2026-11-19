@@ -224,6 +224,5631 @@
       "originalSlot": 1
     },
     {
+      "name": "BUS COMP",
+      "id": "org.spsx.usr.bus-comp",
+      "category": "NFX",
+      "label": "BC",
+      "version": "0.2",
+      "mdsVersion": "1.1",
+      "bytes": 2568,
+      "programWords": 652,
+      "imports": 0,
+      "xWords": 18,
+      "yWords": 56,
+      "cycles": {
+        "mkii": 3551,
+        "mkiDram": 4483,
+        "mkiSram": 3566
+      },
+      "contentId": "ab6bcc8e6539312623bf142e607a243bd024d63492cc50573bd3a2f060f7e981",
+      "sha256": "059fbef5ed1efc2b769a902d517fc16fbdf65b0a87e6d04d2f5ff1a9aea6bce2",
+      "sprite": [
+        0,
+        0,
+        0,
+        0,
+        1048064,
+        524800,
+        1070072320,
+        1070080512,
+        919077376,
+        919077376,
+        919089664,
+        919093760,
+        1070105088,
+        428411392,
+        655872,
+        786944,
+        788992,
+        529007104,
+        1070072320,
+        818416128,
+        818414080,
+        818414080,
+        818418176,
+        818414080,
+        818414080,
+        532992,
+        524800,
+        1048064,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "ATK",
+          "default": 4,
+          "min": 0,
+          "max": 5
+        },
+        {
+          "name": "REL",
+          "default": 4,
+          "min": 0,
+          "max": 4
+        },
+        {
+          "name": "THR",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "RAT",
+          "default": 1,
+          "min": 0,
+          "max": 2
+        },
+        {
+          "name": "MIX",
+          "default": 127,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "SIDE",
+          "default": 127,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "MKUP",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "NBAL",
+          "default": 127,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "jamma/NFX-BC.syx",
+      "manufacturer": "jamma",
+      "fileVersion": "",
+      "file": "machines/jamma/NFX-BC.syx",
+      "image": "machines/jamma/NFX-BC.png",
+      "fileHash": "e152654445b770f505dd2277f75ee66f28f18daf15f43db64980a5a4f9adc655",
+      "originalSlot": 4
+    },
+    {
+      "name": "BBD CHORUS",
+      "id": "org.spsx.usr.bbd-chorus",
+      "category": "NFX",
+      "label": "CH",
+      "version": "0.2",
+      "mdsVersion": "1.1",
+      "bytes": 2044,
+      "programWords": 515,
+      "imports": 1,
+      "xWords": 17,
+      "yWords": 50,
+      "cycles": {
+        "mkii": 3673,
+        "mkiDram": 4578,
+        "mkiSram": 3942
+      },
+      "contentId": "c7223ce4171b59c9e1e31c8118f8e1af33cdc36d152a7b07d6b90e04d7312e1f",
+      "sha256": "73722c2bf72388e4f16cef53122ea33dfad4b67cf3417ac088e00eb4237c4224",
+      "sprite": [
+        0,
+        0,
+        523264,
+        523264,
+        396288,
+        453632,
+        264694784,
+        535297024,
+        409340928,
+        409451520,
+        409340928,
+        409467904,
+        409340928,
+        409398272,
+        396288,
+        523264,
+        396288,
+        535276544,
+        535190528,
+        50854912,
+        50727936,
+        50789376,
+        50727936,
+        535297024,
+        535202816,
+        437248,
+        404480,
+        523264,
+        523264,
+        0,
+        0,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "MODE",
+          "default": 0,
+          "min": 0,
+          "max": 2
+        },
+        {
+          "name": "SIDE",
+          "default": 0,
+          "min": 0,
+          "max": 1
+        },
+        {
+          "name": "MIX",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "RATE",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DPTH",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "NOIS",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "T-1",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "T-2",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "jamma/NFX-CH.syx",
+      "manufacturer": "jamma",
+      "fileVersion": "",
+      "file": "machines/jamma/NFX-CH.syx",
+      "image": "machines/jamma/NFX-CH.png",
+      "fileHash": "8a4a3d14bc463ea8d2fa84c692372d34c63a48cb751eb67d0910b3833bcb5598",
+      "originalSlot": 1
+    },
+    {
+      "name": "DISTORTION",
+      "id": "org.spsx.usr.distortion-1",
+      "category": "NFX",
+      "label": "D1",
+      "version": "0.3",
+      "mdsVersion": "1.1",
+      "bytes": 3612,
+      "programWords": 1032,
+      "imports": 0,
+      "xWords": 52,
+      "yWords": 64,
+      "cycles": {
+        "mkii": 3414,
+        "mkiDram": 4321,
+        "mkiSram": 3419
+      },
+      "contentId": "6f4cf621b098dcbf719ad72cd6ce1e7afdb7bf4c44b5c7f4167bdfb6872f645a",
+      "sha256": "c69760db87d52538d621057591fac96e4fd7be284f46772004521f187f6140bb",
+      "sprite": [
+        0,
+        0,
+        16384,
+        30720,
+        2048,
+        2048,
+        2048,
+        2048,
+        534775808,
+        534804480,
+        409190400,
+        409075712,
+        409075712,
+        409075712,
+        534904832,
+        264372224,
+        245760,
+        30720,
+        2048,
+        4196352,
+        6293504,
+        534775808,
+        534775808,
+        30720,
+        245760,
+        131072,
+        131072,
+        131072,
+        131072,
+        131072,
+        0,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "DRV",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "TONE",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "LVL",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "OUT",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "BRR",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "MIX",
+          "default": 127,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "jamma/NFX-D1.syx",
+      "manufacturer": "jamma",
+      "fileVersion": "",
+      "file": "machines/jamma/NFX-D1.syx",
+      "image": "machines/jamma/NFX-D1.png",
+      "fileHash": "843653641ecc08e2c13889fd4150a408ad891c2775dbfe7b3b739c8d34a7620b",
+      "originalSlot": 6
+    },
+    {
+      "name": "OVERDRIVE",
+      "id": "org.spsx.usr.distortion-2",
+      "category": "NFX",
+      "label": "D2",
+      "version": "0.3",
+      "mdsVersion": "1.1",
+      "bytes": 3572,
+      "programWords": 1020,
+      "imports": 0,
+      "xWords": 52,
+      "yWords": 64,
+      "cycles": {
+        "mkii": 3293,
+        "mkiDram": 3819,
+        "mkiSram": 3298
+      },
+      "contentId": "d356fd8844ec00442077d6f581099d337acd1019d4e33103334a12f53458eb27",
+      "sha256": "f9c587a200475c1e6a1b727d2f3d0a1e2e890ca3e6e5176029c4dcc5a3d3ceda",
+      "sprite": [
+        0,
+        0,
+        16384,
+        30720,
+        2048,
+        2048,
+        2048,
+        534775808,
+        534775808,
+        408975360,
+        409190400,
+        409075712,
+        409075712,
+        534904832,
+        264372224,
+        131072,
+        245760,
+        30720,
+        406849536,
+        476055552,
+        509609984,
+        442501120,
+        459278336,
+        434141184,
+        415481856,
+        131072,
+        131072,
+        131072,
+        131072,
+        131072,
+        0,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "DRV",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "TONE",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "LVL",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "OUT",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "BRR",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "MIX",
+          "default": 127,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "jamma/NFX-D2.syx",
+      "manufacturer": "jamma",
+      "fileVersion": "",
+      "file": "machines/jamma/NFX-D2.syx",
+      "image": "machines/jamma/NFX-D2.png",
+      "fileHash": "532547f84fe14524b431d626f38b838a39c72f6d418a131c8f2ed21a505c3b97",
+      "originalSlot": 8
+    },
+    {
+      "name": "FUZZ",
+      "id": "org.spsx.usr.distortion-3",
+      "category": "NFX",
+      "label": "D3",
+      "version": "0.2",
+      "mdsVersion": "1.1",
+      "bytes": 4440,
+      "programWords": 1297,
+      "imports": 0,
+      "xWords": 52,
+      "yWords": 64,
+      "cycles": {
+        "mkii": 3746,
+        "mkiDram": 4903,
+        "mkiSram": 3755
+      },
+      "contentId": "76cf51c71ce876913aedf5ff0cd1b3020c5aa4f2bfc3d30642d754ab72aae7f0",
+      "sha256": "2ff8474eff98a5b58806f3934c5c566ea8fe4f0a184e281c1dcccd42b88f5f50",
+      "sprite": [
+        0,
+        0,
+        16384,
+        30720,
+        2048,
+        2048,
+        2048,
+        534775808,
+        534775808,
+        408975360,
+        409190400,
+        409075712,
+        409075712,
+        534904832,
+        264372224,
+        131072,
+        245760,
+        30720,
+        408946688,
+        408946688,
+        459278336,
+        459278336,
+        459278336,
+        534804480,
+        214155264,
+        131072,
+        131072,
+        131072,
+        131072,
+        131072,
+        0,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "DRV",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "TONE",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "LVL",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "OUT",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "BRR",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "MIX",
+          "default": 127,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "jamma/NFX-D3.syx",
+      "manufacturer": "jamma",
+      "fileVersion": "",
+      "file": "machines/jamma/NFX-D3.syx",
+      "image": "machines/jamma/NFX-D3.png",
+      "fileHash": "817fb5263b2422be3302dd7f27a58d6a3000d8b6d8fb916cba311087d39b1502",
+      "originalSlot": 9
+    },
+    {
+      "name": "FILTER DISTORT",
+      "id": "org.spsx.usr.distortion-4",
+      "category": "NFX",
+      "label": "D4",
+      "version": "0.2",
+      "mdsVersion": "1.1",
+      "bytes": 2936,
+      "programWords": 815,
+      "imports": 0,
+      "xWords": 52,
+      "yWords": 64,
+      "cycles": {
+        "mkii": 2389,
+        "mkiDram": 2799,
+        "mkiSram": 2400
+      },
+      "contentId": "ff3d95a8b96105294470626afe0a967730c6648b17998c711f3cd7c4f1eb636e",
+      "sha256": "fac739b0fc4128d8c09050dc07b68e84ccbe3bab357ed784bb675d9aca063f9c",
+      "sprite": [
+        0,
+        0,
+        16384,
+        30720,
+        2048,
+        2048,
+        2048,
+        534775808,
+        534775808,
+        408975360,
+        409190400,
+        409075712,
+        409075712,
+        534904832,
+        264372224,
+        131072,
+        245760,
+        30720,
+        65013760,
+        65013760,
+        50333696,
+        50333696,
+        50333696,
+        534804480,
+        535019520,
+        131072,
+        131072,
+        131072,
+        131072,
+        131072,
+        0,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "DRV",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "TONE",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "LVL",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "OUT",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "BRR",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "MIX",
+          "default": 127,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "jamma/NFX-D4.syx",
+      "manufacturer": "jamma",
+      "fileVersion": "",
+      "file": "machines/jamma/NFX-D4.syx",
+      "image": "machines/jamma/NFX-D4.png",
+      "fileHash": "7d3d4da23fcd2d4dfde524d059d0923c2cc2d505977960f56be80a8ff362165e",
+      "originalSlot": 10
+    },
+    {
+      "name": "SY-VP ENSEMBLE",
+      "id": "org.spsx.usr.sy-vp-ensemble",
+      "category": "NFX",
+      "label": "EN",
+      "version": "0.3",
+      "mdsVersion": "1.1",
+      "bytes": 1648,
+      "programWords": 381,
+      "imports": 2,
+      "xWords": 6,
+      "yWords": 17,
+      "cycles": {
+        "mkii": 3210,
+        "mkiDram": 4067,
+        "mkiSram": 3526
+      },
+      "contentId": "1511557a5ab2f076f14f27a0d95f525613aacba5f84dbb98abb2ae9678c4af21",
+      "sha256": "b596dd0ea26724a8db7d841e0b5a965ee45f7f6609577850d2fbd24a53bace22",
+      "sprite": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        524288,
+        524288,
+        1072184832,
+        1072233984,
+        845791232,
+        845873152,
+        845791232,
+        845741568,
+        812137984,
+        524288,
+        524288,
+        524288,
+        1072430592,
+        1072430592,
+        13115904,
+        25698816,
+        50869760,
+        1072184832,
+        1072176128,
+        524288,
+        524288,
+        524288,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "SIDE",
+          "default": 0,
+          "min": 0,
+          "max": 1
+        },
+        {
+          "name": "MIX",
+          "default": 127,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "RATE",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DPTH",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "T-1",
+          "default": 127,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "T-2",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "T-3",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "T-4",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "jamma/NFX-EN.syx",
+      "manufacturer": "jamma",
+      "fileVersion": "",
+      "file": "machines/jamma/NFX-EN.syx",
+      "image": "machines/jamma/NFX-EN.png",
+      "fileHash": "814b6ac40c542dc0ede0e73c80dfb2f046026488c33a5dd305d57038379c3045",
+      "originalSlot": 2
+    },
+    {
+      "name": "FET COMP",
+      "id": "org.spsx.usr.fet-comp",
+      "category": "NFX",
+      "label": "FC",
+      "version": "0.3",
+      "mdsVersion": "1.1",
+      "bytes": 4228,
+      "programWords": 1206,
+      "imports": 0,
+      "xWords": 18,
+      "yWords": 47,
+      "cycles": {
+        "mkii": 3118,
+        "mkiDram": 4215,
+        "mkiSram": 3127
+      },
+      "contentId": "2cef847f6ba27a88aa8318765f7914b71c281d7266bb1897e50cec20dead3214",
+      "sha256": "5fba2ef7815f863b27bce764418b86f733a0f457c6ba66e99f56b3c98672066e",
+      "sprite": [
+        0,
+        0,
+        0,
+        0,
+        1048064,
+        524800,
+        1070072320,
+        1070080512,
+        113771008,
+        113771008,
+        113783296,
+        113787392,
+        13140480,
+        13175296,
+        655872,
+        786944,
+        788992,
+        529007104,
+        1070072320,
+        818416128,
+        818414080,
+        818414080,
+        818418176,
+        818414080,
+        818414080,
+        532992,
+        524800,
+        1048064,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "ATK",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "REL",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "IN",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "RAT",
+          "default": 0,
+          "min": 0,
+          "max": 4
+        },
+        {
+          "name": "THR",
+          "default": 90,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "SIDE",
+          "default": 127,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "OUT",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "NBAL",
+          "default": 127,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "jamma/NFX-FC.syx",
+      "manufacturer": "jamma",
+      "fileVersion": "",
+      "file": "machines/jamma/NFX-FC.syx",
+      "image": "machines/jamma/NFX-FC.png",
+      "fileHash": "5d454451fec02c81ab3f8bd087d1bf2217f28d80710ccb289511437b9d446e10",
+      "originalSlot": 5
+    },
+    {
+      "name": "4-TRACK MIXER",
+      "id": "org.spsx.usr.nfx-mixer",
+      "category": "NFX",
+      "label": "MX",
+      "version": "0.2",
+      "mdsVersion": "1.1",
+      "bytes": 532,
+      "programWords": 36,
+      "imports": 0,
+      "xWords": 2,
+      "yWords": 5,
+      "cycles": {
+        "mkii": 304,
+        "mkiDram": 351,
+        "mkiSram": 309
+      },
+      "contentId": "8a29fb8c7337e6607be52080e80c7f0c30d9f80c5105c1a10c532058725174d8",
+      "sha256": "5c0decd6acf66f71dd0c77b63d5b7f801a9374d6a284d73c6fcc6130dbad2e71",
+      "sprite": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        3072,
+        534776832,
+        535821824,
+        12585984,
+        58723328,
+        58720256,
+        12632064,
+        534822912,
+        535821824,
+        49152,
+        49152,
+        0,
+        408956928,
+        484454400,
+        126877184,
+        50343936,
+        50343936,
+        125829120,
+        484638720,
+        409141248,
+        1048064,
+        196608,
+        196608,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "T-1",
+          "default": 127,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "T-2",
+          "default": 127,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "T-3",
+          "default": 127,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "T-4",
+          "default": 127,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "jamma/NFX-MX.syx",
+      "manufacturer": "jamma",
+      "fileVersion": "",
+      "file": "machines/jamma/NFX-MX.syx",
+      "image": "machines/jamma/NFX-MX.png",
+      "fileHash": "99b77c646a566deb3c0c0ed5c10d7f283054b1308b8ae29bfc314504a5f49723",
+      "originalSlot": 7
+    },
+    {
+      "name": "BOWED STRING",
+      "id": "org.spsx.usr.pi-bw",
+      "category": "P-I",
+      "label": "BW",
+      "version": "0.6",
+      "mdsVersion": "1.1",
+      "bytes": 2912,
+      "programWords": 804,
+      "imports": 3,
+      "xWords": 16,
+      "yWords": 44,
+      "cycles": {
+        "mkii": 3885,
+        "mkiDram": 5484,
+        "mkiSram": 4721
+      },
+      "contentId": "66feb61102945e94c873fc9f01c2d850abe4aa1ac9c28b37958621cbc9ac8cc7",
+      "sha256": "66953439d879ca253d129c53e64c25a11c05f810c462481e505b54dc20943b6f",
+      "sprite": [
+        0,
+        0,
+        0,
+        0,
+        1048064,
+        2145386240,
+        2144338176,
+        2144338176,
+        2144861440,
+        1146617088,
+        2144861440,
+        2144861440,
+        2144339200,
+        2077293824,
+        1113344,
+        1113344,
+        2144402688,
+        2144338176,
+        2144339200,
+        2144861440,
+        1075313920,
+        2081946880,
+        1075313920,
+        2144338176,
+        2144338176,
+        2145386240,
+        2144337408,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "PTCH",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "SPD",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "PRES",
+          "default": 84,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "POS",
+          "default": 72,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "ATK",
+          "default": 40,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "LEN",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DEC",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DAMP",
+          "default": 100,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "jamma/P-I-BW.syx",
+      "manufacturer": "jamma",
+      "fileVersion": "",
+      "file": "machines/jamma/P-I-BW.syx",
+      "image": "machines/jamma/P-I-BW.png",
+      "fileHash": "fda99599ea9fe6a375595e35635c3a5490942b6d324000c9f373fc37d0b18125",
+      "originalSlot": 5
+    },
+    {
+      "name": "E PIANO",
+      "id": "org.spsx.usr.pi-ep",
+      "category": "P-I",
+      "label": "EP",
+      "version": "0.4",
+      "mdsVersion": "1.1",
+      "bytes": 6872,
+      "programWords": 2067,
+      "imports": 4,
+      "xWords": 56,
+      "yWords": 62,
+      "cycles": {
+        "mkii": 4484,
+        "mkiDram": 6124,
+        "mkiSram": 4499
+      },
+      "contentId": "c4683200ee09d2812839c999a24e85624c4e3bd3c375cee28365ee7967ead972",
+      "sha256": "4d536c5b550fc7b2c41a7dd51849ac8d73bcd91b7372d01bbba28c1135c7fec8",
+      "sprite": [
+        0,
+        0,
+        0,
+        0,
+        1048064,
+        2096896,
+        2144338176,
+        2144338176,
+        2144861440,
+        2144861440,
+        1146617088,
+        1146617088,
+        1146094848,
+        1146158336,
+        1079049472,
+        1113344,
+        1113344,
+        2144338176,
+        2144339200,
+        2144861440,
+        2144861440,
+        5766400,
+        265813248,
+        265289984,
+        265289984,
+        266338048,
+        1048064,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "PTCH",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "HARD",
+          "default": 80,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DEC",
+          "default": 100,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "REL",
+          "default": 40,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "BELL",
+          "default": 81,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "TONE",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "BAR",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "BASS",
+          "default": 127,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "jamma/P-I-EP.syx",
+      "manufacturer": "jamma",
+      "fileVersion": "",
+      "file": "machines/jamma/P-I-EP.syx",
+      "image": "machines/jamma/P-I-EP.png",
+      "fileHash": "474affeefbd0a5d75da2e5d5c5318bf64a5580947efc0f3cd12a35a61e2a98d6",
+      "originalSlot": 2
+    },
+    {
+      "name": "HANDPAN",
+      "id": "org.spsx.usr.pi-hp",
+      "category": "P-I",
+      "label": "HP",
+      "version": "0.6",
+      "mdsVersion": "1.1",
+      "bytes": 4136,
+      "programWords": 1197,
+      "imports": 2,
+      "xWords": 61,
+      "yWords": 64,
+      "cycles": {
+        "mkii": 3936,
+        "mkiDram": 5035,
+        "mkiSram": 3945
+      },
+      "contentId": "c411114d336c563793e273c47e85d8f8c1584fe3ed6e8da5c9f08691fb600c2d",
+      "sha256": "11ee96c3c2a8b99e3fbf8cf2de1395e53eae95ba5cb1cfc12df1114bede7f552",
+      "sprite": [
+        0,
+        0,
+        0,
+        0,
+        1048064,
+        2096896,
+        2144338176,
+        2144338176,
+        2144861440,
+        2144861440,
+        68680960,
+        2144861440,
+        2144339200,
+        2144402688,
+        2144402688,
+        1113344,
+        1113344,
+        2144338176,
+        2144339200,
+        2144861440,
+        2144861440,
+        5766400,
+        265813248,
+        265289984,
+        265289984,
+        266338048,
+        1048064,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "PTCH",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DEC",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "POS",
+          "default": 40,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "HARD",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "ACC",
+          "default": 100,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "SYMP",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "GU",
+          "default": 48,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "jamma/P-I-HP.syx",
+      "manufacturer": "jamma",
+      "fileVersion": "",
+      "file": "machines/jamma/P-I-HP.syx",
+      "image": "machines/jamma/P-I-HP.png",
+      "fileHash": "4ef95e12b1397529524159e098fb9d3847d5d60089c85bad983aa0d5db907d65",
+      "originalSlot": 3
+    },
+    {
+      "name": "PIANO",
+      "id": "org.spsx.usr.pi-pn",
+      "category": "P-I",
+      "label": "PN",
+      "version": "0.5",
+      "mdsVersion": "1.1",
+      "bytes": 7232,
+      "programWords": 2189,
+      "imports": 1,
+      "xWords": 64,
+      "yWords": 64,
+      "cycles": {
+        "mkii": 4252,
+        "mkiDram": 6465,
+        "mkiSram": 5652
+      },
+      "contentId": "81cfdf9114b49c2679655de62d7a709f529e914dccb5f66740cc81ce4ef6d6f2",
+      "sha256": "50be4eef43a40631ad40b06c179125a4dc266b76e63bf7a54c2e519d1d833dac",
+      "sprite": [
+        0,
+        0,
+        0,
+        0,
+        1048064,
+        2145386240,
+        2144338176,
+        2144338176,
+        2144861440,
+        5766400,
+        265813248,
+        265813248,
+        265291008,
+        265354496,
+        1113344,
+        1113344,
+        2144402688,
+        2144338176,
+        2144339200,
+        2144861440,
+        30932224,
+        236453120,
+        1880620288,
+        2144338176,
+        2144338176,
+        2145386240,
+        2144337408,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "PTCH",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "VEL",
+          "default": 80,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "HARD",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DEC",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "LEN",
+          "default": 100,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DTUN",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "STIF",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "BODY",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "jamma/P-I-PN.syx",
+      "manufacturer": "jamma",
+      "fileVersion": "",
+      "file": "machines/jamma/P-I-PN.syx",
+      "image": "machines/jamma/P-I-PN.png",
+      "fileHash": "8589bf0b11026f2af21465a4f9ab85926d25a5e42e35d29483bb3398f99c2848",
+      "originalSlot": 1
+    },
+    {
+      "name": "STRING",
+      "id": "org.spsx.usr.pi-st",
+      "category": "P-I",
+      "label": "ST",
+      "version": "0.4",
+      "mdsVersion": "1.1",
+      "bytes": 2880,
+      "programWords": 790,
+      "imports": 2,
+      "xWords": 63,
+      "yWords": 63,
+      "cycles": {
+        "mkii": 3777,
+        "mkiDram": 4974,
+        "mkiSram": 4099
+      },
+      "contentId": "4daa5efcfb7408495f14a6d1ea2c85a95ccf562c318a19f7dc6d6ac7f0f3bb7a",
+      "sha256": "e0a861a91888b60e625faf5213f27b2a95365f4ef16056e70b325429b2934e19",
+      "sprite": [
+        0,
+        0,
+        0,
+        0,
+        1048064,
+        1205862144,
+        1204814080,
+        1204814080,
+        1205337344,
+        1146617088,
+        2086141184,
+        2086141184,
+        2085618944,
+        2085682432,
+        1113344,
+        1113344,
+        5307648,
+        5243136,
+        5244160,
+        2144861440,
+        2144861440,
+        2144861440,
+        2144861440,
+        5243136,
+        5243136,
+        6291200,
+        1048064,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "PTCH",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DEC",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DAMP",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "POS",
+          "default": 40,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "HARD",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "EXC",
+          "default": 0,
+          "min": 0,
+          "max": 1
+        },
+        {
+          "name": "DTUN",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "STIF",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "jamma/P-I-ST.syx",
+      "manufacturer": "jamma",
+      "fileVersion": "",
+      "file": "machines/jamma/P-I-ST.syx",
+      "image": "machines/jamma/P-I-ST.png",
+      "fileHash": "c238156f23fc302978d5fb209b1e726a714f71d0ca2e4c41162e713f294bb18f",
+      "originalSlot": 4
+    },
+    {
+      "name": "SX-1 VCF",
+      "id": "org.spsx.usr.sx1-vcf",
+      "category": "SYN",
+      "label": "F1",
+      "version": "0.2",
+      "mdsVersion": "1.1",
+      "bytes": 1752,
+      "programWords": 432,
+      "imports": 0,
+      "xWords": 24,
+      "yWords": 42,
+      "cycles": {
+        "mkii": 3427,
+        "mkiDram": 3878,
+        "mkiSram": 3432
+      },
+      "contentId": "441483db494d662c86a40b1fc4294b6f8a665725a2f3127f4288b08c3fec06a6",
+      "sha256": "d110f6162a2ec0086d345038fd2d0015e6db4b58857aa7ecd4366acfa92afb23",
+      "sprite": [
+        0,
+        210944,
+        228352,
+        224256,
+        224256,
+        224256,
+        534998016,
+        535030784,
+        56740864,
+        56623104,
+        56623104,
+        56822784,
+        6528000,
+        6352896,
+        24576,
+        24576,
+        61440,
+        535010304,
+        534973440,
+        402653184,
+        402653184,
+        402677760,
+        402677760,
+        402677760,
+        402653184,
+        0,
+        2048,
+        3072,
+        261120,
+        261120,
+        0,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "FLTF",
+          "default": 60,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "FLTQ",
+          "default": 40,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "ENV",
+          "default": 80,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "ATK",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DEC",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "VCA",
+          "default": 1,
+          "min": 0,
+          "max": 1
+        },
+        {
+          "name": "T-1",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "T-2",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "jamma/SYN-F1.syx",
+      "manufacturer": "jamma",
+      "fileVersion": "",
+      "file": "machines/jamma/SYN-F1.syx",
+      "image": "machines/jamma/SYN-F1.png",
+      "fileHash": "6cd5fe066ecacb8bbadb075da620d4651df52b50336c8de096acfb10ececfe44",
+      "originalSlot": 2
+    },
+    {
+      "name": "TX-3 VCF",
+      "id": "org.spsx.usr.tx3-vcf",
+      "category": "SYN",
+      "label": "F3",
+      "version": "0.2",
+      "mdsVersion": "1.1",
+      "bytes": 3296,
+      "programWords": 930,
+      "imports": 0,
+      "xWords": 27,
+      "yWords": 48,
+      "cycles": {
+        "mkii": 3893,
+        "mkiDram": 4653,
+        "mkiSram": 3898
+      },
+      "contentId": "12406d501168b452ced0b1be72ec4e8c8ba32fcb2f77c03b8071a053e8e2fb74",
+      "sha256": "04a37b3bc0d729d1759af16a1aa0d54ff7f2f07d6216969cfea2fda797dd6bb8",
+      "sprite": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1024,
+        1024,
+        261120,
+        1024,
+        1024,
+        534773760,
+        19074048,
+        18911232,
+        18898944,
+        2134016,
+        199680,
+        0,
+        534790144,
+        268451840,
+        268451840,
+        268435456,
+        268503040,
+        132096,
+        140288,
+        140288,
+        120832,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "FLTF",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "FLTQ",
+          "default": 80,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "ENV",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DEC",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "ACC",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "LEN",
+          "default": 48,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "LVL",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "BST",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "jamma/SYN-F3.syx",
+      "manufacturer": "jamma",
+      "fileVersion": "",
+      "file": "machines/jamma/SYN-F3.syx",
+      "image": "machines/jamma/SYN-F3.png",
+      "fileHash": "ad71354a638b0e35502198b35ae3531db8b989e76712db1e2f45f791ac064e01",
+      "originalSlot": 4
+    },
+    {
+      "name": "CS-8 VCF",
+      "id": "org.spsx.usr.cs8-vcf",
+      "category": "SYN",
+      "label": "F8",
+      "version": "0.2",
+      "mdsVersion": "1.1",
+      "bytes": 2876,
+      "programWords": 791,
+      "imports": 0,
+      "xWords": 38,
+      "yWords": 38,
+      "cycles": {
+        "mkii": 2847,
+        "mkiDram": 3354,
+        "mkiSram": 2852
+      },
+      "contentId": "c91f62766b1b3cd297148bf1aadbcf07258ffed68c392ec108f0845ffd5db65c",
+      "sha256": "f4f9b7890b50bd51f3284b1c42df7fee9fb8b839ca4f9e8e2517a29b2efefcf5",
+      "sprite": [
+        0,
+        0,
+        0,
+        61440,
+        129024,
+        261120,
+        236544,
+        199680,
+        199680,
+        534973440,
+        534773760,
+        534984704,
+        56851456,
+        56851456,
+        6548480,
+        257024,
+        115712,
+        534773760,
+        534798336,
+        534798336,
+        402677760,
+        402653184,
+        402774016,
+        261120,
+        261120,
+        205824,
+        261120,
+        261120,
+        120832,
+        0,
+        0,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "HPF",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "HPQ",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "LPF",
+          "default": 80,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "LPQ",
+          "default": 40,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "ENV",
+          "default": 24,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "ATK",
+          "default": 24,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DEC",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "LVL",
+          "default": 100,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "jamma/SYN-F8.syx",
+      "manufacturer": "jamma",
+      "fileVersion": "",
+      "file": "machines/jamma/SYN-F8.syx",
+      "image": "machines/jamma/SYN-F8.png",
+      "fileHash": "f84f410453299699e8a18387871b184d917b1da00907d572b2fabca2a0be3d79",
+      "originalSlot": 6
+    },
+    {
+      "name": "SY-FJ VCF",
+      "id": "org.spsx.usr.sy-fj",
+      "category": "SYN",
+      "label": "FJ",
+      "version": "0.2",
+      "mdsVersion": "1.1",
+      "bytes": 3584,
+      "programWords": 1013,
+      "imports": 0,
+      "xWords": 24,
+      "yWords": 43,
+      "cycles": {
+        "mkii": 3788,
+        "mkiDram": 4693,
+        "mkiSram": 3793
+      },
+      "contentId": "31a15a2053ca30d41ccc4f18bccbeca6a254a0023f2f7dfa2c046bd1872b8fd8",
+      "sha256": "d39c410bf5c9ee4f560b8cce5d3782846d957a176ef3b176a6d1113bb7a11cca",
+      "sprite": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        130023424,
+        532676608,
+        939524096,
+        939524096,
+        532774912,
+        130252800,
+        196608,
+        196608,
+        528743424,
+        1069677568,
+        817889280,
+        817889280,
+        818150400,
+        818150400,
+        52224,
+        52224,
+        1069612032,
+        1069578240,
+        113246208,
+        113246208,
+        113246208,
+        12582912,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "FLTF",
+          "default": 70,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "FLTQ",
+          "default": 30,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "SLOP",
+          "default": 0,
+          "min": 0,
+          "max": 1
+        },
+        {
+          "name": "HPF",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "ENV",
+          "default": 60,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "ATK",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DEC",
+          "default": 60,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "LVL",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "jamma/SYN-FJ.syx",
+      "manufacturer": "jamma",
+      "fileVersion": "",
+      "file": "machines/jamma/SYN-FJ.syx",
+      "image": "machines/jamma/SYN-FJ.png",
+      "fileHash": "5beae9fdc627050365398ad05ea5390efb0509e2d2fd9667e4a5077d34d3d532",
+      "originalSlot": 8
+    },
+    {
+      "name": "SX-1 VCO",
+      "id": "org.spsx.usr.sx1-vco",
+      "category": "SYN",
+      "label": "O1",
+      "version": "0.3",
+      "mdsVersion": "1.1",
+      "bytes": 1624,
+      "programWords": 388,
+      "imports": 0,
+      "xWords": 17,
+      "yWords": 36,
+      "cycles": {
+        "mkii": 1972,
+        "mkiDram": 2412,
+        "mkiSram": 1977
+      },
+      "contentId": "5bd8e300c1ed0ac8d0205b11e990175957449143cb95d3ab61f32ed1162a0974",
+      "sha256": "83e34ebed2a7106da6f53635cce3b95717db80cb4d0fb932caf81ad1bc3041bd",
+      "sprite": [
+        0,
+        210944,
+        228352,
+        224256,
+        224256,
+        224256,
+        264465408,
+        535030784,
+        409062400,
+        408944640,
+        408944640,
+        409144320,
+        535010304,
+        264302592,
+        24576,
+        24576,
+        61440,
+        432249856,
+        467864576,
+        459276288,
+        459276288,
+        459300864,
+        459300864,
+        526409728,
+        241172480,
+        0,
+        2048,
+        3072,
+        261120,
+        261120,
+        0,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "PTCH",
+          "default": 40,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DEC",
+          "default": 80,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "SAW",
+          "default": 100,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "PUL",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "SUB",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "SUBM",
+          "default": 0,
+          "min": 0,
+          "max": 2
+        },
+        {
+          "name": "PW",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "NOIS",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "jamma/SYN-O1.syx",
+      "manufacturer": "jamma",
+      "fileVersion": "",
+      "file": "machines/jamma/SYN-O1.syx",
+      "image": "machines/jamma/SYN-O1.png",
+      "fileHash": "a5b398ddba6abbc842a7d18c89cf66a192b11105ded6904217ac105527f207b2",
+      "originalSlot": 1
+    },
+    {
+      "name": "TX-3 VCO",
+      "id": "org.spsx.usr.tx3-vco",
+      "category": "SYN",
+      "label": "O3",
+      "version": "0.2",
+      "mdsVersion": "1.1",
+      "bytes": 2948,
+      "programWords": 812,
+      "imports": 0,
+      "xWords": 29,
+      "yWords": 32,
+      "cycles": {
+        "mkii": 3411,
+        "mkiDram": 3952,
+        "mkiSram": 3250
+      },
+      "contentId": "1a7bb7d91c8aa74eb62f050de189ad61c437eba0c0b5dd5910aba103f0d45251",
+      "sha256": "f80dc49cfbd0f15ca40e79c22f9bbb79ae3f9be473a2c522b20e259ed4efd6cd",
+      "sprite": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1024,
+        1024,
+        261120,
+        1024,
+        1024,
+        264241152,
+        270732288,
+        270569472,
+        270557184,
+        264278016,
+        199680,
+        0,
+        146817024,
+        287326208,
+        287326208,
+        287309824,
+        239142912,
+        132096,
+        140288,
+        140288,
+        120832,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "PTCH",
+          "default": 32,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DEC",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "WAVE",
+          "default": 0,
+          "min": 0,
+          "max": 1
+        },
+        {
+          "name": "SLD",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "PW",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "jamma/SYN-O3.syx",
+      "manufacturer": "jamma",
+      "fileVersion": "",
+      "file": "machines/jamma/SYN-O3.syx",
+      "image": "machines/jamma/SYN-O3.png",
+      "fileHash": "c29338c3665613af29bf83ccaee00eb238d7139dd3c3176ad57ed7b5225e20a1",
+      "originalSlot": 3
+    },
+    {
+      "name": "CS-8 VCO",
+      "id": "org.spsx.usr.cs8-vco",
+      "category": "SYN",
+      "label": "O8",
+      "version": "0.2",
+      "mdsVersion": "1.1",
+      "bytes": 2796,
+      "programWords": 745,
+      "imports": 0,
+      "xWords": 64,
+      "yWords": 40,
+      "cycles": {
+        "mkii": 2656,
+        "mkiDram": 3160,
+        "mkiSram": 2661
+      },
+      "contentId": "dbc10101d5317fd355e02df97bfb7f79a849a629559a2085d018ebdbebe91964",
+      "sha256": "57cbebc2c936674a9bd33a493303896a2826a254ad0206f917012a3fdea69388",
+      "sprite": [
+        0,
+        0,
+        0,
+        61440,
+        129024,
+        261120,
+        236544,
+        199680,
+        264440832,
+        534973440,
+        534773760,
+        409155584,
+        535002112,
+        535002112,
+        264498176,
+        257024,
+        115712,
+        432013312,
+        467689472,
+        467689472,
+        526409728,
+        526385152,
+        237099008,
+        261120,
+        261120,
+        205824,
+        261120,
+        261120,
+        120832,
+        0,
+        0,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "PTCH",
+          "default": 40,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DEC",
+          "default": 96,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "WAVE",
+          "default": 1,
+          "min": 0,
+          "max": 3
+        },
+        {
+          "name": "PW",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "MOD",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "SPD",
+          "default": 48,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "NOIS",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "SINE",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "jamma/SYN-O8.syx",
+      "manufacturer": "jamma",
+      "fileVersion": "",
+      "file": "machines/jamma/SYN-O8.syx",
+      "image": "machines/jamma/SYN-O8.png",
+      "fileHash": "f6d036f862116aff5afb5cda8ea30db16df1c78793b4e5af88e9f75829630041",
+      "originalSlot": 5
+    },
+    {
+      "name": "SY-OJ VCO 1+2",
+      "id": "org.spsx.usr.sy-jp",
+      "category": "SYN",
+      "label": "OJ",
+      "version": "0.4",
+      "mdsVersion": "1.1",
+      "bytes": 6452,
+      "programWords": 1905,
+      "imports": 10,
+      "xWords": 64,
+      "yWords": 64,
+      "cycles": {
+        "mkii": 3721,
+        "mkiDram": 5098,
+        "mkiSram": 3674
+      },
+      "contentId": "9f48c110f6e562b789b54762a7217a5b6f65a673d0ac155b2c1047cc1f0b302c",
+      "sha256": "116e1d7c632bb95ca101c209986bccc1f0dcb7d6a6cc68dc4806d853543a4eb9",
+      "sprite": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        130023424,
+        532676608,
+        939524096,
+        939524096,
+        532805632,
+        130284544,
+        199680,
+        199680,
+        528743424,
+        1069676544,
+        817889280,
+        817889280,
+        817987584,
+        818118656,
+        196608,
+        196608,
+        528743424,
+        1069677568,
+        817889280,
+        817889280,
+        1069547520,
+        528482304,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "PTCH",
+          "default": 40,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DEC",
+          "default": 127,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "WAV1",
+          "default": 1,
+          "min": 0,
+          "max": 3
+        },
+        {
+          "name": "WAV2",
+          "default": 1,
+          "min": 0,
+          "max": 3
+        },
+        {
+          "name": "MIX",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "PTC2",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "FINE",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "PW",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "jamma/SYN-OJ.syx",
+      "manufacturer": "jamma",
+      "fileVersion": "",
+      "file": "machines/jamma/SYN-OJ.syx",
+      "image": "machines/jamma/SYN-OJ.png",
+      "fileHash": "3843f5abfc1a151ba5f84030ef388d1ba79a75840f5bca480e3f8d894a99f051",
+      "originalSlot": 7
+    },
+    {
+      "name": "SY-VP STRING VOX",
+      "id": "org.spsx.usr.sy-vp",
+      "category": "SYN",
+      "label": "VP",
+      "version": "0.3",
+      "mdsVersion": "1.1",
+      "bytes": 5828,
+      "programWords": 1716,
+      "imports": 6,
+      "xWords": 64,
+      "yWords": 56,
+      "cycles": {
+        "mkii": 3123,
+        "mkiDram": 3958,
+        "mkiSram": 3128
+      },
+      "contentId": "a7f717acb8ccc5c33ad4b1fef3ec20aa72ab7fa26ab2aecd6a84c1c1fe835038",
+      "sha256": "2da7d21ce5636dd2a8885308628812d6121d0cd5775bc8df501158799fcc6ff6",
+      "sprite": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        524288,
+        524288,
+        298335744,
+        870907392,
+        589938688,
+        573243392,
+        640270336,
+        1047068160,
+        474496512,
+        524288,
+        524288,
+        524288,
+        65797632,
+        267124224,
+        470295040,
+        805839360,
+        470300160,
+        266878464,
+        65543168,
+        524288,
+        524288,
+        524288,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "PTCH",
+          "default": 40,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "HOLD",
+          "default": 80,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "ATK",
+          "default": 32,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "REL",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "VOIC",
+          "default": 0,
+          "min": 0,
+          "max": 4
+        },
+        {
+          "name": "TONE",
+          "default": 96,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "VRAT",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "VDEP",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "jamma/SYN-VP.syx",
+      "manufacturer": "jamma",
+      "fileVersion": "",
+      "file": "machines/jamma/SYN-VP.syx",
+      "image": "machines/jamma/SYN-VP.png",
+      "fileHash": "453482c936aa2802657a767cd6655d4f6e49be3af933830a4fba1b75e2b9d890",
+      "originalSlot": 9
+    },
+    {
+      "name": "TX-6 BASS DRUM",
+      "id": "org.spsx.usr.tx6-bd",
+      "category": "TX6",
+      "label": "BD",
+      "version": "0.2",
+      "mdsVersion": "1.1",
+      "bytes": 2252,
+      "programWords": 591,
+      "imports": 2,
+      "xWords": 45,
+      "yWords": 31,
+      "cycles": {
+        "mkii": 3286,
+        "mkiDram": 3832,
+        "mkiSram": 3291
+      },
+      "contentId": "b7fdd8dbffcfc69ba3796055b993cf19c9d2881fb2914c726c9950fe3696289b",
+      "sha256": "bf37cc8634269635d84701eb779c66732f373d65628d87ca5ac66974434a3f3f",
+      "sprite": [
+        0,
+        0,
+        1024,
+        1024,
+        261120,
+        261120,
+        1024,
+        1024,
+        535822336,
+        535954432,
+        286497792,
+        286390272,
+        286285824,
+        249690112,
+        236544,
+        132096,
+        0,
+        535838720,
+        535838720,
+        269500416,
+        269500416,
+        136314880,
+        130138112,
+        253952,
+        143360,
+        145408,
+        142336,
+        254976,
+        114688,
+        0,
+        0,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "PTCH",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DEC",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "ACC",
+          "default": 96,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "PNCH",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "jamma/TX6-BD.syx",
+      "manufacturer": "jamma",
+      "fileVersion": "",
+      "file": "machines/jamma/TX6-BD.syx",
+      "image": "machines/jamma/TX6-BD.png",
+      "fileHash": "ba40ef11a6aadafbababe89a8029cc22166ab8c3651a245f603ff22bd9101514",
+      "originalSlot": 1
+    },
+    {
+      "name": "TX-6 CLOSED HAT",
+      "id": "org.spsx.usr.tx6-ch",
+      "category": "TX6",
+      "label": "CH",
+      "version": "0.2",
+      "mdsVersion": "1.1",
+      "bytes": 5672,
+      "programWords": 1689,
+      "imports": 2,
+      "xWords": 64,
+      "yWords": 64,
+      "cycles": {
+        "mkii": 3784,
+        "mkiDram": 4582,
+        "mkiSram": 3796
+      },
+      "contentId": "ed3d21e23b9feb11a219f696ca84e03ab432fb2aedb8f33f8fc8c560b74d4d1b",
+      "sha256": "fe3255df308270d7863e20d629ee6e6bbe703d942588dc8ad5b028be7d00abf0",
+      "sprite": [
+        0,
+        0,
+        1024,
+        1024,
+        261120,
+        261120,
+        1024,
+        1024,
+        266338304,
+        535954432,
+        269720576,
+        269613056,
+        269508608,
+        136443904,
+        236544,
+        132096,
+        0,
+        535838720,
+        535838720,
+        16793600,
+        16793600,
+        535822336,
+        535937024,
+        253952,
+        143360,
+        145408,
+        142336,
+        254976,
+        114688,
+        0,
+        0,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "PTCH",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DEC",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "ACC",
+          "default": 96,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "jamma/TX6-CH.syx",
+      "manufacturer": "jamma",
+      "fileVersion": "",
+      "file": "machines/jamma/TX6-CH.syx",
+      "image": "machines/jamma/TX6-CH.png",
+      "fileHash": "a0cced8155bb23305bc74417f3dbbbafa71e4e7bf01c04eb2f0158d4e7c88588",
+      "originalSlot": 4
+    },
+    {
+      "name": "TX-6 CYMBAL",
+      "id": "org.spsx.usr.tx6-cy",
+      "category": "TX6",
+      "label": "CY",
+      "version": "0.2",
+      "mdsVersion": "1.1",
+      "bytes": 7552,
+      "programWords": 2290,
+      "imports": 2,
+      "xWords": 64,
+      "yWords": 64,
+      "cycles": {
+        "mkii": 4232,
+        "mkiDram": 5869,
+        "mkiSram": 4243
+      },
+      "contentId": "f4a6cdd9cde6a4848cfb0a8268dd02ca93ad12aa5b425a19b222591cb7d697ba",
+      "sha256": "2752b530ba4924f68228fe0ecb2e3fdbc579856347bdffa3b13ae801616f6584",
+      "sprite": [
+        0,
+        0,
+        1024,
+        1024,
+        261120,
+        261120,
+        1024,
+        1024,
+        266338304,
+        535954432,
+        269720576,
+        269613056,
+        269508608,
+        136443904,
+        236544,
+        132096,
+        0,
+        7356416,
+        15745024,
+        528498688,
+        528498688,
+        15728640,
+        7454720,
+        253952,
+        143360,
+        145408,
+        142336,
+        254976,
+        114688,
+        0,
+        0,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "PTCH",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DEC",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "ACC",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "jamma/TX6-CY.syx",
+      "manufacturer": "jamma",
+      "fileVersion": "",
+      "file": "machines/jamma/TX6-CY.syx",
+      "image": "machines/jamma/TX6-CY.png",
+      "fileHash": "28db23db22b120604adcc10273cfa019ec3041fa39d8bc44fa9553ee934209c7",
+      "originalSlot": 6
+    },
+    {
+      "name": "TX-6 OPEN HAT",
+      "id": "org.spsx.usr.tx6-oh",
+      "category": "TX6",
+      "label": "OH",
+      "version": "0.2",
+      "mdsVersion": "1.1",
+      "bytes": 5880,
+      "programWords": 1755,
+      "imports": 2,
+      "xWords": 64,
+      "yWords": 64,
+      "cycles": {
+        "mkii": 3794,
+        "mkiDram": 4728,
+        "mkiSram": 3799
+      },
+      "contentId": "35eb474930b52d6eff43d436b6fc8476a5c4f076257b0e02547257be6a577a37",
+      "sha256": "855e05632bc221ce4f19a1a965e9f708406c366f8c89eb7a252cfcd39c03819d",
+      "sprite": [
+        0,
+        0,
+        1024,
+        1024,
+        261120,
+        261120,
+        1024,
+        1024,
+        266338304,
+        535954432,
+        269720576,
+        269613056,
+        535846912,
+        266467328,
+        236544,
+        132096,
+        0,
+        535838720,
+        535838720,
+        16793600,
+        16793600,
+        535822336,
+        535937024,
+        253952,
+        143360,
+        145408,
+        142336,
+        254976,
+        114688,
+        0,
+        0,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "PTCH",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DEC",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "ACC",
+          "default": 96,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "jamma/TX6-OH.syx",
+      "manufacturer": "jamma",
+      "fileVersion": "",
+      "file": "machines/jamma/TX6-OH.syx",
+      "image": "machines/jamma/TX6-OH.png",
+      "fileHash": "619e7760b441568c2f7165748561524cd964bfbc831da766f7e00b0978a92a1d",
+      "originalSlot": 5
+    },
+    {
+      "name": "TX-6 SNARE DRUM",
+      "id": "org.spsx.usr.tx6-sd",
+      "category": "TX6",
+      "label": "SD",
+      "version": "0.2",
+      "mdsVersion": "1.1",
+      "bytes": 3052,
+      "programWords": 849,
+      "imports": 1,
+      "xWords": 50,
+      "yWords": 30,
+      "cycles": {
+        "mkii": 3185,
+        "mkiDram": 3811,
+        "mkiSram": 3190
+      },
+      "contentId": "62c180fc60542fed8466db3ce5d62604311132f86fe9d5a1e9cf8481c493adbb",
+      "sha256": "0c977665053110df5804c718e9414c60b1e27ff881d3f29dbfe06e661506bc96",
+      "sprite": [
+        0,
+        0,
+        1024,
+        1024,
+        261120,
+        261120,
+        1024,
+        1024,
+        148897792,
+        301073408,
+        286497792,
+        286390272,
+        521166848,
+        237107200,
+        236544,
+        132096,
+        0,
+        535838720,
+        535838720,
+        269500416,
+        269500416,
+        136314880,
+        130138112,
+        253952,
+        143360,
+        145408,
+        142336,
+        254976,
+        114688,
+        0,
+        0,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "PTCH",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DEC",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "ACC",
+          "default": 96,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "SNAP",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "jamma/TX6-SD.syx",
+      "manufacturer": "jamma",
+      "fileVersion": "",
+      "file": "machines/jamma/TX6-SD.syx",
+      "image": "machines/jamma/TX6-SD.png",
+      "fileHash": "6012eb9f4b943685ea29c562815dc7e49078cd35d981ab05a12bc0ac6517604c",
+      "originalSlot": 2
+    },
+    {
+      "name": "TX-6 TOM",
+      "id": "org.spsx.usr.tx6-xt",
+      "category": "TX6",
+      "label": "XT",
+      "version": "0.3",
+      "mdsVersion": "1.1",
+      "bytes": 4808,
+      "programWords": 1403,
+      "imports": 3,
+      "xWords": 60,
+      "yWords": 56,
+      "cycles": {
+        "mkii": 3473,
+        "mkiDram": 4357,
+        "mkiSram": 3478
+      },
+      "contentId": "b80436e93cccc1cc1f7c7634a599c5bba855b4576e630d447ac84f0eb5f2d22d",
+      "sha256": "935e203fbcc819e75cdfb7f25d34749b468d9b7d99af13829848295366ac73d2",
+      "sprite": [
+        0,
+        0,
+        1024,
+        1024,
+        261120,
+        261120,
+        1024,
+        1024,
+        405798912,
+        477234176,
+        130259968,
+        58849280,
+        130048000,
+        477231104,
+        406035456,
+        132096,
+        0,
+        16384,
+        1064960,
+        1064960,
+        535838720,
+        535822336,
+        1163264,
+        1302528,
+        143360,
+        145408,
+        142336,
+        254976,
+        114688,
+        0,
+        0,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "PTCH",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DEC",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "TYPE",
+          "default": 0,
+          "min": 0,
+          "max": 1
+        },
+        {
+          "name": "ACC",
+          "default": 96,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "NOIS",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "NDEC",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "jamma/TX6-XT.syx",
+      "manufacturer": "jamma",
+      "fileVersion": "",
+      "file": "machines/jamma/TX6-XT.syx",
+      "image": "machines/jamma/TX6-XT.png",
+      "fileHash": "bea2f66cd3c5b4afb61f99e7a13765748a20f4cf7b6da8272eda397665ce5415",
+      "originalSlot": 3
+    },
+    {
+      "name": "TX-8 BASS DRUM",
+      "id": "org.spsx.usr.tx8-bd",
+      "category": "TX8",
+      "label": "BD",
+      "version": "0.2",
+      "mdsVersion": "1.1",
+      "bytes": 1632,
+      "programWords": 398,
+      "imports": 0,
+      "xWords": 21,
+      "yWords": 20,
+      "cycles": {
+        "mkii": 1638,
+        "mkiDram": 1982,
+        "mkiSram": 1643
+      },
+      "contentId": "f715e71d4208ef7668af7bc49c8d3f81f859986acd0e8eabe9fcf0598ee47ae9",
+      "sha256": "3a44ba3d525e166a7ed4c57f322364f3f3893a70218318ec57a0f4a80a5c2a6a",
+      "sprite": [
+        0,
+        0,
+        0,
+        1024,
+        1024,
+        261120,
+        1024,
+        1024,
+        535822336,
+        286261248,
+        286460928,
+        286298112,
+        286285824,
+        249597952,
+        199680,
+        0,
+        0,
+        535830528,
+        269492224,
+        269492224,
+        269492224,
+        136314880,
+        130023424,
+        98304,
+        154624,
+        140288,
+        140288,
+        154624,
+        98304,
+        0,
+        0,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "PTCH",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DEC",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "TONE",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "ACC",
+          "default": 96,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "SIGH",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "ATK",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "jamma/TX8-BD.syx",
+      "manufacturer": "jamma",
+      "fileVersion": "",
+      "file": "machines/jamma/TX8-BD.syx",
+      "image": "machines/jamma/TX8-BD.png",
+      "fileHash": "67d10021dae424a108006f20e022184f73add6445b831e5652a065ec33b1ab1f",
+      "originalSlot": 1
+    },
+    {
+      "name": "TX-8 COWBELL",
+      "id": "org.spsx.usr.tx8-cb",
+      "category": "TX8",
+      "label": "CB",
+      "version": "0.2",
+      "mdsVersion": "1.1",
+      "bytes": 2896,
+      "programWords": 801,
+      "imports": 1,
+      "xWords": 64,
+      "yWords": 64,
+      "cycles": {
+        "mkii": 2884,
+        "mkiDram": 3465,
+        "mkiSram": 2889
+      },
+      "contentId": "122bfd2fc336f9be1fd73d9b2da30a21f4de708e2ddf7038c5d4e0bc73c1d4d5",
+      "sha256": "a873fe327ee04e040f70e1b4156a375621a09921d28a0a5e654a644645a8d566",
+      "sprite": [
+        0,
+        0,
+        0,
+        1024,
+        1024,
+        261120,
+        1024,
+        1024,
+        266338304,
+        269484032,
+        269683712,
+        269520896,
+        269508608,
+        136351744,
+        199680,
+        0,
+        0,
+        535830528,
+        286269440,
+        286269440,
+        286269440,
+        286261248,
+        249561088,
+        98304,
+        154624,
+        140288,
+        140288,
+        154624,
+        98304,
+        0,
+        0,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "PTCH",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DEC",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "ACC",
+          "default": 96,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DTUN",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DROP",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "jamma/TX8-CB.syx",
+      "manufacturer": "jamma",
+      "fileVersion": "",
+      "file": "machines/jamma/TX8-CB.syx",
+      "image": "machines/jamma/TX8-CB.png",
+      "fileHash": "bd50c684332e7580f30c48caaf9e04378c42df7b0b4ff696e70c681e8af8c324",
+      "originalSlot": 9
+    },
+    {
+      "name": "TX-8 CLAVES",
+      "id": "org.spsx.usr.tx8-cl",
+      "category": "TX8",
+      "label": "CL",
+      "version": "0.2",
+      "mdsVersion": "1.1",
+      "bytes": 1384,
+      "programWords": 320,
+      "imports": 0,
+      "xWords": 20,
+      "yWords": 20,
+      "cycles": {
+        "mkii": 1310,
+        "mkiDram": 1584,
+        "mkiSram": 1315
+      },
+      "contentId": "555ea04ec0759ed93a357872215f2052f51f8a897c6a6a856ea7a8718549735e",
+      "sha256": "d074a4001d9166739f5d0b18a55e09a3fe87a62bcf245139c4f6b66ecf9f9d95",
+      "sprite": [
+        0,
+        0,
+        0,
+        1024,
+        1024,
+        261120,
+        1024,
+        1024,
+        266338304,
+        269484032,
+        269683712,
+        269520896,
+        269508608,
+        136351744,
+        199680,
+        0,
+        0,
+        535830528,
+        268443648,
+        268443648,
+        268443648,
+        268435456,
+        268435456,
+        98304,
+        154624,
+        140288,
+        140288,
+        154624,
+        98304,
+        0,
+        0,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "PTCH",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DEC",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "ACC",
+          "default": 96,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "GATE",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "jamma/TX8-CL.syx",
+      "manufacturer": "jamma",
+      "fileVersion": "",
+      "file": "machines/jamma/TX8-CL.syx",
+      "image": "machines/jamma/TX8-CL.png",
+      "fileHash": "b8386efe8c17666fe89488b6aedb68e78be2d774b36b33f92d7cbf0c4b868e0d",
+      "originalSlot": 10
+    },
+    {
+      "name": "TX-8 HAND CLAP",
+      "id": "org.spsx.usr.tx8-cp",
+      "category": "TX8",
+      "label": "CP",
+      "version": "0.4",
+      "mdsVersion": "1.1",
+      "bytes": 5544,
+      "programWords": 1648,
+      "imports": 2,
+      "xWords": 64,
+      "yWords": 22,
+      "cycles": {
+        "mkii": 2673,
+        "mkiDram": 4051,
+        "mkiSram": 2678
+      },
+      "contentId": "4df8479c1adef6badd2ee77a07ae43d2b67c15fe3a9bc633b44430b9bb2c5438",
+      "sha256": "84a83d1b42eebc9022bdee3da9ef3c34e99d46b03008d1ccfdb13f6d77cfb1a0",
+      "sprite": [
+        0,
+        0,
+        0,
+        1024,
+        1024,
+        261120,
+        1024,
+        1024,
+        266338304,
+        269484032,
+        269683712,
+        269520896,
+        269508608,
+        136351744,
+        199680,
+        0,
+        0,
+        535830528,
+        17833984,
+        17833984,
+        17833984,
+        17825792,
+        14680064,
+        98304,
+        154624,
+        140288,
+        140288,
+        154624,
+        98304,
+        0,
+        0,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "PTCH",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DEC",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "ACC",
+          "default": 96,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "CLPS",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "SPAC",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "RDEC",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "VERB",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "jamma/TX8-CP.syx",
+      "manufacturer": "jamma",
+      "fileVersion": "",
+      "file": "machines/jamma/TX8-CP.syx",
+      "image": "machines/jamma/TX8-CP.png",
+      "fileHash": "d00cbce2428ca7821324d74b79b795365c22e70dd0a0c35390a6a024447b1beb",
+      "originalSlot": 4
+    },
+    {
+      "name": "TX-8 CYMBAL",
+      "id": "org.spsx.usr.tx8-cy",
+      "category": "TX8",
+      "label": "CY",
+      "version": "0.2",
+      "mdsVersion": "1.1",
+      "bytes": 6376,
+      "programWords": 1912,
+      "imports": 4,
+      "xWords": 64,
+      "yWords": 64,
+      "cycles": {
+        "mkii": 4823,
+        "mkiDram": 6696,
+        "mkiSram": 4836
+      },
+      "contentId": "a6aca313f52d5a2f2cd23382020739442c98123f21dcaab99f58e105770efddb",
+      "sha256": "d09b7b4c7ea2af2abd9055bcd86e7ae0e5d8efdb87b8e029a3762cfa2e2c5647",
+      "sprite": [
+        0,
+        0,
+        0,
+        1024,
+        1024,
+        261120,
+        1024,
+        1024,
+        266338304,
+        269484032,
+        269683712,
+        269520896,
+        269508608,
+        136351744,
+        199680,
+        0,
+        0,
+        3153920,
+        4202496,
+        8396800,
+        520101888,
+        8388608,
+        4194304,
+        3244032,
+        154624,
+        140288,
+        140288,
+        154624,
+        98304,
+        0,
+        0,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "PTCH",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DEC",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "ACC",
+          "default": 96,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "TONE",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "jamma/TX8-CY.syx",
+      "manufacturer": "jamma",
+      "fileVersion": "",
+      "file": "machines/jamma/TX8-CY.syx",
+      "image": "machines/jamma/TX8-CY.png",
+      "fileHash": "bdc3d9557a6353dd119c73059c52a8fdf126766d5f39ca3a8fa4028efdcba2e7",
+      "originalSlot": 8
+    },
+    {
+      "name": "TX-8 HIHAT",
+      "id": "org.spsx.usr.tx8-hh",
+      "category": "TX8",
+      "label": "HH",
+      "version": "0.4",
+      "mdsVersion": "1.1",
+      "bytes": 7560,
+      "programWords": 2287,
+      "imports": 2,
+      "xWords": 64,
+      "yWords": 47,
+      "cycles": {
+        "mkii": 3930,
+        "mkiDram": 4950,
+        "mkiSram": 3866
+      },
+      "contentId": "ee718ef19aebc073b8366fa1bdda926546bc2200e1f27fe749871a244550d3fc",
+      "sha256": "bd9c88e33c0281b9ce8fae1a8f0b7500201b35c01cd5a797c9bf12da8c43420c",
+      "sprite": [
+        0,
+        0,
+        0,
+        1024,
+        1024,
+        261120,
+        1024,
+        1024,
+        535822336,
+        16777216,
+        16976896,
+        16814080,
+        16801792,
+        535859200,
+        199680,
+        0,
+        0,
+        535830528,
+        16785408,
+        16785408,
+        16785408,
+        16777216,
+        535822336,
+        98304,
+        154624,
+        140288,
+        140288,
+        154624,
+        98304,
+        0,
+        0,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "PTCH",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DEC",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "ACC",
+          "default": 96,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "TYPE",
+          "default": 0,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "key": "jamma/TX8-HH.syx",
+      "manufacturer": "jamma",
+      "fileVersion": "",
+      "file": "machines/jamma/TX8-HH.syx",
+      "image": "machines/jamma/TX8-HH.png",
+      "fileHash": "6e4a6b2d392a7b79cae818b37f3c85de167a1cdbb077fe3562c1eac2a9c5fb1b",
+      "originalSlot": 6
+    },
+    {
+      "name": "TX-8 MARACAS",
+      "id": "org.spsx.usr.tx8-ma",
+      "category": "TX8",
+      "label": "MA",
+      "version": "0.3",
+      "mdsVersion": "1.1",
+      "bytes": 2832,
+      "programWords": 782,
+      "imports": 0,
+      "xWords": 25,
+      "yWords": 37,
+      "cycles": {
+        "mkii": 2822,
+        "mkiDram": 3627,
+        "mkiSram": 2827
+      },
+      "contentId": "8e0eee1bd7c8c0544b3de0eba211bbe82a59e45be81639c3a8e8c70c050e0c6c",
+      "sha256": "28e7cc3711ab55a555788f9bb87085d4b0fc85380ee2ce538ec7125579720785",
+      "sprite": [
+        0,
+        0,
+        0,
+        1024,
+        1024,
+        261120,
+        1024,
+        1024,
+        535822336,
+        2097152,
+        4393984,
+        8425472,
+        4218880,
+        2134016,
+        536022016,
+        0,
+        0,
+        8192,
+        528490496,
+        39854080,
+        34611200,
+        34603008,
+        39845888,
+        528580608,
+        154624,
+        140288,
+        140288,
+        154624,
+        98304,
+        0,
+        0,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "PTCH",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DEC",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "ACC",
+          "default": 96,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "SWEL",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "jamma/TX8-MA.syx",
+      "manufacturer": "jamma",
+      "fileVersion": "",
+      "file": "machines/jamma/TX8-MA.syx",
+      "image": "machines/jamma/TX8-MA.png",
+      "fileHash": "632af2fde53be7ff534eec722d05e96cf5e513b53a9f32f584c2479ce4265ddc",
+      "originalSlot": 11
+    },
+    {
+      "name": "TX-8 RIM SHOT",
+      "id": "org.spsx.usr.tx8-rs",
+      "category": "TX8",
+      "label": "RS",
+      "version": "0.3",
+      "mdsVersion": "1.1",
+      "bytes": 2244,
+      "programWords": 594,
+      "imports": 0,
+      "xWords": 44,
+      "yWords": 64,
+      "cycles": {
+        "mkii": 3442,
+        "mkiDram": 4093,
+        "mkiSram": 3456
+      },
+      "contentId": "1d20f457e3222a7b554ec6744f286798c1478feefcc682a40f17cdabea9a931f",
+      "sha256": "12170b0e7fb24ffdd683c530d49d188f8f29b9cd601008b3c887ea6ce3963985",
+      "sprite": [
+        0,
+        0,
+        0,
+        1024,
+        1024,
+        261120,
+        1024,
+        1024,
+        535822336,
+        17825792,
+        18025472,
+        51417088,
+        84959232,
+        417370112,
+        199680,
+        0,
+        0,
+        148905984,
+        286269440,
+        286269440,
+        286269440,
+        286261248,
+        236978176,
+        98304,
+        154624,
+        140288,
+        140288,
+        154624,
+        98304,
+        0,
+        0,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "PTCH",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DEC",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "ACC",
+          "default": 96,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "TONE",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "jamma/TX8-RS.syx",
+      "manufacturer": "jamma",
+      "fileVersion": "",
+      "file": "machines/jamma/TX8-RS.syx",
+      "image": "machines/jamma/TX8-RS.png",
+      "fileHash": "51a8ae163b78ee27b31a8645b645a1ec53d7828d39dacea6a9fb94e7c3171d10",
+      "originalSlot": 5
+    },
+    {
+      "name": "TX-8 SNARE DRUM",
+      "id": "org.spsx.usr.tx8-sd",
+      "category": "TX8",
+      "label": "SD",
+      "version": "0.4",
+      "mdsVersion": "1.1",
+      "bytes": 5368,
+      "programWords": 1593,
+      "imports": 1,
+      "xWords": 64,
+      "yWords": 64,
+      "cycles": {
+        "mkii": 3406,
+        "mkiDram": 4753,
+        "mkiSram": 3418
+      },
+      "contentId": "ab4339559272f6dd86e265b630c394111422f94bceb6235b6c78d34082a1fc33",
+      "sha256": "7f00fbcb56552cd77cde9acda4d1ce2d7b67472db9a6aaf61444c7ee58447c0b",
+      "sprite": [
+        0,
+        0,
+        0,
+        1024,
+        1024,
+        261120,
+        1024,
+        1024,
+        148897792,
+        286261248,
+        286460928,
+        286298112,
+        286285824,
+        237015040,
+        199680,
+        0,
+        0,
+        535830528,
+        269492224,
+        269492224,
+        269492224,
+        136314880,
+        130023424,
+        98304,
+        154624,
+        140288,
+        140288,
+        154624,
+        98304,
+        0,
+        0,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "PTCH",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DEC",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "TONE",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "SNAP",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "ACC",
+          "default": 96,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "jamma/TX8-SD.syx",
+      "manufacturer": "jamma",
+      "fileVersion": "",
+      "file": "machines/jamma/TX8-SD.syx",
+      "image": "machines/jamma/TX8-SD.png",
+      "fileHash": "3c25d164781d52c6820ce44e11f5238943511f0154b5c841ff87ad9852a11472",
+      "originalSlot": 2
+    },
+    {
+      "name": "TX-8 TOM CONGA",
+      "id": "org.spsx.usr.tx8-xt",
+      "category": "TX8",
+      "label": "XT",
+      "version": "0.3",
+      "mdsVersion": "1.1",
+      "bytes": 3980,
+      "programWords": 1133,
+      "imports": 1,
+      "xWords": 57,
+      "yWords": 28,
+      "cycles": {
+        "mkii": 3229,
+        "mkiDram": 4306,
+        "mkiSram": 3243
+      },
+      "contentId": "4fbc0dea8d90927c1fa873961d6ef4405813ce58c558e79a416ab11b19ea13e5",
+      "sha256": "88c18b5c082aa9de896ccc73d8f549143d370f2479de5031bf3fb1e8efa36d5b",
+      "sprite": [
+        0,
+        0,
+        0,
+        1024,
+        1024,
+        261120,
+        1024,
+        1024,
+        405798912,
+        113246208,
+        16976896,
+        16814080,
+        113270784,
+        405835776,
+        199680,
+        0,
+        0,
+        1056768,
+        1056768,
+        1056768,
+        535830528,
+        1048576,
+        1048576,
+        1146880,
+        154624,
+        140288,
+        140288,
+        154624,
+        98304,
+        0,
+        0,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "PTCH",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DEC",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "TYPE",
+          "default": 0,
+          "min": 0,
+          "max": 5
+        },
+        {
+          "name": "TUNE",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "ACC",
+          "default": 96,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DIOD",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "NOIS",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "jamma/TX8-XT.syx",
+      "manufacturer": "jamma",
+      "fileVersion": "",
+      "file": "machines/jamma/TX8-XT.syx",
+      "image": "machines/jamma/TX8-XT.png",
+      "fileHash": "91469016b42286fa03a97ffcb239c8d31087b7557baa4a9087fb7b5b65877496",
+      "originalSlot": 3
+    },
+    {
+      "name": "TX-9 BASS DRUM",
+      "id": "org.spsx.usr.tx9-bd",
+      "category": "TX9",
+      "label": "BD",
+      "version": "0.3",
+      "mdsVersion": "1.1",
+      "bytes": 4512,
+      "programWords": 1319,
+      "imports": 0,
+      "xWords": 64,
+      "yWords": 23,
+      "cycles": {
+        "mkii": 2275,
+        "mkiDram": 2860,
+        "mkiSram": 2280
+      },
+      "contentId": "cf70cdc53418ba3ab7ccb925777077ca64560fdb8886955b000bae5def5b5c70",
+      "sha256": "d7d1e8decf0c7f8dd4837464b78a4878f729c674cc9a97aa68b72e40c487aa12",
+      "sprite": [
+        0,
+        3072,
+        535825408,
+        535825408,
+        431225856,
+        431225856,
+        430967808,
+        430967808,
+        430967808,
+        430964736,
+        431164416,
+        431201280,
+        535883776,
+        510681088,
+        61440,
+        236544,
+        199680,
+        535822336,
+        535846912,
+        405823488,
+        405823488,
+        405798912,
+        406027264,
+        406027264,
+        406023168,
+        406023168,
+        406023168,
+        536046592,
+        266562560,
+        261120,
+        261120,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "PTCH",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DEC",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "TUNE",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "ATK",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "ACC",
+          "default": 96,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DPTH",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DRV",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "jamma/TX9-BD.syx",
+      "manufacturer": "jamma",
+      "fileVersion": "",
+      "file": "machines/jamma/TX9-BD.syx",
+      "image": "machines/jamma/TX9-BD.png",
+      "fileHash": "27219bed122eccf947bda2bf72282c4acfcdbcb16ec0c089f24020f9baf56ce6",
+      "originalSlot": 1
+    },
+    {
+      "name": "TX-9 HAND CLAP",
+      "id": "org.spsx.usr.tx9-cp",
+      "category": "TX9",
+      "label": "CP",
+      "version": "0.3",
+      "mdsVersion": "1.1",
+      "bytes": 5652,
+      "programWords": 1685,
+      "imports": 0,
+      "xWords": 22,
+      "yWords": 37,
+      "cycles": {
+        "mkii": 3159,
+        "mkiDram": 4274,
+        "mkiSram": 3164
+      },
+      "contentId": "1457e149b9711d117d67160ee1d81cbf9b7a759e33315bfc4f1e025d041794f8",
+      "sha256": "1a1fdaa33148fdddc724fb731338d579c6ff34151cde0603c759da3dd95112dc",
+      "sprite": [
+        0,
+        3072,
+        535825408,
+        535825408,
+        406060032,
+        406060032,
+        405801984,
+        405801984,
+        405801984,
+        405798912,
+        405998592,
+        406035456,
+        405860352,
+        405823488,
+        61440,
+        236544,
+        199680,
+        535822336,
+        535846912,
+        28336128,
+        28336128,
+        28311552,
+        28539904,
+        28539904,
+        28535808,
+        28535808,
+        28535808,
+        32730112,
+        32730112,
+        261120,
+        261120,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "PTCH",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DEC",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "ACC",
+          "default": 96,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "CLPS",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "SPAC",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "RDEC",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "VERB",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "jamma/TX9-CP.syx",
+      "manufacturer": "jamma",
+      "fileVersion": "",
+      "file": "machines/jamma/TX9-CP.syx",
+      "image": "machines/jamma/TX9-CP.png",
+      "fileHash": "d3e3f65e4bcf7769dcebbae5db96cb590d732caa906a75d10d7c75c87c7076dc",
+      "originalSlot": 4
+    },
+    {
+      "name": "TX-9 RIM SHOT",
+      "id": "org.spsx.usr.tx9-rs",
+      "category": "TX9",
+      "label": "RS",
+      "version": "0.3",
+      "mdsVersion": "1.1",
+      "bytes": 6756,
+      "programWords": 2038,
+      "imports": 0,
+      "xWords": 18,
+      "yWords": 18,
+      "cycles": {
+        "mkii": 1230,
+        "mkiDram": 1661,
+        "mkiSram": 1235
+      },
+      "contentId": "1b7855b9367660f2af975246b8866652e03f2b4eab0471b880c2f593d3c57f29",
+      "sha256": "6797f55c3a314ad8c1059c86ec50d443511ccc534d1f0a20a75070a5ef8c0d18",
+      "sprite": [
+        0,
+        3072,
+        535825408,
+        535825408,
+        28572672,
+        28572672,
+        28314624,
+        28314624,
+        28314624,
+        28311552,
+        62065664,
+        129211392,
+        502329344,
+        418406400,
+        61440,
+        236544,
+        199680,
+        418381824,
+        418406400,
+        414212096,
+        430989312,
+        430964736,
+        431193088,
+        456358912,
+        456354816,
+        456354816,
+        439577600,
+        506686464,
+        506686464,
+        261120,
+        261120,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "PTCH",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DEC",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "ACC",
+          "default": 96,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "TONE",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "jamma/TX9-RS.syx",
+      "manufacturer": "jamma",
+      "fileVersion": "",
+      "file": "machines/jamma/TX9-RS.syx",
+      "image": "machines/jamma/TX9-RS.png",
+      "fileHash": "c9f69bbbd8956a075e91a2d66ed95ce03bede904d5d634ccc1aed3e6a0526063",
+      "originalSlot": 5
+    },
+    {
+      "name": "TX-9 SNARE DRUM",
+      "id": "org.spsx.usr.tx9-sd",
+      "category": "TX9",
+      "label": "SD",
+      "version": "0.3",
+      "mdsVersion": "1.1",
+      "bytes": 4552,
+      "programWords": 1333,
+      "imports": 0,
+      "xWords": 40,
+      "yWords": 48,
+      "cycles": {
+        "mkii": 2934,
+        "mkiDram": 3967,
+        "mkiSram": 2935
+      },
+      "contentId": "8e4f17b2e3e7b6f1ba347540521df952e6aa14a5d40d7fa64eec586f02b8482c",
+      "sha256": "7ca10407a415d81e73fab9f07dc9ce1bf5d43a77d8a9af2ed06076635abbe0e0",
+      "sprite": [
+        0,
+        3072,
+        418384896,
+        418384896,
+        414448640,
+        431225856,
+        430967808,
+        430967808,
+        456133632,
+        456130560,
+        456330240,
+        439589888,
+        506523648,
+        506486784,
+        61440,
+        236544,
+        199680,
+        535822336,
+        535846912,
+        405823488,
+        405823488,
+        405798912,
+        406027264,
+        406027264,
+        406023168,
+        406023168,
+        406023168,
+        536046592,
+        266562560,
+        261120,
+        261120,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "PTCH",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DEC",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "TONE",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "SNAP",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "ACC",
+          "default": 96,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "BEND",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DTUN",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "jamma/TX9-SD.syx",
+      "manufacturer": "jamma",
+      "fileVersion": "",
+      "file": "machines/jamma/TX9-SD.syx",
+      "image": "machines/jamma/TX9-SD.png",
+      "fileHash": "918f5c9ed1488a177de199d01af5f4d37057cfd634819c025dd5196c71048991",
+      "originalSlot": 2
+    },
+    {
+      "name": "TX-9 TOM",
+      "id": "org.spsx.usr.tx9-xt",
+      "category": "TX9",
+      "label": "XT",
+      "version": "0.3",
+      "mdsVersion": "1.1",
+      "bytes": 3996,
+      "programWords": 1148,
+      "imports": 0,
+      "xWords": 56,
+      "yWords": 64,
+      "cycles": {
+        "mkii": 2968,
+        "mkiDram": 4467,
+        "mkiSram": 2982
+      },
+      "contentId": "2acb74e0700bbb411ccf04916b788c8dae0ff9ad6f34b0e73fbe64fb5a689dcf",
+      "sha256": "c78795490ef6936455110219e7e26be936cc1113b5409703f6ca946aa1b91fed",
+      "sprite": [
+        0,
+        3072,
+        3072,
+        269487104,
+        406060032,
+        477363200,
+        249564160,
+        130026496,
+        58723328,
+        130023424,
+        249760768,
+        477338624,
+        405860352,
+        269508608,
+        61440,
+        236544,
+        199680,
+        3145728,
+        3170304,
+        3170304,
+        3170304,
+        3145728,
+        536050688,
+        536050688,
+        3369984,
+        3369984,
+        3369984,
+        3369984,
+        3369984,
+        261120,
+        261120,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "PTCH",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DEC",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "TYPE",
+          "default": 0,
+          "min": 0,
+          "max": 2
+        },
+        {
+          "name": "ACC",
+          "default": 96,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "BEND",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "NOIS",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "jamma/TX9-XT.syx",
+      "manufacturer": "jamma",
+      "fileVersion": "",
+      "file": "machines/jamma/TX9-XT.syx",
+      "image": "machines/jamma/TX9-XT.png",
+      "fileHash": "ca1b94dd73cd9a94eb452cccff24cecef04155db25a04d773dbc4090b332901f",
+      "originalSlot": 3
+    },
+    {
+      "name": "TXZ BREATH BRASS",
+      "id": "org.spsx.usr.tz-bb",
+      "category": "TXZ",
+      "label": "BB",
+      "version": "0.1",
+      "mdsVersion": "1.1",
+      "bytes": 4080,
+      "programWords": 1180,
+      "imports": 2,
+      "xWords": 64,
+      "yWords": 56,
+      "cycles": {
+        "mkii": 3614,
+        "mkiDram": 4671,
+        "mkiSram": 3635
+      },
+      "contentId": "95722f7dc5292c84553590df317afb082c3de694113b5742317df6d1f8105b78",
+      "sha256": "bce41b1282a7c6c2c472501ac2f94e6140e8e7efb2454156c11f7bbe0988a6aa",
+      "sprite": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        5120,
+        5120,
+        1071649792,
+        1071649792,
+        572871680,
+        572871680,
+        929387520,
+        1071649792,
+        499127296,
+        5120,
+        0,
+        0,
+        1071911936,
+        1071977472,
+        572855296,
+        572855296,
+        929321984,
+        1071928320,
+        499405824,
+        267264,
+        267264,
+        267264,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "PTCH",
+          "default": 56,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DEC",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "VEL",
+          "default": 127,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "BRT",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "MDEC",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "ATK",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "FB",
+          "default": 127,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "RAT",
+          "default": 4,
+          "min": 0,
+          "max": 63
+        }
+      ],
+      "key": "jamma/TXZ-BB.syx",
+      "manufacturer": "jamma",
+      "fileVersion": "",
+      "file": "machines/jamma/TXZ-BB.syx",
+      "image": "machines/jamma/TXZ-BB.png",
+      "fileHash": "6579e8b22ab98c64bcbc5bd23a961faf4487d4ae549096bcaaae91ccb35e24ea",
+      "originalSlot": 6
+    },
+    {
+      "name": "TXZ CELESTE",
+      "id": "org.spsx.usr.tz-ce",
+      "category": "TXZ",
+      "label": "CE",
+      "version": "0.1",
+      "mdsVersion": "1.1",
+      "bytes": 3444,
+      "programWords": 976,
+      "imports": 2,
+      "xWords": 64,
+      "yWords": 56,
+      "cycles": {
+        "mkii": 2611,
+        "mkiDram": 3464,
+        "mkiSram": 2625
+      },
+      "contentId": "7ec120b82e63042c197103599b15ed6c83cd91c0956586e594bbf74cf6862eac",
+      "sha256": "7413dce1bdf5efd747c91eb41a38ad846a4fbe87a08fe612be9e574a67e49e99",
+      "sprite": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        5120,
+        5120,
+        532681728,
+        1071649792,
+        539317248,
+        539317248,
+        539317248,
+        811602944,
+        272634880,
+        5120,
+        0,
+        0,
+        1071911936,
+        1071977472,
+        845485056,
+        845485056,
+        845435904,
+        845435904,
+        811881472,
+        267264,
+        267264,
+        267264,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "PTCH",
+          "default": 56,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DEC",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "VEL",
+          "default": 127,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "BRT",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "MDEC",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "ATK",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "FB",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "RAT",
+          "default": 22,
+          "min": 0,
+          "max": 63
+        }
+      ],
+      "key": "jamma/TXZ-CE.syx",
+      "manufacturer": "jamma",
+      "fileVersion": "",
+      "file": "machines/jamma/TXZ-CE.syx",
+      "image": "machines/jamma/TXZ-CE.png",
+      "fileHash": "b2a7f05f96d04557547f92a1ec631540eab7fcccb3e74b2fe65c0cd141a9efa2",
+      "originalSlot": 7
+    },
+    {
+      "name": "TXZ E.ORGAN",
+      "id": "org.spsx.usr.tz-eo",
+      "category": "TXZ",
+      "label": "EO",
+      "version": "0.1",
+      "mdsVersion": "1.1",
+      "bytes": 3684,
+      "programWords": 1053,
+      "imports": 2,
+      "xWords": 64,
+      "yWords": 57,
+      "cycles": {
+        "mkii": 2629,
+        "mkiDram": 3489,
+        "mkiSram": 2643
+      },
+      "contentId": "530cdc26400ed4b57a50d5fd3bdc199fd10c956fe03ffcddcad7a3e9236504a6",
+      "sha256": "f4e1843e1da54004a57c137eb70b4fd401ecbceed92416c2110b30f2f3f0d0fe",
+      "sprite": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        5120,
+        5120,
+        1071649792,
+        1071649792,
+        845501440,
+        845501440,
+        845501440,
+        845157376,
+        811602944,
+        5120,
+        0,
+        0,
+        532943872,
+        1071977472,
+        539300864,
+        539300864,
+        539251712,
+        1071928320,
+        532960256,
+        267264,
+        267264,
+        267264,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "PTCH",
+          "default": 56,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DEC",
+          "default": 88,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "VEL",
+          "default": 127,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "BRT",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "ATK",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "FB",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "RAT",
+          "default": 0,
+          "min": 0,
+          "max": 63
+        },
+        {
+          "name": "LFO",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "jamma/TXZ-EO.syx",
+      "manufacturer": "jamma",
+      "fileVersion": "",
+      "file": "machines/jamma/TXZ-EO.syx",
+      "image": "machines/jamma/TXZ-EO.png",
+      "fileHash": "ba06262bcac83961f3086a168511d1b2d16e00cbe131698b80d78632854326c6",
+      "originalSlot": 8
+    },
+    {
+      "name": "TXZ ELECTRIC PNO",
+      "id": "org.spsx.usr.tz-ep",
+      "category": "TXZ",
+      "label": "EP",
+      "version": "0.7",
+      "mdsVersion": "1.1",
+      "bytes": 3452,
+      "programWords": 978,
+      "imports": 2,
+      "xWords": 64,
+      "yWords": 56,
+      "cycles": {
+        "mkii": 2638,
+        "mkiDram": 3468,
+        "mkiSram": 2652
+      },
+      "contentId": "3544d1ed7128b123b6caf0574c9911e7eb4aa7b606ac11918537513a983e9d87",
+      "sha256": "cc72f004495a0ffcc71a7f917f4cbf29e83cc3219a501ff97d30ecdbe1ede073",
+      "sprite": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        5120,
+        5120,
+        1071649792,
+        1071649792,
+        845501440,
+        845501440,
+        845501440,
+        845157376,
+        811602944,
+        5120,
+        0,
+        0,
+        1071911936,
+        1071977472,
+        35984384,
+        35984384,
+        56906752,
+        65295360,
+        29643776,
+        267264,
+        267264,
+        267264,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "PTCH",
+          "default": 56,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DEC",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "VEL",
+          "default": 127,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "BRT",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "MDEC",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "FB",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "RAT",
+          "default": 42,
+          "min": 0,
+          "max": 63
+        },
+        {
+          "name": "LFO",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "jamma/TXZ-EP.syx",
+      "manufacturer": "jamma",
+      "fileVersion": "",
+      "file": "machines/jamma/TXZ-EP.syx",
+      "image": "machines/jamma/TXZ-EP.png",
+      "fileHash": "287c4187926c0353e06e1e1089ef5321de54b200afa587abcb01bd4f58eeff7e",
+      "originalSlot": 1
+    },
+    {
+      "name": "TXZ FLUTE",
+      "id": "org.spsx.usr.tz-fl",
+      "category": "TXZ",
+      "label": "FL",
+      "version": "0.1",
+      "mdsVersion": "1.1",
+      "bytes": 3656,
+      "programWords": 1043,
+      "imports": 2,
+      "xWords": 64,
+      "yWords": 56,
+      "cycles": {
+        "mkii": 2640,
+        "mkiDram": 3520,
+        "mkiSram": 2654
+      },
+      "contentId": "7dc9613a3f7da62632869502c86c729d1fb875074b1c5a2c25b21a867d26dd9e",
+      "sha256": "23bb610755452ca2c2ff5ace296719136bd78f88da72d0d3917d35e64a7768e5",
+      "sprite": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        5120,
+        5120,
+        1071649792,
+        1071649792,
+        40195072,
+        40195072,
+        40195072,
+        39851008,
+        6296576,
+        5120,
+        0,
+        0,
+        1071911936,
+        1071977472,
+        805639168,
+        805639168,
+        805590016,
+        805590016,
+        805590016,
+        267264,
+        267264,
+        267264,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "PTCH",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DEC",
+          "default": 88,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "VEL",
+          "default": 127,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "BRT",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "MDEC",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "ATK",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "RAT",
+          "default": 8,
+          "min": 0,
+          "max": 63
+        },
+        {
+          "name": "LFO",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "jamma/TXZ-FL.syx",
+      "manufacturer": "jamma",
+      "fileVersion": "",
+      "file": "machines/jamma/TXZ-FL.syx",
+      "image": "machines/jamma/TXZ-FL.png",
+      "fileHash": "b6117d77a44ec79afd695e9b6530627ec9d049b3967a530ad93a8bf7c471e71d",
+      "originalSlot": 9
+    },
+    {
+      "name": "TXZ LATE BASS",
+      "id": "org.spsx.usr.tz-lb",
+      "category": "TXZ",
+      "label": "LB",
+      "version": "0.7",
+      "mdsVersion": "1.1",
+      "bytes": 3508,
+      "programWords": 996,
+      "imports": 2,
+      "xWords": 64,
+      "yWords": 56,
+      "cycles": {
+        "mkii": 2663,
+        "mkiDram": 3488,
+        "mkiSram": 2675
+      },
+      "contentId": "f0315d583a1e815fccba00ff372376df763e8da99f930c2bfef582a0be919a88",
+      "sha256": "a76b650cf4ab29666e1d5e7141f4703e16bd16f3ee876823c173711244177727",
+      "sprite": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        5120,
+        5120,
+        1071649792,
+        1071649792,
+        805655552,
+        805655552,
+        805655552,
+        805311488,
+        805311488,
+        5120,
+        0,
+        0,
+        1071911936,
+        1071977472,
+        572855296,
+        572855296,
+        929321984,
+        1071928320,
+        499405824,
+        267264,
+        267264,
+        267264,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "PTCH",
+          "default": 40,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DEC",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "VEL",
+          "default": 127,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "BRT",
+          "default": 59,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "MDEC",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "FB",
+          "default": 127,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "RAT",
+          "default": 4,
+          "min": 0,
+          "max": 63
+        },
+        {
+          "name": "LFO",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "jamma/TXZ-LB.syx",
+      "manufacturer": "jamma",
+      "fileVersion": "",
+      "file": "machines/jamma/TXZ-LB.syx",
+      "image": "machines/jamma/TXZ-LB.png",
+      "fileHash": "e52afb9627a20dd97c87e521259ac3b9380d18c53e9170a5226a775d5b191907",
+      "originalSlot": 2
+    },
+    {
+      "name": "TXZ HEAVY LEAD",
+      "id": "org.spsx.usr.tz-ld",
+      "category": "TXZ",
+      "label": "LD",
+      "version": "0.7",
+      "mdsVersion": "1.1",
+      "bytes": 3524,
+      "programWords": 1001,
+      "imports": 2,
+      "xWords": 64,
+      "yWords": 56,
+      "cycles": {
+        "mkii": 2560,
+        "mkiDram": 3459,
+        "mkiSram": 2574
+      },
+      "contentId": "271524ca353004adc4b532418bdede5cd0d6657fc88873a6b5fb108ffb32844f",
+      "sha256": "2efb7db80e8d97b91c130755fc4af3ddef0a749f86736753322275d3a90848ef",
+      "sprite": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        5120,
+        5120,
+        1071649792,
+        1071649792,
+        805655552,
+        805655552,
+        805655552,
+        805311488,
+        805311488,
+        5120,
+        0,
+        0,
+        1071911936,
+        1071977472,
+        539300864,
+        811930624,
+        954487808,
+        532960256,
+        260330496,
+        267264,
+        267264,
+        267264,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "PTCH",
+          "default": 56,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DEC",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "BRT",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "MDEC",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "ATK",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "FB",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "RAT",
+          "default": 4,
+          "min": 0,
+          "max": 63
+        },
+        {
+          "name": "LFO",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "jamma/TXZ-LD.syx",
+      "manufacturer": "jamma",
+      "fileVersion": "",
+      "file": "machines/jamma/TXZ-LD.syx",
+      "image": "machines/jamma/TXZ-LD.png",
+      "fileHash": "5d0308ca79f1df4f5d6e76c5e508cb56c801f008833ade6bef3ff7530c345bbe",
+      "originalSlot": 3
+    },
+    {
+      "name": "TXZ HARMO PAD",
+      "id": "org.spsx.usr.tz-pd",
+      "category": "TXZ",
+      "label": "PD",
+      "version": "0.7",
+      "mdsVersion": "1.1",
+      "bytes": 3860,
+      "programWords": 1109,
+      "imports": 2,
+      "xWords": 64,
+      "yWords": 56,
+      "cycles": {
+        "mkii": 3632,
+        "mkiDram": 4654,
+        "mkiSram": 3642
+      },
+      "contentId": "1f3dd7b730cf9ec91ccd6a0801c4a002af3078239911908b386bb3b218a8b15c",
+      "sha256": "8be2ae99f411c6f2fbc4f91e27ba4622a9b1c8e68c3f49ed4f312d5106b408b9",
+      "sprite": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        5120,
+        5120,
+        1071649792,
+        1071649792,
+        36000768,
+        36000768,
+        56972288,
+        65016832,
+        29365248,
+        5120,
+        0,
+        0,
+        1071911936,
+        1071977472,
+        539300864,
+        811930624,
+        954487808,
+        532960256,
+        260330496,
+        267264,
+        267264,
+        267264,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "PTCH",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DEC",
+          "default": 88,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "VEL",
+          "default": 127,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "BRT",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "MDEC",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "ATK",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "FB",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "LFO",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "jamma/TXZ-PD.syx",
+      "manufacturer": "jamma",
+      "fileVersion": "",
+      "file": "machines/jamma/TXZ-PD.syx",
+      "image": "machines/jamma/TXZ-PD.png",
+      "fileHash": "9268acf6b128efa3a6a157182129b2ba32325af91cbbf37415dc4172b2e6dcc7",
+      "originalSlot": 4
+    },
+    {
+      "name": "TXZ SOFT CLOUD",
+      "id": "org.spsx.usr.tz-sc",
+      "category": "TXZ",
+      "label": "SC",
+      "version": "0.1",
+      "mdsVersion": "1.1",
+      "bytes": 3532,
+      "programWords": 1003,
+      "imports": 2,
+      "xWords": 64,
+      "yWords": 56,
+      "cycles": {
+        "mkii": 2626,
+        "mkiDram": 3456,
+        "mkiSram": 2640
+      },
+      "contentId": "c44376747001dd1ecef85057438044b7dd209c8589e9a52d17c9f2d805329a6f",
+      "sha256": "212ab90fc70bf577170033c4460b44686b0bc15f06e1f3719d00c99a69cedf31",
+      "sprite": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        5120,
+        5120,
+        297800704,
+        870323200,
+        589648896,
+        572871680,
+        639980544,
+        1046483968,
+        473961472,
+        5120,
+        0,
+        0,
+        532943872,
+        1071977472,
+        539300864,
+        539300864,
+        539251712,
+        811881472,
+        272913408,
+        267264,
+        267264,
+        267264,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "PTCH",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DEC",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "VEL",
+          "default": 127,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "BRT",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "ATK",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "FB",
+          "default": 2,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "RAT",
+          "default": 13,
+          "min": 0,
+          "max": 63
+        },
+        {
+          "name": "LFO",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "jamma/TXZ-SC.syx",
+      "manufacturer": "jamma",
+      "fileVersion": "",
+      "file": "machines/jamma/TXZ-SC.syx",
+      "image": "machines/jamma/TXZ-SC.png",
+      "fileHash": "becc0af3bb915f04f6622e2d9f0ebb264177073adc1bbb1fe85cd2f472f8338c",
+      "originalSlot": 10
+    },
+    {
+      "name": "TXZ SOFT STRING",
+      "id": "org.spsx.usr.tz-ss",
+      "category": "TXZ",
+      "label": "SS",
+      "version": "0.1",
+      "mdsVersion": "1.1",
+      "bytes": 3652,
+      "programWords": 1042,
+      "imports": 2,
+      "xWords": 64,
+      "yWords": 56,
+      "cycles": {
+        "mkii": 2722,
+        "mkiDram": 3593,
+        "mkiSram": 2727
+      },
+      "contentId": "f93b1efcbf2ec9d2796267d7d7df4ea16ef36ce18cf14f64977b6c9a5c45c0bd",
+      "sha256": "8e5ec5e83382c031f9c588af141a1411546b8b5639e08d034c8766a7518ca7ff",
+      "sprite": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        5120,
+        5120,
+        297800704,
+        870323200,
+        589648896,
+        572871680,
+        639980544,
+        1046483968,
+        473961472,
+        5120,
+        0,
+        0,
+        298062848,
+        870650880,
+        589632512,
+        572855296,
+        639915008,
+        1046762496,
+        474240000,
+        267264,
+        267264,
+        267264,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "PTCH",
+          "default": 56,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DEC",
+          "default": 88,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "VEL",
+          "default": 127,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "BRT",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "ATK",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "FB",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "RAT",
+          "default": 10,
+          "min": 0,
+          "max": 63
+        },
+        {
+          "name": "LFO",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "jamma/TXZ-SS.syx",
+      "manufacturer": "jamma",
+      "fileVersion": "",
+      "file": "machines/jamma/TXZ-SS.syx",
+      "image": "machines/jamma/TXZ-SS.png",
+      "fileHash": "b5193a33ef4b197e3398489198a91563500590874e7e59629ded204521735531",
+      "originalSlot": 11
+    },
+    {
+      "name": "TXZ SYN STRING",
+      "id": "org.spsx.usr.tz-st",
+      "category": "TXZ",
+      "label": "ST",
+      "version": "0.7",
+      "mdsVersion": "1.1",
+      "bytes": 3580,
+      "programWords": 1020,
+      "imports": 2,
+      "xWords": 64,
+      "yWords": 56,
+      "cycles": {
+        "mkii": 2670,
+        "mkiDram": 3599,
+        "mkiSram": 2675
+      },
+      "contentId": "447163ee1497e83435ad0062abd29afd6dea0a0ac3525138d2469b769e061cec",
+      "sha256": "5fd8705b74ece32e10c92b50ca63c7dc16656d5d12d85a91716818b9d8e0d03c",
+      "sprite": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        5120,
+        5120,
+        297800704,
+        870323200,
+        589648896,
+        572871680,
+        639980544,
+        1046483968,
+        473961472,
+        5120,
+        0,
+        0,
+        6558720,
+        6624256,
+        1071977472,
+        1071977472,
+        1071928320,
+        6575104,
+        6575104,
+        267264,
+        267264,
+        267264,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "PTCH",
+          "default": 56,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DEC",
+          "default": 88,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "VEL",
+          "default": 127,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "BRT",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "ATK",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "FB",
+          "default": 127,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "RAT",
+          "default": 8,
+          "min": 0,
+          "max": 63
+        },
+        {
+          "name": "LFO",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "jamma/TXZ-ST.syx",
+      "manufacturer": "jamma",
+      "fileVersion": "",
+      "file": "machines/jamma/TXZ-ST.syx",
+      "image": "machines/jamma/TXZ-ST.png",
+      "fileHash": "84dfc5c274454b339c9db72c3ca88da02a65bb5ad974f83a75834c596b102dd0",
+      "originalSlot": 5
+    },
+    {
       "name": "RAM GRANULAR",
       "id": "org.murdenihcam.ram-granular",
       "category": "RAM",

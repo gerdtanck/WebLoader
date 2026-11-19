@@ -17,7 +17,7 @@ test('Packing covers every byte and partial mask', () => {
   }
   assert.throws(() => unpack7(new Uint8Array([1, 0])), /Maske/);
 });
-test('All 71 real packages match Python references and roundtrip byte exactly', async () => {
+test('All library packages match Python references and roundtrip byte exactly', async () => {
   const reference = JSON.parse(await readFile(new URL('tests/fixtures/catalog-reference.json', root), 'utf8')) as Record<string, { hash: string; contentId: string; words: number }>;
   let count = 0;
   for (const manufacturer of await readdir(new URL('machines/', root))) {
@@ -30,7 +30,7 @@ test('All 71 real packages match Python references and roundtrip byte exactly', 
       count++;
     }
   }
-  assert.equal(count, 71);
+  assert.equal(count, Object.keys(reference).length);
 });
 test('Retargeting preserves MDS bytes for U01, U16, U17 and U48', async () => {
   for (const slot of [1, 16, 17, 48]) {

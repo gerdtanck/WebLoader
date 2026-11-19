@@ -1,7 +1,7 @@
 # Machinedrum WebLoader
 
 Webseite für MDS User Machines auf **MDX X.20**. Bibliothek mit
-71 Machines, PNG-Beschreibungen, Slotansicht und Laden über WebMIDI.
+126 Machines, PNG-Beschreibungen, Slotansicht und Laden über WebMIDI.
 Alles zu diesem Unterprojekt liegt in diesem Ordner. Die Original-Machines
 werden beim Laden nicht verändert.
 
@@ -109,6 +109,11 @@ Neue Paare unter `machines/<hersteller>/name.syx` und `name.png` ablegen.
 `npm run catalog` validiert alle MDS-Pakete und erstellt `catalog.json`.
 Der Katalog enthält Metadaten, Inhaltskennungen, Dateihashes und Bildpfade.
 
+`machines/jamma/` enthält die 55 unveränderten User Machines aus der
+X.20-C-Sammlung. Die zugehörigen PNGs zeigen die Originalbeschreibungen,
+Machine-Symbole sowie Parameternamen, Standardwerte und numerische Bereiche.
+Herkunft und reproduzierbare Bilderzeugung: [jamma](machines/jamma/README.md).
+
 ```powershell
 npm test
 npm run build
@@ -133,7 +138,7 @@ Lokale Lab-Notizen und Diagnoseprogramme werden nicht mit veröffentlicht.
   Commit-Bestätigung und Schutz vor parallelen Aufträgen.
 - `src/webmidi.ts`, `src/demo.ts`: physischer bzw. simulierter MIDI-Adapter.
 - `src/main.ts`, `src/style.css`: Oberfläche ohne UI-Framework.
-- `tests/`: 22 Node-Tests einschließlich aller 71 Originalpakete, beschädigter
+- `tests/`: 22 Node-Tests einschließlich aller 126 Bibliothekspakete, beschädigter
   Daten, Fremdantworten, Zeitgrenzen und fehlender/falscher finaler ACKs.
 - `package-lock.json` und `toolchain.lock.json`: gepinnte Abhängigkeiten und
   Protokollquellen. Keine externen Fonts, Tracker oder Laufzeit-CDNs.
