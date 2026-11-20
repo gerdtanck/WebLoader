@@ -638,5 +638,10 @@
     "hash": "1a97474ef275c038a0691312c8b8329aab65cb8e0e12b25064a0ed25c150faec",
     "contentId": "a0da641a409394136dece70a86db1724d2a2506c059543e48fba0780c477c77f",
     "words": 577
+  },
+  "minimal/NFX-OT.syx": {
+    "hash": "65ffd7d0180efbd69a76db2b65833fe82cf5f769d98d195bca38367b27679938",
+    "contentId": "e96275e86b851295023ca7a5d566eb18f8acaeaa34879f7bded2f2cfafa6f947",
+    "words": 2176
   }
 }

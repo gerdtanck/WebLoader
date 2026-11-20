@@ -1,4 +1,10 @@
-# minimal — CROSSFIELD
+# minimal — User Machines
+
+- **[NFX-OT](NFX-OT.md)**: mono three-band OTT compressor, r0003 / v0.3,
+  with seven controls and internal dry/wet mixing. Quick-checked development build.
+- **CROSSFIELD RVB-XA + RVB-XB**: experimental stereo reverb pair, described below.
+
+## CROSSFIELD
 
 **RVB-XA + RVB-XB** form one eight-line, cross-coupled stereo reverb for
 **MDX X.20-C / UW**. Use both machines together.

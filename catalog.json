@@ -5849,6 +5849,111 @@
       "originalSlot": 5
     },
     {
+      "name": "DEV NFX-OT",
+      "id": "dev.fdfa00c478e2a6fc2327876a062",
+      "category": "NFX",
+      "label": "OT",
+      "version": "0.3",
+      "mdsVersion": "1.1",
+      "bytes": 7224,
+      "programWords": 2176,
+      "imports": 0,
+      "xWords": 54,
+      "yWords": 59,
+      "cycles": {
+        "mkii": 44241,
+        "mkiDram": 45441,
+        "mkiSram": 44254
+      },
+      "contentId": "e96275e86b851295023ca7a5d566eb18f8acaeaa34879f7bded2f2cfafa6f947",
+      "sha256": "65ffd7d0180efbd69a76db2b65833fe82cf5f769d98d195bca38367b27679938",
+      "sprite": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "DEPT",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "THR",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "UP",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "TIME",
+          "default": 38,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "GAIN",
+          "default": 58,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "RESP",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "MIX",
+          "default": 127,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "minimal/NFX-OT.syx",
+      "manufacturer": "minimal",
+      "fileVersion": "",
+      "file": "machines/minimal/NFX-OT.syx",
+      "image": "machines/minimal/NFX-OT.png",
+      "fileHash": "613c01c170e857162e1bbecffb3b4f15240d5f404c47edbb1cbb6418f08913f2",
+      "originalSlot": 1
+    },
+    {
       "name": "DEV RVB-XA",
       "id": "dev.e47645870c27261e881ed2af164",
       "category": "RVB",

@@ -1,6 +1,6 @@
 # Machinedrum WebLoader
 
-Browse 128 MDS User Machines, view their descriptions, and load them into
+Browse 129 MDS User Machines, view their descriptions, and load them into
 **MDX X.20** over WebMIDI.
 
 **[Open WebLoader](https://gerdtanck.github.io/WebLoader/)**
@@ -94,6 +94,8 @@ The **RVB-XA + RVB-XB** pair by **minimal** includes English cards with setup
 and control descriptions. This experimental UW reverb uses almost all of the
 MD's DSP capacity and is intended primarily for an external input.
 See [CROSSFIELD setup and development status](machines/minimal/README.md).
+**minimal** also provides [NFX-OT](machines/minimal/NFX-OT.md), a mono OTT
+compressor with internal dry/wet mixing, as the Quick-checked r0003 development build.
 Original machine payloads are unchanged. No firmware or ROM files are included.
 
 - `src/protocol.ts`: package validation, checksums, content IDs, retargeting.

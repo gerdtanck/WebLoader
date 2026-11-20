@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "author": "minimal",
+  "machine": "NFX-OT",
+  "revision": "r0003",
+  "status": "quick_checked_development",
+  "files_sha256": {
+    "artifacts/machines/nfx-ot/revisions/r0003/revision.json": "7b4bbb371e37dc5618fd5d6eafd4e5e8fda71bbc32dd442803d86de22aa336a7",
+    "artifacts/machines/nfx-ot/revisions/r0003/build/machine.syx": "613c01c170e857162e1bbecffb3b4f15240d5f404c47edbb1cbb6418f08913f2",
+    "artifacts/machines/nfx-ot/revisions/r0003/build/machine.mds": "65ffd7d0180efbd69a76db2b65833fe82cf5f769d98d195bca38367b27679938",
+    "artifacts/machines/nfx-ot/revisions/r0003/source/machine.json": "f0a9ef8464eafc72db681bf8b9740d47ba36d66eabdd170fc35710ebac920d9e",
+    "machines/nfx-ot/README.md": "0a41f4490769bab2671b41ea8b594fdd6bad127305da7b294290a3d8aafdc3ff",
+    "knowledge/findings/2026-11-20-nfx-ot-r0003.md": "ea37548391a26a3986cd4babc3be81ffe57f3093e5e9002311295b48c49ad51c",
+    "knowledge/findings/2026-11-20-nfx-ot-noise-recovery.md": "8c321c0b79c00ffe66370b1aaaf5e6f1451ba2047c38537bf8d28a3fd6d142b2"
+  },
+  "fonts_sha256": {
+    "arial.ttf": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+    "arialbd.ttf": "e8f4e3baf6cc35fed6fcce3a540e8b39e8f6cda1d22a28f2ec8f526fef7a43f5",
+    "consola.ttf": "cf00b507b3286870cc5064ebd0633c303f70b491a4af25eec2d32df413db0179",
+    "consolab.ttf": "7e8de70c92a891722bd3fbd623db005caab2bfe267e5dab5be46b95a44e0c7f1"
+  }
+}

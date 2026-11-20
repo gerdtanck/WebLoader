@@ -6,7 +6,7 @@ The project owner supplied the User Machine library, grouped by author:
 | --- | ---: |
 | dbx | 2 |
 | jmamma | 55 |
-| minimal | 2 |
+| minimal | 3 |
 | murdenihcam | 13 |
 | waftlord | 56 |
 
@@ -19,6 +19,8 @@ See [sources and generation](machines/jmamma/README.md).
 revision r0001. Its English cards were generated from the original package
 metadata and project documentation, with the owner's DSP-load and external-input
 usage notes. See [CROSSFIELD sources and status](machines/minimal/README.md).
+The **NFX-OT r0003** mono compressor and its English card also come from
+minimal's project sources; see [NFX-OT sources and status](machines/minimal/NFX-OT.md).
 
 Author credits and descriptions correspond to the original files. This
 repository does not grant a blanket license for these third-party materials.

@@ -66,8 +66,8 @@
   },
   "browser_reference_fixture": {
     "path": "tests/fixtures/catalog-reference.json",
-    "sha256": "3a9c8bbd5e570f56f299ee10bdf86cfec447746fdf9662c8ea068b36ab6eb36b",
-    "source": "Independent mdlab.protocol Python parser output: original 126 packages plus 2 unchanged CROSSFIELD r0001 packages; hashes/content IDs/program words for all 128 packages"
+    "sha256": "1ff58538b53ef4d97ef0f47ecbd7513e6b7cbf839cc37b2b2731a0f29989b258",
+    "source": "Independent mdlab.protocol Python parser output: original 128 packages plus unchanged NFX-OT r0003; hashes/content IDs/program words for all 129 packages"
   },
   "github_pages": {
     "node": "26.12.1",
@@ -143,5 +143,23 @@
       "sha256": "dd5bb9df09d4940e15f37b63ffb49a1df6a6a8e5461a4485d2811df1d22085dd"
     },
     "reproduce": "python scripts/import_minimal.py <Machinedrum-Development-directory>"
+  },
+  "minimal_nfx_ot": {
+    "source": "../artifacts/machines/nfx-ot/revisions/r0003/build/machine.syx",
+    "source_pins": {
+      "path": "scripts/data/minimal-nfx-ot-sources.json",
+      "sha256": "62581de02ac7e6afa05a7d78ada596d0fd47e72839d05065b23056cb5a0abcfe"
+    },
+    "revision": "r0003",
+    "status": "quick_checked_development",
+    "policy": "SYX copied byte-for-byte; English card generated from package metadata and source documentation",
+    "generator": "scripts/import_minimal_nfx_ot.py",
+    "Pillow": "12.0.0",
+    "fonts": "Windows Arial / Consolas, exact hashes in source_pins",
+    "validation_parser": {
+      "path": "../mdlab/protocol.py",
+      "sha256": "dd5bb9df09d4940e15f37b63ffb49a1df6a6a8e5461a4485d2811df1d22085dd"
+    },
+    "reproduce": "python scripts/import_minimal_nfx_ot.py <Machinedrum-Development-directory>"
   }
 }
