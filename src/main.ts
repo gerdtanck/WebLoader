@@ -291,7 +291,7 @@ function events() {
 async function init() {
   shell(); events(); renderSlots(); renderQueue(); showMobileView('library');
   try {
-    const response = await fetch('./catalog.json'); if (!response.ok) throw new Error('Catalog unavailable.');
+    const response = await fetch('./catalog.json', { cache: 'no-cache' }); if (!response.ok) throw new Error('Catalog unavailable.');
     const catalog = await response.json(); machines = catalog.machines;
     if (!machines.length) throw new Error('The catalog is empty.');
     for (const [id, values] of [['manufacturer', [...new Set(machines.map(m => m.manufacturer))].sort()], ['category', [...new Set(machines.map(m => m.category))].sort()]] as [string, string[]][]) {
