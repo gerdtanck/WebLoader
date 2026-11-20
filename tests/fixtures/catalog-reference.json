@@ -628,5 +628,15 @@
     "hash": "b64c9f10ed81d9d660c9cc12dcedfa765231bf05fd67f9c857cfea155a5e6f82",
     "contentId": "0bc5a9b29265da54072c3689f98f3d025ee22a992344e96b3ceb8f136b57e4e1",
     "words": 2437
+  },
+  "minimal/RVB-XA.syx": {
+    "hash": "348c83fefafb3b5c194695969be528cf716b2f1f26b1b41feac58fbd1e8861d8",
+    "contentId": "a43eb1e9e6672fc797d789a8fa3e47ddc306809010abaababa7b1dc0be434e80",
+    "words": 1846
+  },
+  "minimal/RVB-XB.syx": {
+    "hash": "1a97474ef275c038a0691312c8b8329aab65cb8e0e12b25064a0ed25c150faec",
+    "contentId": "a0da641a409394136dece70a86db1724d2a2506c059543e48fba0780c477c77f",
+    "words": 577
   }
 }

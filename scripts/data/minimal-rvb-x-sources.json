@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "author": "minimal",
+  "pair": "CROSSFIELD",
+  "revision": "r0001",
+  "status": "experimental_dsp_checked_mds_violation",
+  "files_sha256": {
+    "artifacts/machines/rvb-xa/revisions/r0001/revision.json": "e3873b2a938be66be77a08793522f972c35ee2d5d8cac7c9f5f2ece235ad0298",
+    "artifacts/machines/rvb-xa/revisions/r0001/build/machine.syx": "c8bde095bf25001fff3ff4b26f29deee352f0b00396497176e3808eaf8ab2d2a",
+    "artifacts/machines/rvb-xa/revisions/r0001/build/machine.mds": "348c83fefafb3b5c194695969be528cf716b2f1f26b1b41feac58fbd1e8861d8",
+    "artifacts/machines/rvb-xa/revisions/r0001/build/definition.json": "ea6f534aaf76b53281d6b42a12a19b5dce4a22b8724a0bd7c0f17de66ace7896",
+    "artifacts/machines/rvb-xa/revisions/r0001/source/README.md": "1ea8c062882ee51427a909afeadf0e77364150de6a81e8829dc4350c0c7e0743",
+    "artifacts/machines/rvb-xb/revisions/r0001/revision.json": "ec9232e4bb4c4ea536e6a28b165cd0ac996faf4c3a35913f7bcaa6f428627438",
+    "artifacts/machines/rvb-xb/revisions/r0001/build/machine.syx": "bd95b181719e2a452066c03b8293aefeb39ba7944c95c70c5c07935262a98967",
+    "artifacts/machines/rvb-xb/revisions/r0001/build/machine.mds": "1a97474ef275c038a0691312c8b8329aab65cb8e0e12b25064a0ed25c150faec",
+    "artifacts/machines/rvb-xb/revisions/r0001/build/definition.json": "98f54bb23802510d2e6c68018ef83223cb30e20af7ab0e4921edca6b354fe111",
+    "artifacts/machines/rvb-xb/revisions/r0001/source/README.md": "a95da70c49989d1c7d640113b34c1518e3f0fd7521b88e217fafe5eda7177f59",
+    "machines/rvb-xa/README.md": "1ea8c062882ee51427a909afeadf0e77364150de6a81e8829dc4350c0c7e0743",
+    "machines/rvb-xb/README.md": "a95da70c49989d1c7d640113b34c1518e3f0fd7521b88e217fafe5eda7177f59",
+    "knowledge/findings/2026-11-20-crossfield-fdn-r0001.md": "7d1d615d9fd934ed1c1ff216fc99518c88216c5a99fafd8ed942aceff4924f99"
+  },
+  "fonts_sha256": {
+    "arial.ttf": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+    "arialbd.ttf": "e8f4e3baf6cc35fed6fcce3a540e8b39e8f6cda1d22a28f2ec8f526fef7a43f5",
+    "consola.ttf": "cf00b507b3286870cc5064ebd0633c303f70b491a4af25eec2d32df413db0179",
+    "consolab.ttf": "7e8de70c92a891722bd3fbd623db005caab2bfe267e5dab5be46b95a44e0c7f1"
+  },
+  "editorial_source": "User request, 2026-11-20: identify the machine pair, near-total MD DSP use and primary external-input effect use. Setup and control descriptions from the pinned project documentation."
+}

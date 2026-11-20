@@ -1,6 +1,6 @@
 # Machinedrum WebLoader
 
-Browse 126 MDS User Machines, view their descriptions, and load them into
+Browse 128 MDS User Machines, view their descriptions, and load them into
 **MDX X.20** over WebMIDI.
 
 **[Open WebLoader](https://gerdtanck.github.io/WebLoader/)**
@@ -90,6 +90,10 @@ metadata, content IDs, hashes, and image paths.
 
 The 55 original X.20-C machines by **jmamma** have generated description
 images. See [image generation](machines/jmamma/README.md) and [credits](CREDITS.md).
+The **RVB-XA + RVB-XB** pair by **minimal** includes English cards with setup
+and control descriptions. This experimental UW reverb uses almost all of the
+MD's DSP capacity and is intended primarily for an external input.
+See [CROSSFIELD setup and development status](machines/minimal/README.md).
 Original machine payloads are unchanged. No firmware or ROM files are included.
 
 - `src/protocol.ts`: package validation, checksums, content IDs, retargeting.
