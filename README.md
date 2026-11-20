@@ -1,6 +1,6 @@
 # Machinedrum WebLoader
 
-Browse 129 MDS User Machines, view their descriptions, and load them into
+Browse 130 MDS User Machines, view their descriptions, and load them into
 **MDX X.20** over WebMIDI.
 
 **[Open WebLoader](https://gerdtanck.github.io/WebLoader/)**
@@ -96,6 +96,8 @@ MD's DSP capacity and is intended primarily for an external input.
 See [CROSSFIELD setup and development status](machines/minimal/README.md).
 **minimal** also provides [NFX-OT](machines/minimal/NFX-OT.md), a mono OTT
 compressor with internal dry/wet mixing, as the Quick-checked r0003 development build.
+[NFX-DC](machines/minimal/NFX-DC.md) adds stereo width to mono sources and
+reverbs through a decorrelated Neighbor output; it is the Quick-checked r0001 build.
 Original machine payloads are unchanged. No firmware or ROM files are included.
 
 - `src/protocol.ts`: package validation, checksums, content IDs, retargeting.

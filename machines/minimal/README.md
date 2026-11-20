@@ -1,5 +1,7 @@
 # minimal — User Machines
 
+- **[NFX-DC](NFX-DC.md)**: mono-to-stereo decorrelator, r0001 / v0.1,
+  especially useful for mono reverbs. Quick-checked development build.
 - **[NFX-OT](NFX-OT.md)**: mono three-band OTT compressor, r0003 / v0.3,
   with seven controls and internal dry/wet mixing. Quick-checked development build.
 - **CROSSFIELD RVB-XA + RVB-XB**: experimental stereo reverb pair, described below.
