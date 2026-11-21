@@ -648,5 +648,10 @@
     "hash": "cd0773fc85617a5bb5f06f888e7d9407a0c7ef72e245b013e65565f054e1913a",
     "contentId": "a5380faae4fea030d0b03e438a726d9c8e3c1862b0d8e0baacd19a28c7caf7e7",
     "words": 132
+  },
+  "minimal/RVB-MR.syx": {
+    "hash": "427e0f43446ec3e3e285f4daa4f09cefd7d4590cb409c5f62c42a593d3f590ba",
+    "contentId": "eb58f121bbadee16c092dda676ba08880bf0dcd8ce9b5652e0a0a80baef72ec7",
+    "words": 1465
   }
 }

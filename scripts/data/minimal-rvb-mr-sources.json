@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "author": "minimal",
+  "machine": "RVB-MR",
+  "revision": "r0001",
+  "status": "quick_checked_development",
+  "files_sha256": {
+    "artifacts/machines/rvb-mr/revisions/r0001/revision.json": "cc410ff20809e3994e8381eab8ec127ff6bd4343609d456ba97ea34bbbf2e787",
+    "artifacts/machines/rvb-mr/revisions/r0001/build/machine.syx": "a26da0cad308dcbb35b7f055afbbeff40d5a2e8b09e827286df5c8786de291ba",
+    "artifacts/machines/rvb-mr/revisions/r0001/build/machine.mds": "427e0f43446ec3e3e285f4daa4f09cefd7d4590cb409c5f62c42a593d3f590ba",
+    "artifacts/machines/rvb-mr/revisions/r0001/source/machine.json": "fac496b027094bcd9b520fc4a8de6224c9f7e9b099bb67aa1796e9a85474eca4",
+    "artifacts/machines/rvb-mr/revisions/r0001/source/LICENSE": "dcc6776eccbe73ade8e8ef077ed9ec26aea1e2d674573857d2beaaff970ba1de",
+    "artifacts/machines/rvb-mr/revisions/r0001/build/running-path.json": "ffbc3d91890c9924294eb453d2dc3be6b8d813962e6b4c389c0d75a2c94d6620",
+    "machines/rvb-mr/README.md": "905189bbc1122258c3c346227d344ca29db9d2b48ca112b9d0b7707f6419598a",
+    "knowledge/findings/2026-11-17-rvb-mr-r0001.md": "1604fe65a62cd4c3de13e00dca84dea35ff9420c1a90cebd61f8059ed3d0231c"
+  },
+  "fonts_sha256": {
+    "arial.ttf": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+    "arialbd.ttf": "e8f4e3baf6cc35fed6fcce3a540e8b39e8f6cda1d22a28f2ec8f526fef7a43f5",
+    "consola.ttf": "cf00b507b3286870cc5064ebd0633c303f70b491a4af25eec2d32df413db0179",
+    "consolab.ttf": "7e8de70c92a891722bd3fbd623db005caab2bfe267e5dab5be46b95a44e0c7f1"
+  }
+}

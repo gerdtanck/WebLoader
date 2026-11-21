@@ -1,6 +1,6 @@
 # Machinedrum WebLoader
 
-Browse 130 MDS User Machines, view their descriptions, and load them into
+Browse 131 MDS User Machines, view their descriptions, and load them into
 **MDX X.20** over WebMIDI.
 
 **[Open WebLoader](https://gerdtanck.github.io/WebLoader/)**
@@ -98,6 +98,8 @@ See [CROSSFIELD setup and development status](machines/minimal/README.md).
 compressor with internal dry/wet mixing, as the Quick-checked r0003 development build.
 [NFX-DC](machines/minimal/NFX-DC.md) adds stereo width to mono sources and
 reverbs through a decorrelated Neighbor output; it is the Quick-checked r0001 build.
+[RVB-MR](machines/minimal/RVB-MR.md) is a fully wet Rings-based UW reverb with
+mono and stereo setups, published as the Quick-checked r0001 development build.
 Original machine payloads are unchanged. No firmware or ROM files are included.
 
 - `src/protocol.ts`: package validation, checksums, content IDs, retargeting.

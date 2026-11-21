@@ -9,3 +9,4 @@
 *.cmd text eol=crlf
 *.syx binary
 *.png binary
+*.LICENSE.txt -text whitespace=cr-at-eol

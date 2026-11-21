@@ -66,8 +66,8 @@
   },
   "browser_reference_fixture": {
     "path": "tests/fixtures/catalog-reference.json",
-    "sha256": "e9bb207abe7663320b06f30e5fa211e54a07f852d617a53c51bf1e0daa730e8b",
-    "source": "Independent mdlab.protocol Python parser output: previous 129 packages plus unchanged NFX-DC r0001; hashes/content IDs/program words for all 130 packages"
+    "sha256": "e0d46c2bca584db8dcd41258cb4042c5b8a07c941ffd38ebc494ddf298a57869",
+    "source": "Independent mdlab.protocol Python parser output: previous 130 packages plus unchanged RVB-MR r0001; hashes/content IDs/program words for all 131 packages"
   },
   "github_pages": {
     "node": "26.12.1",
@@ -179,5 +179,28 @@
       "sha256": "dd5bb9df09d4940e15f37b63ffb49a1df6a6a8e5461a4485d2811df1d22085dd"
     },
     "reproduce": "python scripts/import_minimal_nfx_dc.py <Machinedrum-Development-directory>"
+  },
+  "minimal_rvb_mr": {
+    "source": "../artifacts/machines/rvb-mr/revisions/r0001/build/machine.syx",
+    "source_pins": {
+      "path": "scripts/data/minimal-rvb-mr-sources.json",
+      "sha256": "bccdc436d90683d890f2f4eeb1d4a53a83ca90da947e1832aaffd7d9924c1571"
+    },
+    "revision": "r0001",
+    "status": "quick_checked_development",
+    "policy": "SYX and original MIT notice copied byte-for-byte; English card generated from package metadata and source documentation; open acceptance criteria retained",
+    "generator": "scripts/import_minimal_rvb_mr.py",
+    "Pillow": "12.0.0",
+    "fonts": "Windows Arial / Consolas, exact hashes in source_pins",
+    "license": {
+      "path": "machines/minimal/RVB-MR.LICENSE.txt",
+      "sha256": "dcc6776eccbe73ade8e8ef077ed9ec26aea1e2d674573857d2beaaff970ba1de",
+      "attribution": "Based on the reverb of Mutable Instruments Rings (MIT), Copyright 2014 Emilie Gillet"
+    },
+    "validation_parser": {
+      "path": "../mdlab/protocol.py",
+      "sha256": "dd5bb9df09d4940e15f37b63ffb49a1df6a6a8e5461a4485d2811df1d22085dd"
+    },
+    "reproduce": "python scripts/import_minimal_rvb_mr.py <Machinedrum-Development-directory>"
   }
 }

@@ -6,7 +6,7 @@ The project owner supplied the User Machine library, grouped by author:
 | --- | ---: |
 | dbx | 2 |
 | jmamma | 55 |
-| minimal | 4 |
+| minimal | 5 |
 | murdenihcam | 13 |
 | waftlord | 56 |
 
@@ -23,6 +23,10 @@ The **NFX-OT r0003** mono compressor and its English card also come from
 minimal's project sources; see [NFX-OT sources and status](machines/minimal/NFX-OT.md).
 The **NFX-DC r0001** decorrelator and its English card follow the same process;
 see [NFX-DC sources and status](machines/minimal/NFX-DC.md).
+**RVB-MR r0001** is based on the reverb of **Mutable Instruments Rings**
+(MIT), copyright 2014 **Emilie Gillet**. See [RVB-MR sources and status](machines/minimal/RVB-MR.md)
+and the [original license notice](machines/minimal/RVB-MR.LICENSE.txt), also
+included in the published site.
 
 Author credits and descriptions correspond to the original files. This
 repository does not grant a blanket license for these third-party materials.

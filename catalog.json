@@ -6016,6 +6016,117 @@
       "originalSlot": 1
     },
     {
+      "name": "DEV RVB-MR",
+      "id": "dev.52a3c198cfd14809dfc8d88a11f",
+      "category": "RVB",
+      "label": "MR",
+      "version": "0.1",
+      "mdsVersion": "1.1",
+      "bytes": 5008,
+      "programWords": 1465,
+      "imports": 5,
+      "xWords": 58,
+      "yWords": 63,
+      "cycles": {
+        "mkii": 20245,
+        "mkiDram": 21689,
+        "mkiSram": 19826
+      },
+      "contentId": "eb58f121bbadee16c092dda676ba08880bf0dcd8ce9b5652e0a0a80baef72ec7",
+      "sha256": "427e0f43446ec3e3e285f4daa4f09cefd7d4590cb409c5f62c42a593d3f590ba",
+      "sprite": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parameters": [
+        {
+          "name": "SEND",
+          "default": 127,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "SIZE",
+          "default": 127,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "TIME",
+          "default": 64,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "DIFF",
+          "default": 99,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "LCUT",
+          "default": 0,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "HCUT",
+          "default": 54,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "WARP",
+          "default": 32,
+          "min": 0,
+          "max": 127
+        },
+        {
+          "name": "WDTH",
+          "default": 127,
+          "min": 0,
+          "max": 127
+        }
+      ],
+      "key": "minimal/RVB-MR.syx",
+      "manufacturer": "minimal",
+      "fileVersion": "",
+      "file": "machines/minimal/RVB-MR.syx",
+      "image": "machines/minimal/RVB-MR.png",
+      "fileHash": "a26da0cad308dcbb35b7f055afbbeff40d5a2e8b09e827286df5c8786de291ba",
+      "originalSlot": 1
+    },
+    {
       "name": "DEV RVB-XA",
       "id": "dev.e47645870c27261e881ed2af164",
       "category": "RVB",
